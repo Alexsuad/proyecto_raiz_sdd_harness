@@ -105,13 +105,24 @@ El siguiente paso recomendado es revisar el estado completo del repositorio y de
 
 No debe avanzarse a automatización activa hasta que exista autorización explícita y revisión del impacto.
 
-## 9. Estado del archivo
+## 9. Estado normativo consolidado
+
+- **Fecha:** 2026-05-30.
+- **Resultado:** constitución y mapa documental aprobados para fase documental / MVP estructural.
+- **Documentos consolidados:**
+  - `docs/constitucion_del_proyecto.md`
+  - `docs/00_mapa_y_gobernanza_documental.md`
+- **Motivo:** una auditoría detectó que ambos documentos aún se declaraban como borradores, lo que podía debilitar su autoridad normativa ante agentes de IA.
+- **Decisión:** ambos documentos quedan vigentes para la fase documental actual, sin declararse definitivos para fases futuras.
+- **Restricción vigente:** deberán revalidarse tras la primera feature piloto o cuando se cree el primer recurso activo real del arnés.
+
+## 10. Estado del archivo
 
 - **Estado:** creado como punto de control operativo.
 - **Uso:** referencia rápida del estado actual del arnés.
 - **Pendiente:** actualizar después de cada cambio estructural relevante del proyecto raíz.
 
-## 10. Último preflight estructural
+## 11. Último preflight estructural
 
 - **Fecha:** 2026-05-30.
 - **Documento usado:** `docs/preflight_estructural.md`.

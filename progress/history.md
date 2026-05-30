@@ -148,6 +148,26 @@ Resultado:
 - no se creó automatización;
 - no se creó `.agent/gates/`.
 
+### 2026-05-30 — Consolidación del estado normativo
+
+Se actualizaron:
+
+- `docs/constitucion_del_proyecto.md`
+- `docs/00_mapa_y_gobernanza_documental.md`
+
+Motivo:
+
+- una auditoría detectó que ambos documentos aún se declaraban como borradores;
+- esto podía reducir su autoridad normativa ante agentes de IA;
+- se decidió marcarlos como aprobados para fase documental / MVP estructural.
+
+Resultado:
+
+- constitución vigente para la fase documental actual;
+- mapa documental vigente como documento rector;
+- bloqueo de auditoría levantado;
+- documentos pendientes de revalidación tras la primera feature piloto o cuando se cree el primer recurso activo real del arnés.
+
 ## 4. Estado actual resumido
 
 El proyecto se encuentra en fase documental / MVP estructural.
