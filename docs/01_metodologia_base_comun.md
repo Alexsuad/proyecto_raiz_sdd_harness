@@ -16,7 +16,7 @@ Este documento se subordina jerárquicamente a [docs/00_mapa_y_gobernanza_docume
 El objetivo del proyecto raíz no es crear una aplicación final orientada al usuario final, sino estructurar un sistema de trabajo metodológico, documental y agéntico reutilizable. Funciona como un arnés metodológico y operativo diseñado para ser replicado en futuros proyectos reales de desarrollo de software, asegurando que todos sigan las mismas pautas de calidad y trazabilidad.
 
 ## 4. Principio LEAN
-El proyecto debe avanzar de manera iterativa utilizando cambios pequeños, útiles, revisables y reversibles. Se debe evitar a toda costa la burocracia innecesaria, la duplicación de código o texto, y la documentación excesiva que no aporte valor práctico directo. El objetivo es maximizar la eficiencia y la claridad del repositorio.
+El proyecto debe avanzar de manera iterativa utilizando cambios pequeños, útiles, revisables y reversibles. Se debe evitar a toda costa la burocracia innecesaria, la duplicación de código o texto, y la documentación excesiva que no aporte valor práctico directo. El objetivo es maximizar la eficiencia y la claridad del repositorio. Aplicar LEAN no significa omitir especificaciones necesarias, gates, evidencias ni revisiones. En este proyecto, la documentación mínima necesaria para entender, validar y cerrar un cambio no se considera burocracia: se considera parte del entregable.
 
 ## 5. Principio de entregable candidato
 Cualquier resultado generado por una inteligencia artificial o por un agente de desarrollo se considera un elemento preliminar (o candidato) hasta que pase por las validaciones correspondientes. Ejemplos de entregables candidatos:
