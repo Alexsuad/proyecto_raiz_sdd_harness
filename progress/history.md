@@ -211,6 +211,31 @@ Resultado:
 - no se activó automatización;
 - el proyecto continúa en fase documental / MVP estructural.
 
+### 2026-05-30 — Actualización de estado de metodologías base
+
+Se actualizaron:
+
+- `docs/01_metodologia_base_comun.md`
+- `docs/02_metodologia_desarrollo_software_sdd_harness.md`
+
+Motivo:
+
+- ambos documentos metodológicos aún conservaban estado de borrador inicial;
+- `docs/02_metodologia_desarrollo_software_sdd_harness.md` contenía referencias desactualizadas sobre recursos que ya existen en el proyecto;
+- era necesario alinear ambos documentos con la fase documental / MVP estructural actual.
+
+Resultado:
+
+- `docs/01_metodologia_base_comun.md` quedó aprobado para fase documental / MVP estructural;
+- `docs/02_metodologia_desarrollo_software_sdd_harness.md` quedó aprobado para fase documental / MVP estructural;
+- se aclaró que `AGENTS.md`, `GEMINI.md` y `progress/` ya existen como adaptadores y sedes documentales mínimas;
+- se mantuvo explícito que no existe autorización para implementación sobre código real ni activación de automatización;
+- no se crearon specs reales;
+- no se crearon scripts;
+- no se crearon tests reales;
+- no se creó `.agent/gates/`;
+- el proyecto continúa en fase documental / MVP estructural.
+
 ## 4. Estado actual resumido
 
 El proyecto se encuentra en fase documental / MVP estructural.
