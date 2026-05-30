@@ -105,7 +105,19 @@ El siguiente paso recomendado es revisar el estado completo del repositorio y de
 
 No debe avanzarse a automatización activa hasta que exista autorización explícita y revisión del impacto.
 
-## 9. Estado normativo consolidado
+## 9. Definición documental de Gate 0
+
+- **Fecha:** 2026-05-30.
+- **Documento creado:** `docs/gate_0_preflight_definicion.md`.
+- **Tipo:** definición documental previa de gate.
+- **Estado:** creado, pendiente de auditoría.
+- **Automatización:** ninguna.
+- **Gate activo:** no.
+- **Script asociado:** no existe `scripts/gate_0_preflight.py`.
+- **Decisión:** el documento puede usarse como base conceptual para una futura implementación determinista, pero no autoriza crear scripts, `.agent/gates/` ni automatización activa.
+- **Restricción vigente:** antes de convertir esta definición en script o gate operativo real, debe pasar auditoría documental y requerir autorización explícita.
+
+## 10. Estado normativo consolidado
 
 - **Fecha:** 2026-05-30.
 - **Resultado:** constitución y mapa documental aprobados para fase documental / MVP estructural.
@@ -116,13 +128,13 @@ No debe avanzarse a automatización activa hasta que exista autorización explí
 - **Decisión:** ambos documentos quedan vigentes para la fase documental actual, sin declararse definitivos para fases futuras.
 - **Restricción vigente:** deberán revalidarse tras la primera feature piloto o cuando se cree el primer recurso activo real del arnés.
 
-## 10. Estado del archivo
+## 11. Estado del archivo
 
 - **Estado:** creado como punto de control operativo.
 - **Uso:** referencia rápida del estado actual del arnés.
 - **Pendiente:** actualizar después de cada cambio estructural relevante del proyecto raíz.
 
-## 11. Último preflight estructural
+## 12. Último preflight estructural
 
 - **Fecha:** 2026-05-30.
 - **Documento usado:** `docs/preflight_estructural.md`.
