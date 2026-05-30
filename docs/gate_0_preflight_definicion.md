@@ -26,7 +26,18 @@ La relación es la siguiente:
 - `docs/gate_0_preflight_definicion.md`: definición documental del futuro gate.
 - `scripts/gate_0_preflight.py`: posible implementación futura, todavía no autorizada.
 
-## 3. Cuándo se usará este gate
+## 3. Definiciones de estado del gate
+
+Para evitar ambigüedad, este proyecto distingue entre:
+
+- **Definición documental de gate:** documento que describe qué debería revisar un gate futuro, sin ejecutar validaciones.
+- **Gate operativo:** gate autorizado como parte del flujo de trabajo, aunque pueda ejecutarse manualmente.
+- **Gate automatizado:** gate implementado mediante script o herramienta determinista.
+- **Script ejecutable de gate:** archivo de código que realiza validaciones concretas, por ejemplo `scripts/gate_0_preflight.py`.
+
+El documento actual solo es una definición documental de gate. No debe interpretarse como gate operativo, gate automatizado ni script ejecutable.
+
+## 4. Cuándo se usará este gate
 
 Cuando exista una versión activa del `gate_0_preflight`, deberá ejecutarse antes de:
 
@@ -42,7 +53,7 @@ Cuando exista una versión activa del `gate_0_preflight`, deberá ejecutarse ant
 
 Mientras el gate no exista como script, esta definición solo servirá como guía documental.
 
-## 4. Entradas esperadas
+## 5. Entradas esperadas
 
 El futuro `gate_0_preflight` deberá revisar, como mínimo, la existencia y coherencia de estos elementos:
 
@@ -51,6 +62,7 @@ El futuro `gate_0_preflight` deberá revisar, como mínimo, la existencia y cohe
 - `docs/01_metodologia_base_comun.md`
 - `docs/02_metodologia_desarrollo_software_sdd_harness.md`
 - `docs/preflight_estructural.md`
+- `docs/adr/README.md`
 - `AGENTS.md`
 - `GEMINI.md`
 - `specs/README.md`
@@ -63,7 +75,7 @@ El futuro `gate_0_preflight` deberá revisar, como mínimo, la existencia y cohe
 - `.agent/workflows/README.md`
 - `.agent/skills/README.md`
 
-## 5. Criterios de aprobación
+## 6. Criterios de aprobación
 
 El gate podrá aprobar el avance si se cumplen estas condiciones:
 
@@ -83,7 +95,7 @@ El gate podrá aprobar el avance si se cumplen estas condiciones:
 - `progress/history.md` registra los hitos relevantes sin convertirse en una bitácora excesiva;
 - no hay contradicciones evidentes entre documentos normativos, adaptadores y sedes documentales.
 
-## 6. Criterios de bloqueo
+## 7. Criterios de bloqueo
 
 El gate deberá bloquear el avance si detecta cualquiera de estas situaciones:
 
@@ -102,7 +114,7 @@ El gate deberá bloquear el avance si detecta cualquiera de estas situaciones:
 - se detecta duplicación normativa grave entre documentos;
 - se intenta avanzar hacia automatización sin evidencia de revisión documental.
 
-## 7. Evidencia requerida
+## 8. Evidencia requerida
 
 Cuando el gate se ejecute manualmente o en una futura versión automatizada, deberá dejar evidencia mínima de:
 
@@ -117,7 +129,7 @@ Cuando el gate se ejecute manualmente o en una futura versión automatizada, deb
 
 Mientras el gate sea documental, esta evidencia podrá registrarse en `progress/current.md` o `progress/history.md`.
 
-## 8. Salida esperada
+## 9. Salida esperada
 
 El resultado del gate deberá clasificarse en uno de estos estados:
 
@@ -125,7 +137,7 @@ El resultado del gate deberá clasificarse en uno de estos estados:
 - **aprobado con observaciones:** el proyecto puede avanzar, pero debe corregir observaciones menores antes de activar recursos operativos.
 - **bloqueado:** el proyecto no debe avanzar hasta corregir el problema detectado.
 
-## 9. Relación futura con scripts
+## 10. Relación futura con scripts
 
 Este documento podrá servir como base para crear un script futuro:
 
@@ -141,7 +153,7 @@ La creación futura del script deberá respetar:
 - el estado actual registrado en `progress/current.md`;
 - el principio de no automatización prematura.
 
-## 10. Qué no hace este documento
+## 11. Qué no hace este documento
 
 Este documento no:
 
@@ -155,7 +167,7 @@ Este documento no:
 - reemplaza el preflight estructural manual;
 - reemplaza la constitución ni el mapa documental.
 
-## 11. Estado del documento
+## 12. Estado del documento
 
 - **Estado:** definición documental inicial.
 - **Tipo:** especificación previa de gate.

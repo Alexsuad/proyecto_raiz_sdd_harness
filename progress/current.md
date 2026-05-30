@@ -50,8 +50,7 @@ No existen todavía:
 - rules activas;
 - workflows activos;
 - skills activas;
-- gates definidos;
-- gates automatizados;
+- gates operativos o automatizados;
 - specs de features reales;
 - scripts ejecutables;
 - tests reales del arnés.
@@ -141,6 +140,6 @@ No debe avanzarse a automatización activa hasta que exista autorización explí
 - **Tipo de revisión:** preflight manual documental.
 - **Resultado:** aprobado.
 - **Evidencia:** revisión de estructura base, estado agéntico, no duplicación y criterio LEAN.
-- **Observaciones:** no existen rules activas, workflows activos, skills activas, gates definidos, gates automatizados, scripts ejecutables, specs reales ni código de producto.
+- **Observaciones:** no existen rules activas, workflows activos, skills activas, gates operativos o automatizados, scripts ejecutables, specs reales ni código de producto.
 - **Decisión:** se permite avanzar únicamente con cambios documentales controlados y justificados.
 - **Restricción vigente:** no activar automatización, no crear `.agent/gates/` y no crear recursos operativos activos sin autorización explícita.
