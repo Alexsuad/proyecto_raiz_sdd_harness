@@ -64,6 +64,6 @@ Este documento define únicamente los principios metodológicos base y de intera
 - Scripts locales de automatización, linters o gates técnicos (`scripts/`).
 
 ## 15. Estado del documento
-- **Estado:** Borrador inicial.
-- **Uso:** Base metodológica común para proyectos y documentos posteriores.
-- **Pendiente:** Validar los principios transversales contra el documento maestro del arnés original y ajustar según los resultados de la primera prueba de integración.
+- **Estado:** aprobado para fase documental / MVP estructural.
+- **Uso:** base metodológica común vigente para la fase documental actual y para orientar documentos posteriores.
+- **Pendiente:** revalidar tras la primera feature piloto o cuando se cree el primer recurso activo real del arnés.

@@ -149,9 +149,10 @@ Los agentes pueden realizar autoauditoría como primera revisión interna de su 
 
 ## 15. Harness para Codex y Antigravity
 El arnés (harness) no debe confundirse con el modelo de lenguaje en sí. Es la infraestructura de reglas, documentos, flujos de trabajo, habilidades agénticas, checkpoints de avance y bitácoras que enmarcan la operación de Codex y Antigravity en el workspace.
-- `AGENTS.md` (a ser creado en el futuro) actuará como adaptador operativo enfocado en Codex.
-- `GEMINI.md` o las carpetas de reglas de contexto (a ser creados en el futuro) actuarán como adaptadores para Antigravity.
-- Ambos adaptadores operativos deberán vincularse a la constitución y gobernanza del proyecto mediante referencias cruzadas en lugar de duplicar sus lineamientos.
+- `AGENTS.md` actúa como adaptador operativo mínimo para Codex y agentes compatibles.
+- `GEMINI.md` actúa como adaptador operativo mínimo para Gemini y Antigravity.
+- `.agent/rules/`, `.agent/workflows/` y `.agent/skills/` existen únicamente como sedes documentales futuras no activas.
+- Estos adaptadores y sedes deben vincularse a la constitución y gobernanza del proyecto mediante referencias cruzadas en lugar de duplicar sus lineamientos.
 
 ## 16. Gates de la ruta software
 Los gates son puntos de control y calidad que regulan el avance entre fases. Se clasifican de forma general en:
@@ -170,18 +171,21 @@ Se proyectan los siguientes gates conceptuales para la ruta de desarrollo (cuyos
 Si una característica de software falla en superar un gate crítico, un test de regresión, una validación de negocio o una validación técnica compleja, está prohibido realizar parches rápidos o modificaciones ad-hoc a ciegas. El agente debe detener el proceso de codificación, registrar la evidencia detallada de la falla en `validation.md` o `review.md`, revisar la especificación y el diseño técnico, ajustar el plan en `tasks.md` cuando corresponda, y reiniciar el ciclo de validación de manera ordenada. Solo se usará `clarifications.md` si la falla revela una ambigüedad, duda o supuesto no resuelto en los requisitos.
 
 ## 18. Límites del MVP actual
-Este documento establece la estructura lógica de desarrollo de software, pero no crea ni habilita de forma operativa los siguientes elementos, los cuales quedan pendientes para fases de implementación posteriores:
+Este documento establece la estructura lógica de desarrollo de software, pero no crea ni habilita de forma operativa los siguientes elementos, los cuales quedan pendientes para fases posteriores:
+
 - Plantillas documentales formalizadas para los archivos de la carpeta `specs/`.
-- Archivos adaptadores operativos locales en la raíz como `AGENTS.md` o `GEMINI.md`.
-- Habilidades agénticas específicas (`.agent/skills/`).
-- Flujos de orquestación multi-agente (`.agent/workflows/`).
+- Skills activas (`.agent/skills/`).
+- Workflows activos (`.agent/workflows/`).
+- Rules activas (`.agent/rules/`).
 - Scripts ejecutables de validación técnica o gates automatizados.
-- Directorios del sistema de control y seguimiento (`progress/`).
+- Tests reales del arnés.
 - Implementaciones de código productivo o suite de pruebas unitarias reales.
 
-Mientras no existan plantillas mínimas de specs, adaptadores operativos, skills básicas y gates mínimos auditados, ningún agente implementador debe activarse sobre código real de un proyecto derivado. Hasta entonces, el arnés solo puede usarse para planificación, documentación, simulación controlada o pruebas piloto sin impacto productivo.
+`AGENTS.md`, `GEMINI.md` y `progress/` ya existen como adaptadores y sedes documentales mínimas dentro de la fase documental / MVP estructural. Su existencia no autoriza implementación sobre código real ni activación de automatización.
+
+Mientras no existan plantillas mínimas de specs, recursos agénticos activos autorizados y gates mínimos auditados, ningún agente implementador debe activarse sobre código real de un proyecto derivado. Hasta entonces, el arnés solo puede usarse para planificación, documentación, simulación controlada o pruebas piloto sin impacto productivo.
 
 ## 19. Estado del documento
-- **Estado:** Borrador inicial.
-- **Uso:** Metodología inicial de referencia para la ruta de desarrollo de software con SDD.
-- **Pendiente:** Someter a auditoría técnica de arquitectura, ajustar de forma iterativa y validar su efectividad práctica con la primera especificación de feature piloto del arnés.
+- **Estado:** aprobado para fase documental / MVP estructural.
+- **Uso:** metodología inicial vigente para orientar la ruta de desarrollo de software con SDD durante la fase documental actual.
+- **Pendiente:** revalidar y ajustar tras la primera especificación de feature piloto del arnés o cuando se cree el primer recurso activo real.
