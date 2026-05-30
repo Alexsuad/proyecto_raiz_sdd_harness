@@ -57,6 +57,7 @@ Esta carpeta no debe usarse para guardar:
 
 Todo workflow futuro debe definir de forma clara:
 
+- descripción breve de máximo 250 caracteres;
 - propósito;
 - cuándo usarlo;
 - entradas necesarias;
