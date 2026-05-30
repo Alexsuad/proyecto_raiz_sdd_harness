@@ -1,0 +1,16 @@
+# Normaliza los finales de línea para evitar cambios falsos entre Windows y Linux.
+* text=auto
+
+# Los archivos Markdown deben mantenerse con finales de línea LF.
+*.md text eol=lf
+
+# Los scripts de shell deben mantenerse con finales de línea LF.
+*.sh text eol=lf
+
+# Los archivos Python deben mantenerse con finales de línea LF.
+*.py text eol=lf
+
+# Los archivos JSON y YAML deben mantenerse con finales de línea LF.
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
