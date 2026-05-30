@@ -233,8 +233,7 @@ Actualmente no existen:
 - rules activas;
 - workflows activos;
 - skills activas;
-- gates definidos;
-- gates automatizados;
+- gates operativos o automatizados;
 - scripts ejecutables;
 - tests reales.
 

@@ -57,8 +57,7 @@ Antes de avanzar, verificar que:
 - No existen workflows activos.
 - No existen skills activas.
 - No existe `.agent/gates/`.
-- No existen gates definidos.
-- No existen gates automatizados.
+- No existen gates operativos ni automatizados.
 
 ## 5. Checklist de no duplicación
 
