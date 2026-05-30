@@ -1,7 +1,3 @@
----
-trigger: always_on
----
-
 # File: .agent/rules/README.md
 # ──────────────────────────────────────────────────────────────────────
 # Propósito: Definir la sede futura de reglas operativas locales para Antigravity.
@@ -13,6 +9,8 @@ trigger: always_on
 ## 1. Propósito
 
 Esta carpeta será la sede oficial de las reglas operativas locales de Antigravity para el proyecto raíz `proyecto_raiz_sdd_harness`.
+
+Esta carpeta tiene estado documental. Ningún archivo dentro de esta sede debe considerarse una rule activa hasta que se cree explícitamente una regla operativa validada y autorizada.
 
 Su objetivo es permitir que Antigravity trabaje con restricciones claras, contexto controlado y límites operativos alineados con la documentación oficial del repositorio.
 

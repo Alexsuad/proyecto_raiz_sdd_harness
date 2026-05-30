@@ -10,6 +10,8 @@
 
 Esta carpeta será la sede oficial de las skills reutilizables del proyecto raíz `proyecto_raiz_sdd_harness`.
 
+Esta carpeta tiene estado documental. Ningún archivo dentro de esta sede debe considerarse una skill activa hasta que se cree explícitamente una skill validada y autorizada.
+
 Su objetivo es permitir que los agentes ejecuten tareas especializadas siguiendo instrucciones claras, reutilizables, auditables y alineadas con la documentación oficial del repositorio.
 
 ## 2. Qué es una skill

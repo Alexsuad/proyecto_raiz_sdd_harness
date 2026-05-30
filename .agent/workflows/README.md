@@ -1,7 +1,3 @@
----
-description: Todo workflow futuro debe incluir una descripción breve de máximo 250 caracteres.
----
-
 # File: .agent/workflows/README.md
 # ──────────────────────────────────────────────────────────────────────
 # Propósito: Definir la sede futura de workflows operativos para Antigravity.
@@ -13,6 +9,8 @@ description: Todo workflow futuro debe incluir una descripción breve de máximo
 ## 1. Propósito
 
 Esta carpeta será la sede oficial de los workflows operativos de Antigravity para el proyecto raíz `proyecto_raiz_sdd_harness`.
+
+Esta carpeta tiene estado documental. Ningún archivo dentro de esta sede debe considerarse un workflow activo hasta que se cree explícitamente un workflow validado y autorizado.
 
 Su objetivo es permitir que tareas repetibles del arnés se ejecuten con pasos claros, límites definidos, entradas esperadas, salidas verificables y cierre con evidencia.
 
