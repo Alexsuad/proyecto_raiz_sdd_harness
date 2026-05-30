@@ -188,6 +188,29 @@ Resultado:
 - no se activó automatización;
 - el documento queda pendiente de auditoría antes de cualquier implementación futura.
 
+### 2026-05-30 — Corrección de observaciones de auditoría de Gate 0
+
+Se actualizaron:
+
+- `docs/gate_0_preflight_definicion.md`
+- `progress/current.md`
+
+Motivo:
+
+- la definición documental de Gate 0 fue revisada;
+- el dictamen fue “aprobado con observaciones menores”;
+- se procedió a corregir las observaciones detectadas en la auditoría.
+
+Resultado:
+
+- se agregaron definiciones de estado para evitar ambigüedades sobre el rol estrictamente documental de esta fase;
+- se incorporó `docs/adr/README.md` como entrada del futuro gate;
+- se clarificó en `progress/current.md` que no hay gates operativos ni automatizados activos;
+- no se creó `scripts/gate_0_preflight.py`;
+- no se creó `.agent/gates/`;
+- no se activó automatización;
+- el proyecto continúa en fase documental / MVP estructural.
+
 ## 4. Estado actual resumido
 
 El proyecto se encuentra en fase documental / MVP estructural.
