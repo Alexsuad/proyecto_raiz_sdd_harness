@@ -127,6 +127,7 @@ Antes de dar por cerrado un ciclo de cambios en la documentación, se debe verif
 - [ ] `.agent/` sigue documentado como sede futura y no como sistema activo, salvo autorización explícita.
 
 ## 15. Estado del documento
-- **Estado**: Borrador consolidado inicial.
-- **Uso**: Documento rector para iniciar la separación documental del proyecto raíz.
-- **Pendiente**: Validar nuevamente tras la primera feature piloto o cuando se cree el primer recurso activo real del arnés.
+
+- **Estado**: aprobado para fase documental / MVP estructural.
+- **Uso**: documento rector vigente para la gobernanza documental del proyecto raíz.
+- **Pendiente**: validar nuevamente tras la primera feature piloto o cuando se cree el primer recurso activo real del arnés.

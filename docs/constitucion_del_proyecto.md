@@ -105,6 +105,6 @@ La constitución del proyecto raíz representa el núcleo normativo de estabilid
 
 ## 17. Estado del documento
 
-- **Estado:** Borrador inicial.
-- **Uso:** Reglas no negociables del proyecto raíz.
-- **Pendiente:** Someter el documento a auditoría técnica contra las metodologías descritas en `01` y `02` para ajustar detalles normativos tras finalizar la primera prueba real del arnés agéntico.
+- **Estado:** aprobado para fase documental / MVP estructural.
+- **Uso:** reglas no negociables vigentes del proyecto raíz durante la fase documental actual.
+- **Pendiente:** revalidar tras la primera feature piloto o cuando se cree el primer recurso activo real del arnés.
