@@ -168,6 +168,26 @@ Resultado:
 - bloqueo de auditoría levantado;
 - documentos pendientes de revalidación tras la primera feature piloto o cuando se cree el primer recurso activo real del arnés.
 
+### 2026-05-30 — Definición documental de Gate 0
+
+Se creó:
+
+- `docs/gate_0_preflight_definicion.md`
+
+Motivo:
+
+- avanzar desde el checklist manual `docs/preflight_estructural.md` hacia una definición formal del futuro `gate_0_preflight`;
+- mantener el enfoque SDD: primero definición documental, luego posible automatización;
+- evitar crear scripts o gates activos antes de contar con revisión y autorización explícita.
+
+Resultado:
+
+- primera definición documental de gate creada;
+- no se creó `.agent/gates/`;
+- no se creó `scripts/gate_0_preflight.py`;
+- no se activó automatización;
+- el documento queda pendiente de auditoría antes de cualquier implementación futura.
+
 ## 4. Estado actual resumido
 
 El proyecto se encuentra en fase documental / MVP estructural.

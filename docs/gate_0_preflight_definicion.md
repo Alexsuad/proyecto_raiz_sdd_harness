@@ -34,7 +34,7 @@ Cuando exista una versión activa del `gate_0_preflight`, deberá ejecutarse ant
 - crear una rule activa;
 - crear un workflow activo;
 - crear una skill activa;
-- crear una definición formal de gate operativo;
+- crear una definición operativa activa de gate;
 - crear scripts de validación;
 - activar automatización;
 - permitir que un agente actúe sobre código real de un proyecto derivado;
