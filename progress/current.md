@@ -47,7 +47,7 @@ Actualmente solo se consideran activos:
 
 No existen todavía:
 
-- rules activas;
+- rules activas (la regla local `.agent/rules/00_reglas_locales_mvp_documental.md` existe en estado documental e inactivo);
 - workflows activos (el workflow `.agent/workflows/sdd_feature_workflow.md` existe en estado puramente documental e inactivo);
 - skills activas (las skills de `spec_author`, `implementer` y `reviewer` existen en `.agent/skills/` en estado documental e inactivo);
 - gates operativos o automatizados;
@@ -59,18 +59,22 @@ No existen todavía:
 
 La carpeta `.agent/` alberga la estructura documental conceptual del arnés.
 
-Actualmente contiene las siguientes piezas documentales del triángulo mínimo de roles y flujo:
+Actualmente contiene las siguientes piezas documentales del triángulo mínimo de roles, flujo y reglas del MVP:
 - **Workflow SDD por feature:** [.agent/workflows/sdd_feature_workflow.md](../.agent/workflows/sdd_feature_workflow.md)
 - **Skill Spec Author:** [.agent/skills/spec_author/SKILL.md](../.agent/skills/spec_author/SKILL.md)
 - **Skill Implementer:** [.agent/skills/implementer/SKILL.md](../.agent/skills/implementer/SKILL.md)
 - **Skill Reviewer:** [.agent/skills/reviewer/SKILL.md](../.agent/skills/reviewer/SKILL.md)
+- **Regla local documental:** [.agent/rules/00_reglas_locales_mvp_documental.md](../.agent/rules/00_reglas_locales_mvp_documental.md)
 
 Estas piezas siguen siendo:
 - documentales;
 - no activas;
 - no ejecutables;
 - sin front matter;
+- sin metadata activa;
+- sin triggers, globs, `alwaysApply` ni configuración equivalente;
 - sin autorización para modificar código real en proyectos derivados;
+- sin autorización para automatización real;
 - pendientes de futura activación o adaptación formal en los adaptadores operativos.
 
 No debe crearse `.agent/gates/` todavía si el proyecto sigue en MVP documental.
@@ -105,9 +109,9 @@ Hasta nueva autorización explícita, no se debe:
 ## 8. Próximo paso recomendado
 
 El próximo paso recomendado es:
-- Revisar si el siguiente bloque a desarrollar debe ser la carpeta de reglas locales `.agent/rules/` o la definición documental detallada de gates.
-- No crear todavía scripts ejecutables.
-- No crear la carpeta `.agent/gates/` todavía mientras el proyecto continúe en la fase de MVP documental.
+- Evaluar una definición documental más detallada de gates;
+- O realizar una auditoría de coherencia entre `progress/`, `.agent/`, `AGENTS.md`, `GEMINI.md` y los documentos rectores.
+- No crear todavía la carpeta `.agent/gates/` ni scripts ejecutables mientras el proyecto continúe en la fase de MVP documental.
 - No avanzar a automatización activa hasta contar con autorización explícita y validación documental previa.
 
 ## 9. Definición documental de Gate 0

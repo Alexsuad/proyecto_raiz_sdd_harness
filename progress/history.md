@@ -352,6 +352,24 @@ Resultado:
 - Todas las piezas se mantienen en estado documental, no activo y no ejecutable, sin front matter y sin autorización de modificación de código real en proyectos derivados.
 - Bloqueo de avance controlado: el arnés cuenta con sus directrices conceptuales básicas consolidadas.
 
+### 2026-06-01 — Creación de reglas locales documentales del MVP
+
+Se creó y publicó:
+
+- `.agent/rules/00_reglas_locales_mvp_documental.md` (Regla local documental de MVP)
+
+Commit asociado:
+
+- `21f34ba docs: crear reglas locales documentales del mvp`
+
+Motivo:
+- Consolidar las pautas de control del comportamiento de agentes o asistentes de IA, estableciendo límites de alcance, Git seguro, elección eficiente de modelos de lenguaje, diffs cortos, commits atómicos y límites rígidos de la fase documental.
+
+Resultado:
+- Regla documental de contexto integrada en el repositorio.
+- El archivo se mantiene en estado documental, no activo y no ejecutable, sin front matter ni metadatos activos y sin autorización de modificación en el codebase de código real.
+- Aclaración: no se activaron rules reales de Antigravity, no se creó `.agent/gates/`, no se crearon scripts, tests ni specs reales.
+
 ## 4. Estado actual resumido
 
 El proyecto se encuentra en fase documental / MVP estructural.
@@ -366,7 +384,8 @@ Actualmente existen:
 - sedes documentales para `.agent/rules/`, `.agent/workflows/` y `.agent/skills/`;
 - preflight estructural manual;
 - workflow SDD por feature documental (`sdd_feature_workflow.md`);
-- skills documentales de roles de primer nivel (`spec_author`, `implementer` y `reviewer`).
+- skills documentales de roles de primer nivel (`spec_author`, `implementer` y `reviewer`);
+- primera regla local documental del MVP en `.agent/rules/`.
 
 Actualmente no existen:
 
