@@ -34,16 +34,16 @@ La carpeta `progress/` registrará el seguimiento del avance, pero no reemplazar
 
 Si existe diferencia entre una spec aprobada y un reporte de progreso, la spec tendrá prioridad hasta que sea actualizada mediante revisión y evidencia.
 
-## 4. Archivos previstos para fases futuras
+## 4. Archivos de seguimiento existentes y previstos
 
-Cuando el arnés avance, esta carpeta podrá incorporar archivos como:
+Actualmente existen `current.md` y `history.md` como archivos de seguimiento operativo. En fases posteriores, esta carpeta podrá incorporar archivos adicionales como:
 
 - `current.md`: estado operativo actual del proyecto o de la feature activa.
-- `history.md`: historial resumido de avances, cierres y cambios relevantes.
+- `history.md`: historial resumido de avances, closures y cambios relevantes.
 - `blocked.md`: bloqueos abiertos, causas y acciones necesarias.
 - `decisions_pending.md`: decisiones pendientes de revisión humana o técnica.
 
-Estos archivos no se crean todavía para evitar estructura vacía prematura.
+`current.md` y `history.md` ya existen; `blocked.md` y `decisions_pending.md` permanecen pendientes hasta que exista una necesidad real.
 
 ## 5. Reglas de uso
 
@@ -64,5 +64,5 @@ Los reportes de progreso deben apuntar a la evidencia correspondiente cuando exi
 ## 6. Estado actual
 
 - **Estado:** sede documental creada.
-- **Archivos activos de seguimiento:** ninguno.
-- **Pendiente:** crear `current.md` e `history.md` cuando se inicie la primera feature piloto del arnés.
+- **Archivos activos de seguimiento:** `current.md` e `history.md`.
+- **Pendiente:** crear `blocked.md` o `decisions_pending.md` solo cuando exista una necesidad real.

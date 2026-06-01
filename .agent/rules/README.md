@@ -27,7 +27,7 @@ Las reglas locales deben actuar como una capa operativa breve para Antigravity, 
 
 ## 3. Qué vivirá en esta carpeta
 
-En fases posteriores, esta carpeta podrá contener reglas relacionadas con:
+Actualmente contiene una primera regla local documental no activa. En fases posteriores, esta carpeta podrá incorporar reglas adicionales relacionadas con:
 
 - alcance permitido por tipo de tarea;
 - comportamiento esperado del agente;
@@ -63,5 +63,6 @@ Si una regla necesita explicación larga, debe vivir en un documento oficial den
 ## 6. Estado actual
 
 - **Estado:** sede documental creada.
+- **Recursos documentales existentes:** [00_reglas_locales_mvp_documental.md](./00_reglas_locales_mvp_documental.md) (Regla local documental de MVP, no activa).
 - **Rules activas:** ninguna.
-- **Pendiente:** crear la primera rule local mínima cuando se valide su necesidad operativa dentro de Antigravity.
+- **Pendiente:** activación futura o adaptación formal al formato ejecutable del motor agéntico correspondiente solo tras autorización explícita.

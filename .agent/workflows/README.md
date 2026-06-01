@@ -71,17 +71,18 @@ Todo workflow futuro debe definir de forma clara:
 
 ## 6. Workflows previstos
 
-En fases posteriores se podrán crear workflows como:
+Además del workflow conceptual ya creado, en fases posteriores se podrán crear o activar formalmente workflows como:
 
-- `sdd_feature_workflow.md`: flujo completo de una feature desde requisitos hasta revisión.
+- `sdd_feature_workflow.md`: ya existe como flujo conceptual no activo de una feature desde requisitos hasta revisión.
 - `spec_review_workflow.md`: revisión controlada de una spec antes de implementación.
 - `gate_review_workflow.md`: validación de resultados de gates y bloqueos.
 - `documentation_audit_workflow.md`: auditoría documental puntual.
 
-Estos workflows no se crean todavía para evitar automatización prematura.
+Estos workflows no deben interpretarse como activos; cualquier activación futura requiere autorización explícita.
 
 ## 7. Estado actual
 
 - **Estado:** sede documental creada.
+- **Recursos documentales existentes:** [sdd_feature_workflow.md](./sdd_feature_workflow.md) (Flujo conceptual de feature piloto, no activo).
 - **Workflows activos:** ninguno.
-- **Pendiente:** crear el primer workflow cuando exista una primera feature piloto o una necesidad operativa validada.
+- **Pendiente:** activación futura o adaptación formal al formato ejecutable del motor agéntico correspondiente solo tras autorización explícita.

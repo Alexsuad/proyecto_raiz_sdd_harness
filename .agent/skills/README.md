@@ -64,7 +64,7 @@ Cada `SKILL.md` futuro deberá definir:
 
 ## 6. Skills previstas
 
-En fases posteriores se podrán crear skills como:
+En fases posteriores se podrán crear o activar skills como:
 
 - `spec_author`: ayuda a crear o revisar specs por feature.
 - `implementer`: ayuda a ejecutar implementación candidata desde una spec aprobada.
@@ -72,7 +72,7 @@ En fases posteriores se podrán crear skills como:
 - `qa_reviewer`: revisa validaciones, pruebas, escenarios críticos y bloqueos de QA.
 - `documentation_auditor`: detecta duplicación, inconsistencias y problemas de gobernanza documental.
 
-Estas skills no se crean todavía para evitar automatización prematura.
+Las skills `spec_author`, `implementer` y `reviewer` ya han sido estructuradas de forma conceptual y no activa en sus respectivos directorios para definir su comportamiento futuro, mientras que otras permanecen previstas.
 
 ## 7. Qué no debe vivir aquí
 
@@ -99,5 +99,9 @@ Cuando una skill produzca un entregable candidato, otro rol, skill, checklist, g
 ## 9. Estado actual
 
 - **Estado:** sede documental creada.
+- **Recursos documentales existentes:**
+  - [spec_author/SKILL.md](./spec_author/SKILL.md) (Skill conceptual, no activa).
+  - [implementer/SKILL.md](./implementer/SKILL.md) (Skill conceptual, no activa).
+  - [reviewer/SKILL.md](./reviewer/SKILL.md) (Skill conceptual, no activa).
 - **Skills activas:** ninguna.
-- **Pendiente:** crear la primera skill cuando exista una necesidad operativa validada y una estructura mínima suficiente del arnés.
+- **Pendiente:** activación futura o adaptación formal al formato ejecutable del motor agéntico correspondiente solo tras autorización explícita.
