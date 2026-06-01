@@ -263,6 +263,9 @@ Resultado:
 - no se crearon tests;
 - no se activó automatización.
 
+Nota posterior de contención:
+El archivo `docs/manual_anti_errores_del_arnes.md` fue posteriormente reclasificado como material local privado/no versionado hacia adelante. La decisión operativa fue no limpiar historial en esta fase, pero sí evitar que el archivo siga alimentándose en GitHub mediante `.gitignore`.
+
 ### 2026-06-01 — Alineación de checklists documentales del arnés
 
 Se actualizaron:
@@ -324,6 +327,31 @@ Decisión:
 - se permite avanzar únicamente con cambios documentales controlados y justificados;
 - el siguiente avance sugerido es evaluar la creación de una primera spec piloto documental, sin activar todavía automatización ni código de producto.
 
+### 2026-06-01 — Creación del bloque documental mínimo de skills del arnés
+
+Se crearon y publicaron:
+
+- `.agent/workflows/sdd_feature_workflow.md` (Workflow SDD por feature)
+- `.agent/skills/spec_author/SKILL.md` (Skill Spec Author)
+- `.agent/skills/implementer/SKILL.md` (Skill Implementer)
+- `.agent/skills/reviewer/SKILL.md` (Skill Reviewer)
+
+Commits asociados:
+
+- `52f8c68 docs: crear workflow sdd por feature`
+- `1b99a18 docs: crear skill documental spec author`
+- `90b8186 docs: crear skill documental implementer`
+- `baf9071 docs: crear skill documental reviewer`
+
+Motivo:
+- Definir conceptualmente el triángulo de roles mínimos (`spec_author`, `implementer`, `reviewer`) y el flujo lógico de estados y artefactos por feature bajo Spec-Driven Development (SDD).
+- Establecer las responsabilidades operativas y límites rígidos de cada rol antes de activar automatizaciones o scripts reales.
+
+Resultado:
+- Bloque documental mínimo integrado y validado.
+- Todas las piezas se mantienen en estado documental, no activo y no ejecutable, sin front matter y sin autorización de modificación de código real en proyectos derivados.
+- Bloqueo de avance controlado: el arnés cuenta con sus directrices conceptuales básicas consolidadas.
+
 ## 4. Estado actual resumido
 
 El proyecto se encuentra en fase documental / MVP estructural.
@@ -336,7 +364,9 @@ Actualmente existen:
 - adaptadores `AGENTS.md` y `GEMINI.md`;
 - sedes documentales para specs, progress, scripts, tests;
 - sedes documentales para `.agent/rules/`, `.agent/workflows/` y `.agent/skills/`;
-- preflight estructural manual.
+- preflight estructural manual;
+- workflow SDD por feature documental (`sdd_feature_workflow.md`);
+- skills documentales de roles de primer nivel (`spec_author`, `implementer` y `reviewer`).
 
 Actualmente no existen:
 

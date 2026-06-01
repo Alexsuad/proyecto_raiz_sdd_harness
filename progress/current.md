@@ -48,8 +48,8 @@ Actualmente solo se consideran activos:
 No existen todavía:
 
 - rules activas;
-- workflows activos;
-- skills activas;
+- workflows activos (el workflow `.agent/workflows/sdd_feature_workflow.md` existe en estado puramente documental e inactivo);
+- skills activas (las skills de `spec_author`, `implementer` y `reviewer` existen en `.agent/skills/` en estado documental e inactivo);
 - gates operativos o automatizados;
 - specs de features reales;
 - scripts ejecutables;
@@ -57,19 +57,23 @@ No existen todavía:
 
 ## 5. Estado de `.agent/`
 
-La carpeta `.agent/` existe únicamente como estructura documental futura.
+La carpeta `.agent/` alberga la estructura documental conceptual del arnés.
 
-Las carpetas internas:
+Actualmente contiene las siguientes piezas documentales del triángulo mínimo de roles y flujo:
+- **Workflow SDD por feature:** [.agent/workflows/sdd_feature_workflow.md](../.agent/workflows/sdd_feature_workflow.md)
+- **Skill Spec Author:** [.agent/skills/spec_author/SKILL.md](../.agent/skills/spec_author/SKILL.md)
+- **Skill Implementer:** [.agent/skills/implementer/SKILL.md](../.agent/skills/implementer/SKILL.md)
+- **Skill Reviewer:** [.agent/skills/reviewer/SKILL.md](../.agent/skills/reviewer/SKILL.md)
 
-- `.agent/rules/`
-- `.agent/workflows/`
-- `.agent/skills/`
+Estas piezas siguen siendo:
+- documentales;
+- no activas;
+- no ejecutables;
+- sin front matter;
+- sin autorización para modificar código real en proyectos derivados;
+- pendientes de futura activación o adaptación formal en los adaptadores operativos.
 
-no deben interpretarse como recursos activos de Antigravity.
-
-Su función actual es indicar dónde vivirán esos recursos cuando exista una necesidad operativa validada, autorización explícita y revisión correspondiente.
-
-No debe crearse `.agent/gates/` todavía.
+No debe crearse `.agent/gates/` todavía si el proyecto sigue en MVP documental.
 
 ## 6. Decisión de auditoría aplicada
 
@@ -100,16 +104,18 @@ Hasta nueva autorización explícita, no se debe:
 
 ## 8. Próximo paso recomendado
 
-El siguiente paso recomendado es realizar una auditoría documental general del estado actual del arnés, verificando la coherencia entre el mapa documental, la constitución, la definición documental de Gate 0, el manual anti-errores y los archivos de seguimiento.
-
-No debe avanzarse a automatización activa hasta que exista autorización explícita, revisión del impacto y evidencia documental suficiente.
+El próximo paso recomendado es:
+- Revisar si el siguiente bloque a desarrollar debe ser la carpeta de reglas locales `.agent/rules/` o la definición documental detallada de gates.
+- No crear todavía scripts ejecutables.
+- No crear la carpeta `.agent/gates/` todavía mientras el proyecto continúe en la fase de MVP documental.
+- No avanzar a automatización activa hasta contar con autorización explícita y validación documental previa.
 
 ## 9. Definición documental de Gate 0
 
 - **Fecha:** 2026-05-30.
 - **Documento creado:** `docs/gate_0_preflight_definicion.md`.
 - **Tipo:** definición documental previa de gate.
-- **Estado:** creado, pendiente de auditoría.
+- **Estado:** definición documental creada y corregida tras observaciones de auditoría; no activa.
 - **Automatización:** ninguna.
 - **Gate activo:** no.
 - **Script asociado:** no existe `scripts/gate_0_preflight.py`.
