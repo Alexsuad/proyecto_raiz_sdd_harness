@@ -263,6 +263,31 @@ Resultado:
 - no se crearon tests;
 - no se activó automatización.
 
+### 2026-06-01 — Alineación de checklists documentales del arnés
+
+Se actualizaron:
+
+- `docs/preflight_estructural.md`
+- `docs/gate_0_preflight_definicion.md`
+
+Motivo:
+
+- corregir las observaciones menores detectadas por la auditoría documental general de contraste realizada con Gemini 3.5 Flash High;
+- asegurar que el preflight estructural manual verifique la existencia de `docs/gate_0_preflight_definicion.md`;
+- asegurar que el preflight estructural manual verifique la existencia de `docs/manual_anti_errores_del_arnes.md`;
+- asegurar que la definición documental de Gate 0 reconozca `docs/manual_anti_errores_del_arnes.md` como entrada esperada del futuro gate.
+
+Resultado:
+
+- checklist de estructura base del preflight actualizado;
+- entradas esperadas de Gate 0 actualizadas;
+- observaciones menores de auditoría corregidas;
+- no se creó `.agent/gates/`;
+- no se crearon scripts;
+- no se crearon tests;
+- no se crearon specs;
+- no se activó automatización.
+
 ## 4. Estado actual resumido
 
 El proyecto se encuentra en fase documental / MVP estructural.
