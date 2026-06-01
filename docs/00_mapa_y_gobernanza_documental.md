@@ -23,6 +23,7 @@ Los documentos que integran el sistema se clasifican en:
 - **Documentos operativos para agentes**: Instrucciones simplificadas y directrices en la raíz (ej. reglas e instrucciones de contexto) que indican a los asistentes de IA cómo actuar.
 - **Constitución del proyecto**: El acuerdo inicial sobre las metas, alcance, límites y estándares de calidad del proyecto.
 - **Preflight estructural**: checklist documental manual para verificar la coherencia del repositorio antes de avanzar.
+- **Manuales operativos anti-error**: guías complementarias para prevenir errores recurrentes del arnés, sin reemplazar la constitución, el mapa documental ni los gates.
 - **Specs por feature**: Carpetas de especificaciones completas para características individuales de software.
 - **Skills**: Contratos operativos reutilizables que extienden las habilidades de los agentes.
 - **Workflows**: Flujos de pasos secuenciales para guiar la interacción humano-agente o multi-agente.
@@ -39,12 +40,14 @@ La estructura de jerarquía y prioridad documental del proyecto raíz se define 
 3. [01_metodologia_base_comun.md](./01_metodologia_base_comun.md)
 4. [02_metodologia_desarrollo_software_sdd_harness.md](./02_metodologia_desarrollo_software_sdd_harness.md)
 5. [preflight_estructural.md](./preflight_estructural.md)
-6. `AGENTS.md` / `GEMINI.md`
-7. `.agent/rules/`, `.agent/workflows/` y `.agent/skills/` como sedes documentales futuras no activas
-8. `specs/`
-9. `progress/`
-10. `scripts/` y `tests/`
-11. `anexos/`
+6. [gate_0_preflight_definicion.md](./gate_0_preflight_definicion.md)
+7. [manual_anti_errores_del_arnes.md](./manual_anti_errores_del_arnes.md)
+8. `AGENTS.md` / `GEMINI.md`
+9. `.agent/rules/`, `.agent/workflows/` y `.agent/skills/` como sedes documentales futuras no activas
+10. `specs/`
+11. `progress/`
+12. `scripts/` y `tests/`
+13. `anexos/`
 
 Nota de subordinación operativa: `AGENTS.md`, `GEMINI.md` y la carpeta `.agent/` actúan como adaptadores y canalizadores de contexto para los agentes. No son documentos maestros y no pueden contradecir, reemplazar ni ignorar las normas definidas en `docs/00_mapa_y_gobernanza_documental.md`, `docs/constitucion_del_proyecto.md`, `docs/01_metodologia_base_comun.md` ni `docs/02_metodologia_desarrollo_software_sdd_harness.md`.
 
@@ -58,6 +61,8 @@ Nota de subordinación operativa: `AGENTS.md`, `GEMINI.md` y la carpeta `.agent/
 | `docs/03_metodologia_proyectos_documentales_agenticos.md` | [POST-MVP - PLACEHOLDER] Ruta documental/agéntica futura | Referencia mínima de que existirá una metodología futura para proyectos documentales, creativos o analíticos. | Desarrollo completo de la metodología documental/agéntica durante el MVP actual, lógica de negocio o base de datos del proyecto. |
 | `docs/constitucion_del_proyecto.md` | Definición de límites y objetivos | Alcance del proyecto, roles, hitos, tecnologías principales permitidas y límites de presupuesto/tiempo. | Guías paso a paso de codificación, scripts de automatización. |
 | `docs/preflight_estructural.md` | Checklist documental de preflight. | Revisión manual de estructura base, estado agéntico, no duplicación, criterio LEAN, bloqueos y resultado esperado. | Scripts ejecutables, automatización, gates activos o metodología extensa. |
+| `docs/gate_0_preflight_definicion.md` | Definición documental de Gate 0. | Criterios, entradas, bloqueos, evidencias y límites del futuro `gate_0_preflight`. | Script ejecutable, gate activo, automatización, `.agent/gates/` o implementación técnica. |
+| `docs/manual_anti_errores_del_arnes.md` | Guía operativa anti-errores del arnés. | Lecciones aplicables, errores recurrentes a evitar, reglas anti-error para la fase documental, criterios para futuras automatizaciones y manejo de deuda técnica o agéntica diferida. | Constitución paralela, reglas que contradigan documentos rectores, automatización activa, scripts, specs, workflows activos, skills activas o gates ejecutables. |
 | `AGENTS.md` | Instrucciones operativas de agentes | Instrucciones específicas de arranque, comportamiento y restricciones inmediatas para agentes de IA de desarrollo. | Metodologías de desarrollo extensas, código de aplicación. |
 | `GEMINI.md` | Adaptador operativo para Gemini | Contexto mínimo, restricciones operativas y referencias hacia la constitución, el mapa documental y los documentos operativos autorizados. | Reglas de estilo de código general, arquitectura del software. |
 | `.agent/skills/` | Sede documental futura de skills. | README de sede, futura estructura de skills y criterios mínimos para `SKILL.md` cuando se autorice su creación. | Skills activas, código de productos derivados, metodología completa o credenciales. |
@@ -122,6 +127,7 @@ Antes de dar por cerrado un ciclo de cambios en la documentación, se debe verif
 - [ ] Los cambios importantes a nivel documental quedan registrados en el control de cambios de cada archivo.
 - [ ] No se agregaron carpetas o archivos documentales fuera de la estructura autorizada por este mapa.
 - [ ] `docs/preflight_estructural.md` fue revisado antes de crear nuevas piezas estructurales.
+- [ ] `docs/manual_anti_errores_del_arnes.md` no contradice la constitución, el mapa documental, el preflight estructural ni la definición documental de Gate 0.
 - [ ] `progress/current.md` refleja el estado operativo actual del arnés.
 - [ ] `progress/history.md` registra los hitos relevantes sin convertirse en bitácora excesiva.
 - [ ] `.agent/` sigue documentado como sede futura y no como sistema activo, salvo autorización explícita.
