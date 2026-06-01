@@ -288,6 +288,42 @@ Resultado:
 - no se crearon specs;
 - no se activó automatización.
 
+### 2026-06-01 — Preflight estructural manual actualizado aprobado
+
+Se ejecutó:
+
+- `docs/preflight_estructural.md`
+
+Modelo usado:
+
+- Gemini 3.5 Flash High
+
+Motivo:
+
+- validar el estado documental del arnés después de la creación del manual anti-errores;
+- validar el estado documental después de alinear los checklists de `docs/preflight_estructural.md` y `docs/gate_0_preflight_definicion.md`;
+- confirmar que las observaciones menores detectadas por la auditoría de contraste quedaron corregidas.
+
+Resultado:
+
+- preflight estructural manual aprobado;
+- estructura base aprobada;
+- estado agéntico inactivo confirmado;
+- no existe `.agent/gates/`;
+- no existen scripts ejecutables;
+- no existen tests reales;
+- no existen specs reales;
+- no existen rules activas;
+- no existen workflows activos;
+- no existen skills activas;
+- no existen gates operativos ni automatizados;
+- no se activó automatización.
+
+Decisión:
+
+- se permite avanzar únicamente con cambios documentales controlados y justificados;
+- el siguiente avance sugerido es evaluar la creación de una primera spec piloto documental, sin activar todavía automatización ni código de producto.
+
 ## 4. Estado actual resumido
 
 El proyecto se encuentra en fase documental / MVP estructural.

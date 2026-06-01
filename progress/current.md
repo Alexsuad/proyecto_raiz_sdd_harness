@@ -135,11 +135,12 @@ No debe avanzarse a automatización activa hasta que exista autorización explí
 
 ## 12. Último preflight estructural
 
-- **Fecha:** 2026-05-30.
+- **Fecha:** 2026-06-01.
 - **Documento usado:** `docs/preflight_estructural.md`.
-- **Tipo de revisión:** preflight manual documental.
+- **Tipo de revisión:** preflight manual estructural actualizado.
+- **Modelo usado:** Gemini 3.5 Flash High.
 - **Resultado:** aprobado.
-- **Evidencia:** revisión de estructura base, estado agéntico, no duplicación y criterio LEAN.
-- **Observaciones:** no existen rules activas, workflows activos, skills activas, gates operativos o automatizados, scripts ejecutables, specs reales ni código de producto.
+- **Evidencia:** verificación de estructura base, estado agéntico, no duplicación, criterio LEAN, ausencia de automatización activa y working tree limpio.
+- **Observaciones:** no existen `.agent/gates/`, scripts ejecutables, tests reales, specs reales, rules activas, workflows activos, skills activas ni gates operativos o automatizados.
 - **Decisión:** se permite avanzar únicamente con cambios documentales controlados y justificados.
 - **Restricción vigente:** no activar automatización, no crear `.agent/gates/` y no crear recursos operativos activos sin autorización explícita.
