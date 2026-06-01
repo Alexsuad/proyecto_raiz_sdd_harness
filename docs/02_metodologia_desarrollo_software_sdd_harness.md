@@ -151,7 +151,7 @@ Los agentes pueden realizar autoauditoría como primera revisión interna de su 
 El arnés (harness) no debe confundirse con el modelo de lenguaje en sí. Es la infraestructura de reglas, documentos, flujos de trabajo, habilidades agénticas, checkpoints de avance y bitácoras que enmarcan la operación de Codex y Antigravity en el workspace.
 - `AGENTS.md` actúa como adaptador operativo mínimo para Codex y agentes compatibles.
 - `GEMINI.md` actúa como adaptador operativo mínimo para Gemini y Antigravity.
-- `.agent/rules/`, `.agent/workflows/` y `.agent/skills/` existen únicamente como sedes documentales futuras no activas.
+- `.agent/rules/`, `.agent/workflows/` y `.agent/skills/` existen como sedes documentales conceptuales no activas, aunque ya contienen recursos documentales no ejecutables.
 - Estos adaptadores y sedes deben vincularse a la constitución y gobernanza del proyecto mediante referencias cruzadas en lugar de duplicar sus lineamientos.
 
 ## 16. Gates de la ruta software

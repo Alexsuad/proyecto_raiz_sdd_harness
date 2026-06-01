@@ -39,7 +39,7 @@ Si existe diferencia entre una spec aprobada y un reporte de progreso, la spec t
 Actualmente existen `current.md` y `history.md` como archivos de seguimiento operativo. En fases posteriores, esta carpeta podrá incorporar archivos adicionales como:
 
 - `current.md`: estado operativo actual del proyecto o de la feature activa.
-- `history.md`: historial resumido de avances, closures y cambios relevantes.
+- `history.md`: historial resumido de avances, cierres y cambios relevantes.
 - `blocked.md`: bloqueos abiertos, causas y acciones necesarias.
 - `decisions_pending.md`: decisiones pendientes de revisión humana o técnica.
 
