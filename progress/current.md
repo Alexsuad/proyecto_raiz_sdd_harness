@@ -100,9 +100,9 @@ Hasta nueva autorización explícita, no se debe:
 
 ## 8. Próximo paso recomendado
 
-El siguiente paso recomendado es revisar el estado completo del repositorio y decidir si conviene crear una primera definición documental de gate o si antes debe consolidarse un checklist de preflight en documentación.
+El siguiente paso recomendado es realizar una auditoría documental general del estado actual del arnés, verificando la coherencia entre el mapa documental, la constitución, la definición documental de Gate 0, el manual anti-errores y los archivos de seguimiento.
 
-No debe avanzarse a automatización activa hasta que exista autorización explícita y revisión del impacto.
+No debe avanzarse a automatización activa hasta que exista autorización explícita, revisión del impacto y evidencia documental suficiente.
 
 ## 9. Definición documental de Gate 0
 
