@@ -55,7 +55,7 @@ Mientras el gate no exista como script, esta definición solo servirá como guí
 
 ## 5. Entradas esperadas
 
-El futuro `gate_0_preflight` deberá revisar, como mínimo, la existencia y coherencia de estos elementos:
+El futuro `gate_0_preflight` deberá revisar, como mínimo, la existencia y coherencia de estos elementos base obligatorios:
 
 - `docs/00_mapa_y_gobernanza_documental.md`
 - `docs/constitucion_del_proyecto.md`
@@ -63,7 +63,6 @@ El futuro `gate_0_preflight` deberá revisar, como mínimo, la existencia y cohe
 - `docs/02_metodologia_desarrollo_software_sdd_harness.md`
 - `docs/preflight_estructural.md`
 - `docs/adr/README.md`
-- `docs/manual_anti_errores_del_arnes.md`
 - `AGENTS.md`
 - `GEMINI.md`
 - `specs/README.md`
@@ -76,6 +75,9 @@ El futuro `gate_0_preflight` deberá revisar, como mínimo, la existencia y cohe
 - `.agent/workflows/README.md`
 - `.agent/skills/README.md`
 
+*Entradas locales opcionales (no bloqueantes en entornos públicos):*
+- `docs/manual_anti_errores_del_arnes.md` (recurso local privado excluido de git).
+
 ## 6. Criterios de aprobación
 
 El gate podrá aprobar el avance si se cumplen estas condiciones:
@@ -84,7 +86,7 @@ El gate podrá aprobar el avance si se cumplen estas condiciones:
 - la constitución y el mapa documental están aprobados para fase documental / MVP estructural;
 - `AGENTS.md` y `GEMINI.md` existen y funcionan como adaptadores operativos mínimos;
 - `specs/`, `progress/`, `scripts/` y `tests/` existen solo como sedes documentales cuando aplique;
-- `.agent/rules/`, `.agent/workflows/` y `.agent/skills/` existen solo como sedes documentales futuras no activas;
+- `.agent/rules/`, `.agent/workflows/` y `.agent/skills/` existen como sedes documentales conceptuales no activas, aunque ya puedan contener recursos documentales no ejecutables;
 - no existe `.agent/gates/`, salvo autorización explícita posterior;
 - no existen rules activas;
 - no existen workflows activos;

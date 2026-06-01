@@ -39,7 +39,6 @@ Antes de avanzar, verificar que existen:
 - `docs/constitucion_del_proyecto.md`
 - `docs/adr/README.md`
 - `docs/gate_0_preflight_definicion.md`
-- `docs/manual_anti_errores_del_arnes.md`
 - `AGENTS.md`
 - `GEMINI.md`
 - `specs/README.md`
@@ -47,6 +46,8 @@ Antes de avanzar, verificar que existen:
 - `progress/current.md`
 - `scripts/README.md`
 - `tests/README.md`
+
+*Nota sobre recursos privados:* Si existe en el entorno local, se puede verificar `docs/manual_anti_errores_del_arnes.md`. Sin embargo, al ser un archivo local privado excluido de git, su ausencia en el repositorio público no se considera un fallo estructural ni bloquea el preflight.
 
 ## 4. Checklist de estado agéntico
 
@@ -68,7 +69,7 @@ Antes de avanzar, verificar que:
 - `AGENTS.md` no duplica la constitución completa.
 - `GEMINI.md` no duplica la constitución completa.
 - Los README de sede no duplican la metodología completa.
-- Las carpetas futuras solo explican su propósito y límites.
+- Las carpetas documentales conceptuales solo explican su propósito, límites y recursos no activos existentes.
 - Las reglas importantes siguen viviendo en los documentos oficiales correspondientes.
 
 ## 6. Checklist LEAN

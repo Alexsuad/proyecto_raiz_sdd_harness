@@ -41,13 +41,14 @@ La estructura de jerarquía y prioridad documental del proyecto raíz se define 
 4. [02_metodologia_desarrollo_software_sdd_harness.md](./02_metodologia_desarrollo_software_sdd_harness.md)
 5. [preflight_estructural.md](./preflight_estructural.md)
 6. [gate_0_preflight_definicion.md](./gate_0_preflight_definicion.md)
-7. [manual_anti_errores_del_arnes.md](./manual_anti_errores_del_arnes.md)
-8. `AGENTS.md` / `GEMINI.md`
-9. `.agent/rules/`, `.agent/workflows/` y `.agent/skills/` como sedes documentales futuras no activas
-10. `specs/`
-11. `progress/`
-12. `scripts/` y `tests/`
-13. `anexos/`
+7. `AGENTS.md` / `GEMINI.md`
+8. `.agent/rules/`, `.agent/workflows/` y `.agent/skills/` como sedes documentales conceptuales no activas
+9. `specs/`
+10. `progress/`
+11. `scripts/` y `tests/`
+12. `anexos/`
+
+*Recurso local opcional privado (excluido de git):* [manual_anti_errores_del_arnes.md](./manual_anti_errores_del_arnes.md) (si existe localmente en el entorno de trabajo, subordinado a las metodologías superiores).
 
 Nota de subordinación operativa: `AGENTS.md`, `GEMINI.md` y la carpeta `.agent/` actúan como adaptadores y canalizadores de contexto para los agentes. No son documentos maestros y no pueden contradecir, reemplazar ni ignorar las normas definidas en `docs/00_mapa_y_gobernanza_documental.md`, `docs/constitucion_del_proyecto.md`, `docs/01_metodologia_base_comun.md` ni `docs/02_metodologia_desarrollo_software_sdd_harness.md`.
 
@@ -62,12 +63,12 @@ Nota de subordinación operativa: `AGENTS.md`, `GEMINI.md` y la carpeta `.agent/
 | `docs/constitucion_del_proyecto.md` | Definición de límites y objetivos | Alcance del proyecto, roles, hitos, tecnologías principales permitidas y límites de presupuesto/tiempo. | Guías paso a paso de codificación, scripts de automatización. |
 | `docs/preflight_estructural.md` | Checklist documental de preflight. | Revisión manual de estructura base, estado agéntico, no duplicación, criterio LEAN, bloqueos y resultado esperado. | Scripts ejecutables, automatización, gates activos o metodología extensa. |
 | `docs/gate_0_preflight_definicion.md` | Definición documental de Gate 0. | Criterios, entradas, bloqueos, evidencias y límites del futuro `gate_0_preflight`. | Script ejecutable, gate activo, automatización, `.agent/gates/` o implementación técnica. |
-| `docs/manual_anti_errores_del_arnes.md` | Guía operativa anti-errores del arnés. | Lecciones aplicables, errores recurrentes a evitar, reglas anti-error para la fase documental, criterios para futuras automatizaciones y manejo de deuda técnica o agéntica diferida. | Constitución paralela, reglas que contradigan documentos rectores, automatización activa, scripts, specs, workflows activos, skills activas o gates ejecutables. |
+| `docs/manual_anti_errores_del_arnes.md` *(Recurso local opcional privado, excluido de git)* | Guía operativa anti-errores del arnés (privada y local). | Lecciones aplicables, errores recurrentes a evitar, reglas anti-error para la fase documental, criterios para futuras automatizaciones y manejo de deuda técnica o agéntica diferida. | Constitución paralela, reglas que contradigan documentos rectores, automatización activa, scripts, specs, workflows activos, skills activas o gates ejecutables. |
 | `AGENTS.md` | Instrucciones operativas de agentes | Instrucciones específicas de arranque, comportamiento y restricciones inmediatas para agentes de IA de desarrollo. | Metodologías de desarrollo extensas, código de aplicación. |
 | `GEMINI.md` | Adaptador operativo para Gemini | Contexto mínimo, restricciones operativas y referencias hacia la constitución, el mapa documental y los documentos operativos autorizados. | Reglas de estilo de código general, arquitectura del software. |
-| `.agent/skills/` | Sede documental futura de skills. | README de sede, futura estructura de skills y criterios mínimos para `SKILL.md` cuando se autorice su creación. | Skills activas, código de productos derivados, metodología completa o credenciales. |
-| `.agent/workflows/` | Sede documental futura de workflows. | README de sede, estructura futura de workflows, regla de descripción máxima de 250 caracteres y criterios de diseño. | Workflows activos, scripts ejecutables, specs de features o reportes de progreso. |
-| `.agent/rules/` | Sede documental futura de rules locales. | README de sede y criterios para futuras reglas breves, claras y accionables. | Rules activas, metodología completa, prompts extensos, credenciales o configuraciones sensibles. |
+| `.agent/skills/` | Sede documental conceptual de skills. | README de sede, futura estructura de skills y criterios mínimos para `SKILL.md` cuando se autorice su creación. | Skills activas, código de productos derivados, metodología completa o credenciales. |
+| `.agent/workflows/` | Sede documental conceptual de workflows. | README de sede, estructura futura de workflows, regla de descripción máxima de 250 caracteres y criterios de diseño. | Workflows activos, scripts ejecutables, specs de features o reportes de progreso. |
+| `.agent/rules/` | Sede documental conceptual de rules locales. | README de sede y criterios para futuras reglas breves, claras y accionables. | Rules activas, metodología completa, prompts extensos, credenciales o configuraciones sensibles. |
 | `specs/` | Especificaciones de features | Carpetas individuales por característica con sus requerimientos, diseños, tareas e historial de cambios. | Metodología del proyecto general, utilidades compartidas de código. |
 | `progress/` | Seguimiento operativo del arnés. | `README.md`, `current.md`, `history.md`, estado actual, hitos relevantes, bloqueos futuros y cierres con evidencia. | Specs aprobadas, metodología completa, código o decisiones arquitectónicas que deban vivir en ADR. |
 | `scripts/` | Sede futura de scripts y gates deterministas. | README de sede, scripts de validación, gates automatizados y utilidades deterministas cuando sean autorizados. | Código core de productos derivados, credenciales, tokens, prompts extensos o specs. |
@@ -90,7 +91,7 @@ Una skill o workflow no es un prompt suelto o una instrucción informal.
 - Cada skill debe entenderse y estructurarse como un contrato operativo reutilizable.
 - Debe incluir: propósito claro, entradas esperadas (esquema), límites de operación, pasos exactos de procesamiento, criterios de validación y la evidencia resultante esperada.
 
-Durante la fase documental/MVP estructural, `.agent/skills/`, `.agent/workflows/` y `.agent/rules/` son sedes documentales futuras. Ningún archivo dentro de esas carpetas debe interpretarse como recurso activo hasta que exista autorización explícita, revisión y evidencia.
+Durante la fase documental/MVP estructural, `.agent/skills/`, `.agent/workflows/` y `.agent/rules/` son sedes documentales conceptuales no activas. Pueden contener recursos documentales no ejecutables, pero ningún archivo dentro de esas carpetas debe interpretarse como recurso activo hasta que exista autorización explícita, revisión y evidencia.
 
 ## 10. Reglas para specs por feature
 Cada funcionalidad relevante (feature) del sistema se gestionará dentro de su propio subdirectorio en `specs/<feature_id>/`. Este debe estructurarse obligatoriamente con los siguientes archivos:
@@ -127,10 +128,10 @@ Antes de dar por cerrado un ciclo de cambios en la documentación, se debe verif
 - [ ] Los cambios importantes a nivel documental quedan registrados en el control de cambios de cada archivo.
 - [ ] No se agregaron carpetas o archivos documentales fuera de la estructura autorizada por este mapa.
 - [ ] `docs/preflight_estructural.md` fue revisado antes de crear nuevas piezas estructurales.
-- [ ] `docs/manual_anti_errores_del_arnes.md` no contradice la constitución, el mapa documental, el preflight estructural ni la definición documental de Gate 0.
+- [ ] Si existe localmente, docs/manual_anti_errores_del_arnes.md no contradice la constitución, el mapa documental, el preflight estructural ni la definición documental de Gate 0.
 - [ ] `progress/current.md` refleja el estado operativo actual del arnés.
 - [ ] `progress/history.md` registra los hitos relevantes sin convertirse en bitácora excesiva.
-- [ ] `.agent/` sigue documentado como sede futura y no como sistema activo, salvo autorización explícita.
+- [ ] `.agent/` sigue documentado como sede conceptual no activa y no como sistema activo, salvo autorización explícita.
 
 ## 15. Estado del documento
 

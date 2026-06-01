@@ -83,3 +83,6 @@ Queda estrictamente prohibido realizar cualquiera de las siguientes acciones en 
 Cuando esta regla pase de estado documental a estado activo, deberá adaptarse formalmente a la sintaxis del motor agéntico correspondiente. Esto incluirá la adición de metadatos o glob triggers requeridos (como `name`, `description`, `trigger`, `glob`, `alwaysApply` o equivalentes), validando la integración segura en Codex, Antigravity u otros runtimes autorizados.
 
 Mientras el proyecto continúe en fase documental / MVP estructural, este archivo carecerá de front matter y no se interpretará como recurso ejecutable.
+
+## 17. Regla de empaquetado y exportación (futura)
+Al diseñar o ejecutar futuros comandos de empaquetado, compresión o exportación del arnés, se debe garantizar la exclusión explícita del manual privado (`docs/manual_anti_errores_del_arnes.md`) y de cualquier exportación en formato zip (`*.zip` y sus directorios correspondientes). Esto previene que datos locales opcionales o archivos temporales se filtren en la estructura pública del repositorio.
