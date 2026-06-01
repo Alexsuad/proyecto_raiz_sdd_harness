@@ -1,2 +1,75 @@
+# ==========================================
+# 1. Reglas específicas del proyecto
+# ==========================================
+
 # Material fuente temporal no versionado
 anexos/
+
+# Archivos locales privados y temporales
+docs/manual_anti_errores_del_arnes.md
+*archivos_zip*/
+*.zip
+
+# ==========================================
+# 2. Entornos virtuales y dependencias de Python
+# ==========================================
+venv/
+.venv/
+env/
+ENV/
+lib/
+lib64/
+bin/
+include/
+share/
+pyvenv.cfg
+.Python
+pip-selfcheck.json
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# ==========================================
+# 3. Configuraciones de Editores e IDEs
+# ==========================================
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+*~
+
+# ==========================================
+# 4. Archivos de Sistema Operativo
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# 5. Logs y Archivos Temporales Generales
+# ==========================================
+*.log
+logs/
+tmp/
+temp/
