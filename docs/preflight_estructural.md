@@ -38,6 +38,8 @@ Antes de avanzar, verificar que existen:
 - `docs/02_metodologia_desarrollo_software_sdd_harness.md`
 - `docs/constitucion_del_proyecto.md`
 - `docs/adr/README.md`
+- `docs/gate_0_preflight_definicion.md`
+- `docs/manual_anti_errores_del_arnes.md`
 - `AGENTS.md`
 - `GEMINI.md`
 - `specs/README.md`

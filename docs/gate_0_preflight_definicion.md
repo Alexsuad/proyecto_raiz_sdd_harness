@@ -63,6 +63,7 @@ El futuro `gate_0_preflight` deberá revisar, como mínimo, la existencia y cohe
 - `docs/02_metodologia_desarrollo_software_sdd_harness.md`
 - `docs/preflight_estructural.md`
 - `docs/adr/README.md`
+- `docs/manual_anti_errores_del_arnes.md`
 - `AGENTS.md`
 - `GEMINI.md`
 - `specs/README.md`
