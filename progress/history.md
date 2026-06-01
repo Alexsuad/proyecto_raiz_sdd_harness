@@ -236,6 +236,33 @@ Resultado:
 - no se creó `.agent/gates/`;
 - el proyecto continúa en fase documental / MVP estructural.
 
+### 2026-06-01 — Creación del manual anti-errores del arnés
+
+Se creó:
+
+- `docs/manual_anti_errores_del_arnes.md`
+
+También se actualizó:
+
+- `docs/00_mapa_y_gobernanza_documental.md`
+
+Motivo:
+
+- adaptar un conjunto de lecciones aprendidas al contexto específico del proyecto raíz;
+- prevenir errores recurrentes durante la fase documental / MVP estructural;
+- reforzar reglas como política primero, código después; revisión de diff; no degradar contenido para pasar auditorías; separación de commits por naturaleza del cambio; y gestión diferida de deuda técnica o agéntica;
+- registrar el manual en el mapa documental sin convertirlo en constitución paralela ni en automatización activa.
+
+Resultado:
+
+- manual anti-errores creado como guía operativa subordinada a la constitución y al mapa documental;
+- mapa documental actualizado para reconocer el manual;
+- `docs/gate_0_preflight_definicion.md` reconocido también en la jerarquía y tabla documental;
+- no se creó `.agent/gates/`;
+- no se crearon scripts;
+- no se crearon tests;
+- no se activó automatización.
+
 ## 4. Estado actual resumido
 
 El proyecto se encuentra en fase documental / MVP estructural.
