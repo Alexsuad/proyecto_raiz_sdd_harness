@@ -167,10 +167,41 @@ Se proyectan los siguientes gates conceptuales para la ruta de desarrollo (cuyos
 - **`gate_pre_implementation`**: Validación de que el diseño y el checklist de tareas cuentan con aprobación humana para iniciar codificación.
 - **`gate_review`**: Verificación de que el código candidato pasa los tests, no rompe la arquitectura y está listo para la revisión final de código.
 
-## 17. Regla de replanificación
+## 17. Pruebas reales, mocks y aislamiento de proveedores
+Durante el desarrollo se pueden usar herramientas agénticas como Antigravity, Codex u otras para construir, revisar, generar tests, diagnosticar errores y auditar. Estas herramientas forman parte del entorno de desarrollo, no del componente bajo prueba.
+
+Cuando se pruebe un proveedor real, API externa, modelo local o integración similar, el proveedor configurado debe ser el único origen válido de la respuesta evaluada. Si el proveedor real falla, la prueba debe fallar y dejar evidencia. El agente de desarrollo puede diagnosticar, leer logs, proponer hipótesis o sugerir correcciones, pero no puede sustituir, completar, simular ni maquillar la respuesta del proveedor bajo prueba.
+
+Los mocks, stubs o fakes son válidos para pruebas aisladas, pruebas de flujo y desarrollo rápido, pero no deben presentarse como validación real de proveedor. El fallback entre proveedores solo puede usarse si el producto o sistema lo define explícitamente y si la prueba está diseñada para validar fallback.
+
+Toda prueba real de proveedor debe registrar, cuando aplique:
+- proveedor esperado;
+- proveedor usado;
+- modelo usado;
+- modo de prueba;
+- si el fallback estaba permitido;
+- si el fallback fue usado;
+- resultado;
+- error si existe.
+
+La configuración de proveedor debe quedar separada del código, por ejemplo mediante variables de entorno, archivos de configuración no versionados o mecanismos equivalentes. Esta regla aplica también a revisión documental: ante errores documentales, el agente debe buscar la causa raíz y no limitarse a maquillar el documento final.
+
+### Regla de no maquillaje
+Cuando falle una prueba, auditoría, integración o revisión documental, el agente no debe producir una salida alternativa que simule éxito. Debe reportar el fallo, ubicar la causa probable, proponer corrección si corresponde y dejar el estado como bloqueado o pendiente cuando no haya evidencia suficiente.
+
+En modo prueba real de proveedor, si el proveedor configurado no responde correctamente, la prueba no puede aprobarse usando razonamiento del agente de desarrollo.
+
+### Modos de prueba recomendados
+Se recomiendan los siguientes modos de prueba para el desarrollo del arnés:
+- `mock`: para desarrollo rápido y pruebas controladas sin proveedor real.
+- `sandbox`: para servicios o entornos de prueba.
+- `real_provider`: para validar conexión real con el proveedor configurado, sin fallback implícito.
+- `fallback_enabled`: solo cuando el sistema haya definido explícitamente fallback entre proveedores.
+
+## 18. Regla de replanificación
 Si una característica de software falla en superar un gate crítico, un test de regresión, una validación de negocio o una validación técnica compleja, está prohibido realizar parches rápidos o modificaciones ad-hoc a ciegas. El agente debe detener el proceso de codificación, registrar la evidencia detallada de la falla en `validation.md` o `review.md`, revisar la especificación y el diseño técnico, ajustar el plan en `tasks.md` cuando corresponda, y reiniciar el ciclo de validación de manera ordenada. Solo se usará `clarifications.md` si la falla revela una ambigüedad, duda o supuesto no resuelto en los requisitos.
 
-## 18. Límites del MVP actual
+## 19. Límites del MVP actual
 Este documento establece la estructura lógica de desarrollo de software, pero no crea ni habilita de forma operativa los siguientes elementos, los cuales quedan pendientes para fases posteriores:
 
 - Plantillas documentales formalizadas para los archivos de la carpeta `specs/`.
@@ -185,7 +216,7 @@ Este documento establece la estructura lógica de desarrollo de software, pero n
 
 Mientras no existan plantillas mínimas de specs, recursos agénticos activos autorizados y gates mínimos auditados, ningún agente implementador debe activarse sobre código real de un proyecto derivado. Hasta entonces, el arnés solo puede usarse para planificación, documentación, simulación controlada o pruebas piloto sin impacto productivo.
 
-## 19. Estado del documento
+## 20. Estado del documento
 - **Estado:** aprobado para fase documental / MVP estructural.
 - **Uso:** metodología inicial vigente para orientar la ruta de desarrollo de software con SDD durante la fase documental actual.
 - **Pendiente:** revalidar y ajustar tras la primera especificación de feature piloto del arnés o cuando se cree el primer recurso activo real.
