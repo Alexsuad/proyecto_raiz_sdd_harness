@@ -7,7 +7,7 @@
 # Plan de implementación v0.1 — Proyecto Raíz SDD Harness
 
 ## 1. Propósito del plan
-Este documento define la hoja de ruta oficial y el plan de implementación v0.1 del proyecto `proyecto_raiz_sdd_harness`. Actúa como la fuente oficial de orden para guiar los pasos de desarrollo técnico, asegurando la coherencia entre las reglas de gobernanza documental, los límites de la constitución del proyecto y el desarrollo progresivo del arnés agéntico bajo el enfoque de Spec-Driven Development (SDD), priorizando el cierre de la etapa documental sobre la implementación técnica técnica.
+Este documento define la hoja de ruta oficial y el plan de implementación v0.1 del proyecto `proyecto_raiz_sdd_harness`. Actúa como la fuente oficial de orden para guiar los pasos de desarrollo técnico, asegurando la coherencia entre las reglas de gobernanza documental, los límites de la constitución del proyecto y el desarrollo progresivo del arnés agéntico bajo el enfoque de Spec-Driven Development (SDD), priorizando el cierre de la etapa documental sobre la implementación técnica.
 
 ## 2. Estado actual del repositorio
 A la fecha actual de este plan, el repositorio se encuentra en la **Fase Documental / MVP Estructural**.
@@ -68,13 +68,14 @@ Para garantizar la calidad en el desarrollo híbrido (IA + determinismo), se imp
 De acuerdo con el enfoque LEAN de consolidación por capas de valor, el desarrollo técnico del arnés se llevará a cabo bajo el siguiente orden:
 
 1. **Fase 0: Consolidación documental (MVP Estructural) — [EN CURSO]**
-   - Ajustar y refinar el procedimiento operativo de inicio de proyectos derivados.
-   - Crear el origen del proyecto raíz (`progress/fase_00_origen_del_proyecto_raiz.md`).
-   - Crear la visión y alcance oficial del repositorio raíz.
-   - Realizar la auditoría arquitectónica interna inicial del repositorio.
-   - Definir la política de zonas de trabajo y restricción del espacio de archivos.
-   - Ajustar el `README.md` principal con la arquitectura resultante.
-   - Crear la lista oficial de características del arnés (*feature list*).
+   - Ajustar y refinar el procedimiento operativo de inicio de proyectos derivados. — [COMPLETADO]
+   - Crear el origen del proyecto raíz (`progress/fase_00_origen_del_proyecto_raiz.md`). — [COMPLETADO]
+   - Crear la visión y alcance oficial del repositorio raíz (`docs/vision_y_alcance_del_proyecto_raiz.md`). — [COMPLETADO]
+   - Realizar la auditoría arquitectónica interna inicial del repositorio (`progress/auditoria_arquitectonica_interna_2026-06-07.md`). — [COMPLETADO]
+   - Definir la política de zonas de trabajo y restricción del espacio de archivos. — [PENDIENTE]
+   - Ajustar el `README.md` principal con la arquitectura resultante. — [PENDIENTE]
+   - Crear la lista oficial de características del arnés (*feature list*). — [PENDIENTE]
+   - Auditoría final de cierre de la Fase 0. — [PENDIENTE]
 2. **Fase 1: Spec Piloto Documental — [PENDIENTE]**
    - Crear la especificación funcional y técnica para la primera característica piloto en `specs/`, en estado puramente documental y aprobado por el humano.
 3. **Fase 2: Preparación del entorno de pruebas deterministas locales — [FASE POSTERIOR NO ACTIVA]**
@@ -89,27 +90,28 @@ De acuerdo con el enfoque LEAN de consolidación por capas de valor, el desarrol
 * Constitución del proyecto raíz aprobada.
 * Mapa de gobernanza y subordinación documental establecido.
 * Metodología base común y metodología de desarrollo de software definidas.
+* Procedimiento operativo oficial para el inicio de proyectos derivados documentado y ajustado con controles procedimentales.
+* Registro del origen del proyecto raíz (`progress/fase_00_origen_del_proyecto_raiz.md`) creado.
+* Visión y alcance del repositorio raíz (`docs/vision_y_alcance_del_proyecto_raiz.md`) definidos y consolidados en Git.
+* Auditoría arquitectónica interna del repositorio registrada (`progress/auditoria_arquitectonica_interna_2026-06-07.md`).
 * Sedes documentales del arnés organizadas (`specs/`, `progress/`, `scripts/`, `tests/`, `docs/adr/`).
 * Estructura agéntica conceptual mínima y no activa en `.agent/` (workflows, skills y reglas locales iniciales).
 
 ## 11. Qué está pendiente
 * **Pendientes inmediatos (Fase 0 - Documental/Procedimental):**
-  - Ajustar el procedimiento de inicio de proyectos derivados (`docs/procedimiento_inicio_proyecto_sdd_harness.md`).
-  - Crear el origen del proyecto raíz (`progress/fase_00_origen_del_proyecto_raiz.md`).
-  - Crear la visión y alcance del repositorio raíz.
-  - Realizar la auditoría arquitectónica interna del repositorio.
   - Definir la política de zonas de trabajo y espacio de archivos.
   - Ajustar el `README.md` principal.
   - Crear la lista de características (*feature list*).
+  - Auditoría final de cierre de la Fase 0.
 * **Pendientes de fases técnicas posteriores (Inactivos en este momento):**
   - Configuración del entorno de pruebas unitarias locales en `tests/`.
   - Programación del script determinista `scripts/gate_0_preflight.py`.
-  - Diseño de plantillas de especificaciones en `specs/`.
+  - Diseños de plantillas de especificaciones en `specs/`.
 
 ## 12. Qué queda bloqueado por ahora
 * La ejecución o despliegue automático de agentes en entornos de producción.
 * La creación de automatizaciones en background que modifiquen el código de proyectos derivados sin control humano.
-* El desarrollo de cualquier módulo del arnés no alíneado con el alcance cerrado del MVP v0.1 (ej. motores de generación de texto o analítica comercial).
+* El desarrollo de cualquier módulo del arnés no alineado con el alcance cerrado del MVP v0.1 (ej. motores de generación de texto o analítica comercial).
 * La creación de la carpeta `.agent/gates/`, la inicialización del entorno técnico de testing y la creación de scripts ejecutables de automatización hasta que la consolidación documental de la Fase 0 esté plenamente finalizada y aprobada por el auditor humano.
 
 ## 13. Restricciones de ejecución
