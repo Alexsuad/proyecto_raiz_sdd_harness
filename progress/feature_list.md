@@ -65,7 +65,7 @@ Cada capacidad técnica o documental debe clasificarse en uno de los siguientes 
 ---
 
 ## 5. Bloqueos explícitos
-Tras el cierre de la Fase 0 documental, y hasta que exista autorización humana explícita para abrir la Fase 1, se mantienen **estrictamente bloqueados y sin autorización para ser ejecutados** los siguientes componentes:
+Tras la apertura controlada de la Fase 1, y hasta nueva autorización humana explícita, se mantienen **estrictamente bloqueados y sin autorización para ser ejecutados** los siguientes componentes:
 * Codificación o creación de especificaciones reales de características en `specs/`.
 * Programación de scripts ejecutables en `scripts/` (incluyendo `gate_0_preflight.py`).
 * Configuración de gates automatizados o inicialización de suites de test locales con `pytest`.

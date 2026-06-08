@@ -432,7 +432,7 @@ Se ha cerrado formalmente la **Fase 0 (Consolidación Documental y del MVP Estru
 Se ha abierto la **Fase 1 (Spec Piloto Documental)** de forma controlada y se ha creado físicamente la especificación piloto en la carpeta `specs/f_013_gate_manual_futuro/`.
 
 **Detalles del Hito:**
-- **Commit Asociado:** `ccfac0b895cbbfbcf2c125df1262d29482d8c36f` (ccfac0b)
+- **Commit Asociado:** ccfac0b2b2a265672f614f91991a0ca465fc9206 (ccfac0b)
 - **Ruta de Spec:** `specs/f_013_gate_manual_futuro/`
 - **Archivos creados:**
   * `requirements.md`: define alcance, roles y bloqueos explícitos.

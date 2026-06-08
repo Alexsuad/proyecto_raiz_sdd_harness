@@ -18,7 +18,7 @@ Su objetivo es dejar evidencia clara de qué partes del arnés existen como docu
 - **Tipo de proyecto:** proyecto raíz metodológico y agéntico.
 - **Objetivo:** construir una base reutilizable para futuros proyectos de desarrollo de software con SDD, documentación gobernada, adaptadores operativos, skills, workflows y gates.
 - **Estado actual:** Fase 1 abierta de forma controlada. Spec piloto F-013 creada como candidata documental en revisión.
-- **Último commit confirmado:** ccfac0b895cbbfbcf2c125df1262d29482d8c36f (ccfac0b)
+- **Último commit confirmado:** ccfac0b2b2a265672f614f91991a0ca465fc9206 (ccfac0b)
 - **Siguiente paso:** revisión humana de la spec F-013, especialmente `review.md`.
 - **Código de producto:** No existe (bloqueado).
 - **Features activas:** Ninguna (bloqueado).
