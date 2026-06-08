@@ -18,7 +18,7 @@ Su objetivo es dejar evidencia clara de qué partes del arnés existen como docu
 - **Tipo de proyecto:** proyecto raíz metodológico y agéntico.
 - **Objetivo:** construir una base reutilizable para futuros proyectos de desarrollo de software con SDD, documentación gobernada, adaptadores operativos, skills, workflows y gates.
 - **Estado actual:** Fase 1 cerrada documentalmente. F-013 completada documentalmente como spec piloto (F-010 satisfecha). Fase 2 permanece bloqueada hasta autorización humana explícita.
-- **Último commit confirmado del repositorio:** 585d1c5478c0092b882d9b8d66150acabda4f59b
+- **Último commit confirmado del repositorio:** fa097ff36aeda0098f7f5405914533727907d85b
 - **Commit de cierre documental de F-013:** 585d1c5478c0092b882d9b8d66150acabda4f59b
 - **Commit de pre-cierre documental de F-013:** e46870d1c3bf6f3c9f8b681a1579e6257a94c0ce
 - **Commit de revisión documental de F-013:** 17aeb1a2527f932c9bb84489a3701958ea628b5f
@@ -115,6 +115,7 @@ Hasta nueva autorización explícita y firma humana, se mantienen estrictamente 
 El próximo hito recomendado es:
 - Decisión humana explícita sobre apertura controlada de Fase 2. Hasta entonces, runtime, scripts, pytest, uv, gates ejecutables y .agent/ permanecen bloqueados.
 - Mantener estrictamente bloqueada cualquier inicialización de código técnico o automatización en background.
+- **Readiness documental para Fase 2:** pendiente de autorización humana explícita. Antes de abrir Fase 2 deberán definirse condiciones mínimas para entorno virtual, uv, pytest, .gitignore, scripts deterministas y límites de ejecución.
 
 ## 9. Definición documental de Gate 0
 

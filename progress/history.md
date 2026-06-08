@@ -491,7 +491,7 @@ Se ha declarado formalmente la especificación piloto **F-013 — Gate manual fu
 Se ha cerrado formalmente la **Fase 1 (Spec Piloto Documental)** del proyecto raíz en sentido documental.
 
 **Detalles del Hito:**
-- **Commit pendiente de consolidación:** Microfase 1.9
+- **Commit de cierre formal de Fase 1:** fa097ff36aeda0098f7f5405914533727907d85b
 - **Resumen:** Declaración de cierre formal de la Fase 1 tras completarse documentalmente la especificación piloto **F-013 — Gate manual futuro** (consolidada en commit `585d1c5478c0092b882d9b8d66150acabda4f59b`). Se actualizan los documentos de control y el plan de implementación v0.1.
 
 **Restricciones de Seguridad:**
