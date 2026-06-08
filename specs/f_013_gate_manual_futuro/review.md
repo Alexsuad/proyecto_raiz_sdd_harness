@@ -15,9 +15,9 @@
 
 ## 1. Estado del Gate
 
-* **Estado actual:** `abierto` (Pendiente de revisión humana)
+* **Estado actual:** dictamen humano registrado — pendiente de auditoría de diff y commit
 * **Fecha de solicitud:** 2026-06-08
-* **Commit de referencia para revisión:** Pendiente de asignación en el commit final
+* **Commit de referencia para revisión:** 424576a5ce2b24781905aa584c879db3ab0f1084 (424576a)
 
 ---
 
@@ -26,12 +26,12 @@
 El auditor procedimental realiza una inspección previa para verificar que se cumplen los estándares del arnés.
 
 * **Checklist de cumplimiento documental:**
-  * [ ] ¿Existen físicamente los 5 archivos en `specs/f_013_gate_manual_futuro/`?
-  * [ ] ¿Todos los archivos son estrictamente Markdown (`.md`)?
-  * [ ] ¿Se omitieron todas las rutas absolutas (`file:///wsl$/...`) de los documentos?
-  * [ ] ¿Se incluye en todos los documentos la declaración explícita de estado candidato y bloqueo de runtime?
-* **Dictamen preliminar del Auditor:** `PENDIENTE`
-* **Firma del Auditor:** [Firma / Nombre del Auditor Procedimental]
+  * [x] ¿Existen físicamente los 5 archivos en `specs/f_013_gate_manual_futuro/`?
+  * [x] ¿Todos los archivos son estrictamente Markdown (`.md`)?
+  * [x] ¿Se omitieron todas las rutas absolutas (`file:///wsl$/...`) de los documentos?
+  * [x] ¿Se incluye en todos los documentos la declaración explícita de estado candidato y bloqueo de runtime?
+* **Dictamen preliminar del Auditor:** APROBADO CON OBSERVACIONES MENORES
+* **Firma del Auditor:** Equipo Auditor Procedimental — dictamen registrado por instrucción humana
 
 ---
 
@@ -40,15 +40,15 @@ El auditor procedimental realiza una inspección previa para verificar que se cu
 El desarrollador humano audita el fondo del diseño, la coherencia con el proyecto raíz y valida el dictamen final.
 
 * **Checklist de revisión humana/procedimental:**
-  * [ ] ¿El gate propuesto previene autoaprobaciones descontroladas de la IA?
-  * [ ] ¿La estructura del bloque de firma es adecuada y fácil de aplicar en Markdown?
-  * [ ] ¿El plan de validación manual cubre todos los casos previsibles sin habilitar scripts?
+  * [x] ¿El gate propuesto previene autoaprobaciones descontroladas de la IA?
+  * [x] ¿La estructura del bloque de firma es adecuada y fácil de aplicar en Markdown?
+  * [x] ¿El plan de validación manual cubre todos los casos previsibles sin habilitar scripts?
 
 ---
 
 ## 4. Observaciones y Feedback de la Revisión
 
-*(Espacio reservado para que el revisor humano redacte observaciones, solicitudes de corrección o justificaciones de bloqueo)*
+La spec F-013 se registra como válida para definir documentalmente un gate manual futuro. El dictamen humano aprueba la estructura procedimental de la spec con observaciones menores, bajo la condición de que esta aprobación no habilita implementación técnica. No se autoriza crear scripts, gates ejecutables, runtime, pytest, uv, modificar .agent/ ni activar skills o workflows automáticos. Cualquier transición posterior hacia implementación, automatización o cierre completo de Fase 1 deberá requerir nueva autorización humana explícita.
 
 ---
 
@@ -60,12 +60,14 @@ El desarrollador humano audita el fondo del diseño, la coherencia con el proyec
 
 ### Bloque de Firma Oficial
 * **Fase / Feature ID:** F-013
-* **Fecha de Dictamen:** [YYYY-MM-DD]
-* **Commit de Referencia (SHA):** [e.g., e942469]
-* **Revisor Principal:** [Nombre del Revisor]
-* **Dictamen Oficial:** PENDIENTE
-* **Observaciones de Cierre:** [Ninguna / Ver sección 4]
-* **Firma de Aceptación:** [Firma de texto del Revisor]
+* **Fecha de Dictamen:** 2026-06-08
+* **Commit de Referencia (SHA):** 424576a5ce2b24781905aa584c879db3ab0f1084
+* **Revisor Principal:** Alex Suárez / Desarrollador Humano
+* **Dictamen Oficial:** APROBADO CON OBSERVACIONES MENORES
+* **Observaciones de Cierre:** Ver sección 4
+* **Firma de Aceptación:** Alex Suárez — aprobación documental controlada de F-013
+
+Nota: Este dictamen fue definido por revisión humana y registrado documentalmente en este archivo. No constituye aprobación técnica, no implementa el gate y no cierra completamente la Fase 1.
 
 ---
 
