@@ -201,6 +201,18 @@ Se recomiendan los siguientes modos de prueba para el desarrollo del arnés:
 ## 18. Regla de replanificación
 Si una característica de software falla en superar un gate crítico, un test de regresión, una validación de negocio o una validación técnica compleja, está prohibido realizar parches rápidos o modificaciones ad-hoc a ciegas. El agente debe detener el proceso de codificación, registrar la evidencia detallada de la falla en `validation.md` o `review.md`, revisar la especificación y el diseño técnico, ajustar el plan en `tasks.md` cuando corresponda, y reiniciar el ciclo de validación de manera ordenada. Solo se usará `clarifications.md` si la falla revela una ambigüedad, duda o supuesto no resuelto en los requisitos.
 
+## 18.1. Validación avanzada proporcional al riesgo
+Mientras que el flujo Spec-Driven Development (SDD) gobierna de manera general el avance de todos los cambios del repositorio, se prevé una capa de **validación avanzada opcional y proporcional al riesgo**, inspirada en los principios de diseño limpio de Robert C. Martin (Uncle Bob). Esta capa sirve para reforzar la robustez de componentes de software de alta criticidad técnica o funcional (como servicios core, lógica de seguridad o flujos financieros).
+
+Directrices de validación proporcional:
+* **Diseño orientado a contratos:** Priorizar la definición clara de contratos de interfaces y APIs en la spec técnica (`design.md`) antes de codificar, asegurando el desacoplamiento de dependencias y aislamiento del modelo de negocio.
+* **Trazabilidad estricta:** Establecer un mapeo directo y explícito entre cada caso de uso del requisito, el test que lo valida y los componentes, funciones o bloques de código que lo implementan.
+* **TDD (Test-Driven Development) proporcional:** Aplicación de flujos de desarrollo guiado por pruebas de forma selectiva cuando la complejidad lógica del algoritmo o la criticidad del componente lo justifiquen.
+* **Escenarios tipo Gherkin (BDD):** Definición futura opcional de criterios de aceptación estructurados en formato *Dado/Cuando/Entonces* para features críticas de interfaz o integración, sirviendo como puente de entendimiento.
+* **Pruebas de mutación:** Técnica futura avanzada para auditar la cobertura real y la efectividad de la suite de pruebas unitarias sobre módulos críticos.
+
+*Límite del MVP:* Esta guía de validación avanzada constituye un marco de referencia metodológico proporcional para desarrollos futuros. No se considera obligatoria para tareas comunes y no habilita bajo ningún concepto la inicialización activa de entornos virtuales, frameworks de testing o gates lógicos automatizados en esta fase documental.
+
 ## 19. Límites del MVP actual
 Este documento establece la estructura lógica de desarrollo de software, pero no crea ni habilita de forma operativa los siguientes elementos, los cuales quedan pendientes para fases posteriores:
 

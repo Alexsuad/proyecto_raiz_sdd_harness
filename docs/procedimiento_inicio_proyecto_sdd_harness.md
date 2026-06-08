@@ -36,7 +36,13 @@ Este procedimiento se usa cuando se quiere iniciar:
 
 > [!IMPORTANT]
 > **Límites del MVP actual:**
-> La aplicación de este procedimiento y del arnés de desarrollo en su versión v0.1 está estrictamente restringida a proyectos técnicos de desarrollo de software (Python, validadores automáticos, CLI, APIs, suites de tests y scripts locales). Quedan excluidos del alcance de este MVP los planes de negocio comerciales, el copy de marketing, sistemas editoriales de redacción de contenido largo no técnico e investigación documental general.
+> El MVP actual de este procedimiento y del arnés de desarrollo se enfoca exclusivamente en proyectos técnicos de desarrollo de software utilizando **Spec-Driven Development (SDD) + Harness agéntico** (desarrollo con Python, inicialización virtual con `uv`, scripts locales, APIs internas, utilidades de línea de comandos CLI, validadores estáticos, definición e implementación de gates documentales y suite de tests locales con `pytest`).
+> 
+> Quedan estrictamente **fuera del alcance** de esta versión del arnés:
+> - Planes de negocio, análisis comerciales, estudios de mercado o financieros.
+> - Proyectos documentales extensos o de carácter general no técnico.
+> - Sistemas editoriales de redacción de prosa, copys de marketing o campañas de comunicación.
+> - Sistemas agénticos y de procesamiento de texto cuyo entregable principal sea la generación de prosa o contenido escrito largo no técnico.
 
 ---
 
@@ -73,6 +79,36 @@ Toda propuesta de cambio técnico o incorporación de nuevos requerimientos debe
 
 ### 4.2. Responsable del flujo procedimental
 El rol líder (Orquestador) se define como el máximo garante de velar por el cumplimiento de la metodología paso a paso. Es su responsabilidad verificar que las transiciones de estado y la creación de artefactos se apeguen estrictamente al orden LEAN y a las pautas de esta guía, impidiendo que los agentes comiencen la codificación antes de cerrar las especificaciones previas.
+
+---
+
+## Tabla resumen del flujo procedimental
+
+Esta tabla ofrece una visión de alto nivel del flujo procedimental del arnés para orientar de forma rápida a humanos y agentes sobre qué se requiere, qué se hace y qué se espera obtener en cada paso de inicio:
+
+| Fase | Entrada necesaria | Actividad principal | Salida esperada | Decisión posible | Evidencia mínima |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Fase 00 — Intake inicial** | Idea o necesidad técnica inicial informal | Capturar la necesidad, objetivos, usuarios y restricciones resolviendo preguntas mínimas | Registro de intake estructurado | **Avanzar** (a Fase 01), **Aclarar** (pedir más datos) o **Detener** | Archivo físico de intake en `progress/fase_00_...` |
+| **Fase 01 — Espejo del proyecto** | Registro de intake de la Fase 00 | Redactar una interpretación conceptual objetiva y clara de lo entendido | Espejo del proyecto revisable | **Ajustar** entendimiento o **Confirmar** para continuar | Sección de confirmación de alcance y supuestos aprobada |
+| **Fase 02 — Organización del contexto** | Fuentes, referencias e inputs iniciales | Organizar y clasificar de forma física las fuentes de referencia en el repositorio | Repositorio estructurado y limpio | **Consolidar** en Git o **Solicitar** información faltante | Archivos de referencia y adaptadores versionados en Git |
+| **Fase 03 — Clasificación del proyecto** | Tipo de entregable y complejidad | Asignar la profundidad proporcional del flujo procedimental (Tipo 1 al 5) | Clasificación y profundidad definidas | **Aprobar** nivel de flujo LEAN o **Replanificar** | Tabla de clasificación registrada y justificada |
+| **Fase 04 — Documentación base mínima** | Clasificación de flujo aprobada | Crear o confirmar los documentos maestros de gobernanza, normas y límites | Set documental mínimo configurado | **Aprobar** documentos base o **Ajustar** normas | Documentos rectores en `docs/` (`constitucion.md`, README, mapa) |
+| **Gate de salida** | Set documental de Fase 04 y checklists | Comprobar manual y estáticamente el cumplimiento y orden de las reglas de inicio | Dictamen de salida y control estructural | **Avanzar** a especificación/visión o **Bloquear** avance técnico | Checklist de `docs/preflight_estructural.md` verificado |
+| **Control input/output** | Entradas de validación y definición de salidas | Asegurar la trazabilidad y correspondencia determinista de los reportes generados | Evidencias físicas registradas en sedes oficiales | **Aprobar** entregable con evidencia o **Exigir** corrección | Archivo de reporte o bitácora de progreso actualizado |
+
+---
+
+## Guía rápida para usar este procedimiento
+
+Esta guía rápida está orientada a facilitar el uso directo del procedimiento para el **usuario final** del arnés:
+
+1. **Presentación de la idea:** Traiga una necesidad o idea inicial de desarrollo técnico de software.
+2. **Responder el Intake:** Complete las 9 preguntas mínimas del Intake (Fase 00) para delimitar qué se busca y qué se excluye.
+3. **Revisar el Espejo:** Lea y confirme el documento espejo generado. Este debe reflejar fielmente su requerimiento técnico.
+4. **Confirmar Entendimiento:** Ajuste o apruebe el espejo. Corrija activamente cualquier brecha de interpretación.
+5. **Validar Límites:** Asegúrese de definir claramente el *Alcance* y el *Fuera de Alcance* para mantener el desarrollo LEAN.
+6. **Tomar Decisión:** Elija si el proyecto está listo para **Avanzar**, si requiere **Aclarar** datos pendientes, o si debe **Detenerse**.
+7. **Control Procedimental:** Bajo ningún concepto inicie la especificación de specs de features en `specs/` o la escritura de código si el inicio procedimental de estas fases no está debidamente cerrado y firmado.
 
 ---
 
@@ -193,7 +229,7 @@ El proyecto puede clasificarse como:
 
 | Tipo | Descripción | Profundidad sugerida |
 |---|---|---|
-| Tipo 1 | Proyecto documental o analítico | Flujo ligero |
+| Tipo 1 | Proyecto documental o analítico (Fuera del MVP actual / Referencia futura) | Flujo ligero (No aplicable en v0.1) |
 | Tipo 2 | Software simple o utilidad menor | Mini-spec o checklist |
 | Tipo 3 | Software con lógica relevante | SDD por feature |
 | Tipo 4 | Proyecto con datos, seguridad, producción o integraciones | SDD completo + validación reforzada |
@@ -368,7 +404,7 @@ El rol de Orquestador se concibe únicamente como una directriz lógica de contr
 Los agentes no deben depender de la memoria volátil de la conversación del chat como fuente de verdad. El estado del proyecto, hitos, bloqueos y decisiones de diseño deben persistir en los archivos físicos del repositorio localizados en la carpeta `progress/` (`current.md`, `history.md`) y en `docs/adr/`. 
 
 ### 13.3. Control Input/Output
-Todo script, gate o automatización técnica posterior debe contar con una definición explícita de sus entradas admitidas (inputs) y estructurar sus reportes, resultados y evidencias físicas (outputs) dentro del directorio oficial de `/output`, garantizando la repetibilidad determinista.
+Todo script, gate o automatización técnica posterior debe contar con una definición explícita de sus entradas admitidas (inputs) y estructurar sus reportes, resultados y evidencias físicas (outputs). Las salidas y evidencias deberán registrarse en la zona oficial de evidencias definida y aprobada para la fase correspondiente. Mientras esa zona no exista, la evidencia se registrará en el documento de progreso, reporte o sede documental autorizada por el plan, garantizando la repetibilidad determinista.
 
 ### 13.4. Self-improving loop controlado
 El bucle de auto-mejora (*self-improving loop*) del arnés se restringe a la optimización estructurada de reglas y especificaciones metodológicas. Queda terminantemente prohibido que los agentes de IA se auto-modifiquen o alteren de manera libre sus reglas de comportamiento locales, adaptadores operativos (`AGENTS.md`, `GEMINI.md`) o la constitución del repositorio sin la revisión cruzada de la auditoría y la firma final del desarrollador humano.

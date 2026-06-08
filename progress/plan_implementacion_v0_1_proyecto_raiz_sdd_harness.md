@@ -10,7 +10,7 @@
 Este documento define la hoja de ruta oficial y el plan de implementación v0.1 del proyecto `proyecto_raiz_sdd_harness`. Actúa como la fuente oficial de orden para guiar los pasos de desarrollo técnico, asegurando la coherencia entre las reglas de gobernanza documental, los límites de la constitución del proyecto y el desarrollo progresivo del arnés agéntico bajo el enfoque de Spec-Driven Development (SDD), priorizando el cierre de la etapa documental sobre la implementación técnica.
 
 ## 2. Estado actual del repositorio
-A la fecha actual de este plan, el repositorio se encuentra en la **Fase Documental / MVP Estructural**.
+A la fecha actual de este plan, el repositorio tiene la Fase 0 documental cerrada con observaciones controladas y se encuentra pendiente de autorización humana explícita para evaluar la apertura de la Fase 1 — Spec Piloto Documental.
 * **Elementos creados y vigentes:**
   - Gobernanza y mapa documental: `docs/00_mapa_y_gobernanza_documental.md`
   - Metodología base común: `docs/01_metodologia_base_comun.md`
@@ -37,13 +37,15 @@ Se excluyen explícitamente de esta versión los siguientes elementos:
 * Procesamiento masivo de texto, bots de conversación y sistemas agénticos cuyo producto final o propuesta de valor principal sea únicamente la generación de prosa o texto estructurado no técnico.
 
 ## 5. Rol del Equipo Auditor Procedimental
-El **Equipo Auditor Procedimental** es un rol metodológico clave del arnés encargado de:
-* Auditar la calidad, consistencia y trazabilidad del producto metodológico, las guías procedimentales y la documentación del proyecto.
-* Asegurar que todo cambio o avance cumpla de forma rigurosa con los principios del mapa documental y la constitución del proyecto.
-* Validar que la información técnica sea útil, comprensible y accionable tanto para el desarrollador humano como para la integración con sistemas asistidos por IA.
-* Auditar el rastro de trazabilidad del repositorio (Git status, diferencias de diff, checklists firmados) antes de aprobar una transición de fase o declarar una feature como completada (`done`).
-* Reportar de forma objetiva las desviaciones técnicas o procedimentales para activar la regla de replanificación cuando sea necesario.
-* *Nota:* Este rol no actúa como auditor técnico de la lógica del runtime o de los gates ejecutables automatizados, sino como salvaguarda del cumplimiento de la metodología y la calidad del entregable final.
+El **Equipo Auditor Procedimental** es un rol metodológico y de control enfocado en el producto metodológico, el procedimiento, la documentación y la utilidad práctica de los entregables para el usuario final. Su propósito principal es asegurar la claridad, comprensión y facilidad de uso de los flujos de trabajo del arnés.
+
+Sus responsabilidades clave son:
+* Auditar la coherencia, claridad y trazabilidad de los documentos rectores, guías de procedimiento y especificaciones funcionales, asegurando que aporten valor real al usuario final.
+* Verificar la trazabilidad del flujo de trabajo (entradas, actividades principales y salidas documentadas) asegurando que el proceso sea entendible y fácilmente reproducible por seres humanos y agentes de IA.
+* Evaluar y validar que el resultado documental obtenido corresponda con el resultado esperado y resuelva la necesidad de negocio del intake inicial.
+* Detectar inconsistencias o ambigüedades en el procedimiento que puedan confundir al usuario, y proponer mejoras para optimizar su aplicación.
+* Asegurar que todo cambio o avance cumpla con el mapa de gobernanza y la constitución, reportando desviaciones de flujo para activar la regla de replanificación si es necesario.
+* *Nota:* Este rol **no** es responsable principal del diff técnico de bajo nivel, la programación o depuración de scripts o herramientas deterministas, la ejecución o mantenimiento de suites de test, ni de la validación del código fuente del runtime técnico del software. Su validación de evidencias físicas se limita exclusivamente a verificar que existan actas de tests pasados, reportes o commits para dar trazabilidad formal y visual del proceso.
 
 ## 6. Ajustes procedimentales aprobados
 Para garantizar la calidad en el desarrollo híbrido (IA + determinismo), se implementan los siguientes ajustes operativos:
@@ -99,6 +101,7 @@ De acuerdo con el enfoque LEAN de consolidación por capas de valor, el desarrol
 * Política de zonas de trabajo y restricción del espacio de archivos definida.
 * `README.md` principal ajustado.
 * Lista de características (`feature_list.md`) creada.
+* Auditoría final de cierre de Fase 0 registrada y consolidada mediante commit 0f2ae3e.
 
 ## 11. Qué está pendiente
 * **Pendientes inmediatos (Fase 0 - Documental/Procedimental):**
@@ -112,7 +115,7 @@ De acuerdo con el enfoque LEAN de consolidación por capas de valor, el desarrol
 * La ejecución o despliegue automático de agentes en entornos de producción.
 * La creación de automatizaciones en background que modifiquen el código de proyectos derivados sin control humano.
 * El desarrollo de cualquier módulo del arnés no alineado con el alcance cerrado del MVP v0.1 (ej. motores de generación de texto o analítica comercial).
-* La creación de la carpeta `.agent/gates/`, la inicialización del entorno técnico de testing y la creación de scripts ejecutables de automatización hasta que la consolidación documental de la Fase 0 esté plenamente finalizada y aprobada por el auditor humano.
+* La creación de la carpeta `.agent/gates/`, la inicialización del entorno técnico de testing y la creación de scripts ejecutables de automatización permanecen bloqueadas hasta que exista autorización humana explícita para la fase correspondiente y una spec documental aprobada que justifique su creación.
 
 ## 13. Restricciones de ejecución
 * No se modificará la constitución ni el mapa de gobernanza sin una revisión formal previa y un registro explícito en el ADR del proyecto.
