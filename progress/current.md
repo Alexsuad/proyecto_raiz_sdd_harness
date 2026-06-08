@@ -17,14 +17,18 @@ Su objetivo es dejar evidencia clara de qué partes del arnés existen como docu
 - **Proyecto:** `proyecto_raiz_sdd_harness`
 - **Tipo de proyecto:** proyecto raíz metodológico y agéntico.
 - **Objetivo:** construir una base reutilizable para futuros proyectos de desarrollo de software con SDD, documentación gobernada, adaptadores operativos, skills, workflows y gates.
-- **Estado actual:** Fase 2 abierta de forma controlada (Microfase 2.2 — Creación controlada del entorno virtual mínimo). El entorno virtual `.venv` ha sido creado y validado físicamente (aislamiento comprobado). No hay desarrollo funcional autorizado, ni dependencias instaladas, ni inicialización de uv o pytest.
-- **Último commit confirmado del repositorio:** f86d1f8610934c6e80f14a231d4e7df9a227ff2f
+- **Estado actual:** Fase 2 lista para cierre tras verificación mínima reproducible. El entorno virtual `.venv` ha sido creado y validado físicamente (aislamiento comprobado) y el smoke test mínimo reproducible fue ejecutado exitosamente. No hay desarrollo funcional autorizado, ni dependencias instaladas, ni inicialización de uv o pytest. La carpeta `.agent/` y los directorios `scripts/` y `tests/` permanecen sin cambios. La Fase 3 no ha sido abierta.
+- **Último commit confirmado del repositorio:** a1fd0b81ea4b053424dd2623cc9e8eaa487a8708
+- **Commit de creación controlada del entorno virtual mínimo:** a1fd0b81ea4b053424dd2623cc9e8eaa487a8708
+- **Commit de política de entorno técnico mínimo:** f86d1f8610934c6e80f14a231d4e7df9a227ff2f
+- **Commit de apertura controlada de Fase 2:** f0c9f840b04e46e1851ab1739e946f07ac518ad4
+- **Commit de readiness documental para fase 2:** 9d7d848a266166a476c48b59df818cce9420797b
 - **Commit de cierre documental de F-013:** 585d1c5478c0092b882d9b8d66150acabda4f59b
 - **Commit de pre-cierre documental de F-013:** e46870d1c3bf6f3c9f8b681a1579e6257a94c0ce
 - **Commit de revisión documental de F-013:** 17aeb1a2527f932c9bb84489a3701958ea628b5f
 - **Commit de sincronización tras revisión de F-013:** 75f9d0429146e89cf58235f5fd2f946bf94fe5af
 - **Commit de trazabilidad previa:** 424576a5ce2b24781905aa584c879db3ab0f1084
-- **Siguiente paso:** Microfase 2.3 — Verificación mínima reproducible y cierre de Fase 2.
+- **Siguiente paso:** Revisión humana final y, si se aprueba, commit único de cierre de Fase 2.
 - **Código de producto:** No existe (bloqueado).
 - **Features activas de implementación:** Ninguna (bloqueado). Spec documental piloto F-013: completada documentalmente.
 - **Automatización activa:** Ninguna (bloqueado).
@@ -113,10 +117,11 @@ Hasta nueva autorización explícita y firma humana, se mantienen estrictamente 
 ## 8. Próximo paso recomendado
 
 El próximo hito recomendado es:
-- **Verificación mínima reproducible y cierre de Fase 2 (Microfase 2.3):** Ejecutar un smoke test básico sobre el entorno virtual y cerrar formalmente la Fase 2.
-- **Creación controlada del entorno virtual mínimo (Microfase 2.2):** Entorno virtual local `.venv` creado y validado físicamente. Aislamiento verificado exitosamente.
+- **Revisión humana final y, si se aprueba, commit único de cierre de Fase 2.**
+- **Verificación mínima reproducible y cierre de Fase 2 (Microfase 2.3):** Smoke test mínimo reproducible ejecutado y validado localmente desde `.venv`.
+- **Creación controlada del entorno virtual mínimo (Microfase 2.2):** Entorno virtual local `.venv` creado y validado físicamente.
 - **Política de entorno técnico mínimo (Microfase 2.1):** Establecida. Ninguna dependencia podrá instalarse fuera del entorno virtual.
-- **Herramientas de testing y tooling:** `uv` y `pytest` permanecen en estado futuro/inactivo hasta autorización explícita para evitar complejidad prematura.
+- **Herramientas de testing y tooling:** `uv` y `pytest` permanecen en estado futuro/inactivo hasta autorización explícita.
 - Mantener estrictamente bloqueada cualquier inicialización de código técnico, scripts, gates ejecutables o automatizaciones de `.agent/` en background.
 - **Readiness documental para Fase 2:** Registrado.
 

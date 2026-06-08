@@ -24,8 +24,8 @@ Es una **base metodológica, documental y estructural** reutilizable. Funciona c
 ---
 
 ## 3. Estado actual
-El repositorio se encuentra con la **Fase 0 documental cerrada con observaciones controladas**, la **Fase 1 (Spec Piloto Documental)** formalmente **cerrada en sentido documental**, y la **Fase 2 (Preparación mínima para hacer verificable el arnés)** abierta de forma controlada.
-El entorno virtual mínimo `.venv` fue creado y validado localmente (aislamiento verificado), sin instalar dependencias ni activar uv o pytest. No hay desarrollo funcional autorizado, ni runtime activo, ni scripts activos, ni gates ejecutables activos. La carpeta `.agent/` sigue sin activación técnica.
+El repositorio se encuentra con la **Fase 0 documental cerrada con observaciones controladas**, la **Fase 1 (Spec Piloto Documental)** formalmente **cerrada en sentido documental**, y la **Fase 2 (Preparación mínima para hacer verificable el arnés)** verificada localmente y lista para su cierre formal.
+El entorno virtual mínimo `.venv` fue validado mediante smoke test local, sin instalar dependencias ni activar uv o pytest. No hay desarrollo funcional autorizado, ni runtime activo, ni scripts activos, ni gates ejecutables activos en el repositorio. La carpeta `.agent/` sigue sin activación técnica, y la Fase 3 no ha sido abierta.
 
 * **Creado e incorporado a Git:**
   - Plan de implementación v0.1: [progress/plan_implementacion_v0_1_proyecto_raiz_sdd_harness.md](./progress/plan_implementacion_v0_1_proyecto_raiz_sdd_harness.md)
@@ -94,7 +94,7 @@ El diseño del repositorio raíz busca la **portabilidad e independencia**. Las 
 ---
 
 ## 9. Siguiente paso según el plan
-El siguiente hito es la verificación mínima reproducible y cierre de Fase 2 (Microfase 2.3), ejecutando un smoke test básico sobre el entorno virtual.
+El siguiente hito es la revisión humana final y el commit único de cierre formal de la Fase 2, antes de evaluar la transición a la Fase 3.
 
 ---
 

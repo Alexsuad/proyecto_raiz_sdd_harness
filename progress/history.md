@@ -544,7 +544,7 @@ Se ha definido formalmente la política de entorno técnico mínimo para la Fase
 Se ha creado y validado físicamente el entorno virtual local `.venv` para la Fase 2.
 
 **Detalles del Hito:**
-- **Commit pendiente de consolidación:** Microfase 2.2
+- **Commit de creación controlada del entorno virtual mínimo:** a1fd0b81ea4b053424dd2623cc9e8eaa487a8708
 - **Commit base de apertura:** `f86d1f8610934c6e80f14a231d4e7df9a227ff2f`
 - **Resumen:** Creación del entorno virtual mínimo `.venv` en WSL/Linux y verificación de su correcto aislamiento.
 
@@ -556,3 +556,23 @@ Se ha creado y validado físicamente el entorno virtual local `.venv` para la Fa
 - No se inicializó uv ni pytest.
 - No se crearon scripts ni código funcional.
 - No se modificó `.agent/` ni gates ejecutables.
+
+---
+
+### 2026-06-08 — Verificación mínima reproducible y cierre de Fase 2
+
+Se ha verificado el entorno virtual y la Fase 2 queda lista para el cierre formal en sentido documental.
+
+**Detalles del Hito:**
+- **Commit pendiente de consolidación:** cierre de Fase 2
+- **Resumen:** Ejecución exitosa de smoke test mínimo reproducible sobre el entorno virtual local `.venv` comprobando aislamiento e integridad.
+
+**Restricciones de Seguridad e Integridad:**
+- Se ejecutó smoke test mínimo sobre `.venv`.
+- Se confirmó que `.venv/bin/python` funciona y está aislado.
+- Se confirmó que `.venv/` está ignorado por Git de manera correcta.
+- No se instalaron dependencias.
+- No se inicializó uv ni pytest.
+- No se crearon scripts en `scripts/` ni archivos `.py` en el repositorio.
+- No se modificó `.agent/` ni gates ejecutables.
+- La Fase 2 queda lista para revisión humana y cierre, y la Fase 3 permanece inactiva.
