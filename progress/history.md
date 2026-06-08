@@ -559,20 +559,39 @@ Se ha creado y validado físicamente el entorno virtual local `.venv` para la Fa
 
 ---
 
-### 2026-06-08 — Verificación mínima reproducible y cierre de Fase 2
+### 2026-06-08 — Cierre formal y consolidación de la Fase 2
 
-Se ha verificado el entorno virtual y la Fase 2 queda lista para el cierre formal en sentido documental.
+Se ha cerrado formalmente la **Fase 2 (Preparación mínima para hacer verificable el arnés)** del proyecto raíz y se han publicado los cambios en GitHub.
 
 **Detalles del Hito:**
-- **Commit pendiente de consolidación:** cierre de Fase 2
-- **Resumen:** Ejecución exitosa de smoke test mínimo reproducible sobre el entorno virtual local `.venv` comprobando aislamiento e integridad.
+- **Commit de Cierre:** `5a8f044bbab0dfc1fd86723f5e4cc4dc91b46f05` (chore: cerrar fase 2 de entorno verificable).
+- **Resumen:** Consolidación final del entorno virtual `.venv` y confirmación de su correcto aislamiento tras las verificaciones locales.
 
 **Restricciones de Seguridad e Integridad:**
 - Se ejecutó smoke test mínimo sobre `.venv`.
 - Se confirmó que `.venv/bin/python` funciona y está aislado.
 - Se confirmó que `.venv/` está ignorado por Git de manera correcta.
-- No se instalaron dependencias.
+- No se instalaron dependencias ni se crearon archivos de dependencias (`requirements.txt`).
 - No se inicializó uv ni pytest.
 - No se crearon scripts en `scripts/` ni archivos `.py` en el repositorio.
 - No se modificó `.agent/` ni gates ejecutables.
-- La Fase 2 queda lista para revisión humana y cierre, y la Fase 3 permanece inactiva.
+- La Fase 2 queda oficialmente **cerrada**.
+
+---
+
+### 2026-06-08 — Definición previa de alcance para Fase 3
+
+Se propone formalmente el alcance de la **Fase 3 — Verificación automatizada mínima del arnés** para su aprobación humana.
+
+---
+
+### 2026-06-08 — Implementación local de verificación automatizada mínima
+
+Se ha abierto e implementado localmente el desarrollo de la **Fase 3 — Verificación automatizada mínima del arnés**.
+
+**Detalles del Hito:**
+- Se creó el script determinista independiente `scripts/gate_0_preflight.py`.
+- Se ejecutó y validó localmente desde el entorno virtual `.venv`.
+- El script no utiliza `pytest`, `uv` ni dependencias externas, basándose únicamente en la biblioteca estándar de Python.
+- La Fase 4 (Codificación candidata de la feature piloto) permanece estrictamente **inactiva/cerrada** y no fue abierta.
+- No se ha realizado commit ni push remoto de este desarrollo local, quedando a la espera de la revisión humana.

@@ -80,14 +80,10 @@ De acuerdo con el enfoque LEAN de consolidación por capas de valor, el desarrol
    - Auditoría final de cierre de la Fase 0. — [COMPLETADA / COMMIT 0f2ae3e]
 2. **Fase 1: Spec Piloto Documental — [CERRADA DOCUMENTALMENTE / F-013 COMPLETADA]**
    - Hito cumplido mediante la feature F-013. La especificación piloto fue creada, revisada, validada y cerrada documentalmente (commit 585d1c5478c0092b882d9b8d66150acabda4f59b). El cierre de Fase 1 es exclusivamente documental y no abre Fase 2, la cual requiere autorización humana explícita.
-3. **Fase 2: Preparación mínima para hacer verificable el arnés — [ABIERTA DE FORMA CONTROLADA]**
-   - El alcance está limitado estrictamente a la preparación mínima del entorno verificable, sin desarrollo funcional, sin creación de pytest, uv, scripts ejecutables, ni gates activos. La fase no debe superar 4 microfases y se estructura de la siguiente manera:
-     * **2.0 — Apertura controlada de Fase 2:** Habilitación documental y revisión de .gitignore (COMPLETADO).
-     * **2.1 — Política de entorno técnico mínimo:** Definir la política del entorno virtual, uv, pytest y límites de scripts (COMPLETADO).
-     * **2.2 — Creación controlada del entorno virtual mínimo:** Creación y activación física del entorno virtual y validación del aislamiento (COMPLETADO).
-     * **2.3 — Verificación mínima reproducible y cierre de Fase 2:** Smoke test básico del entorno y cierre formal (COMPLETADA LOCALMENTE / PENDIENTE DE REVISIÓN HUMANA Y COMMIT DE CIERRE).
-4. **Fase 3: Diseño e implementación de la validación automatizada — [FASE POSTERIOR NO ACTIVA]**
-   - Desarrollo del script `scripts/gate_0_preflight.py` para la revisión estática de dependencias, entornos y archivos prohibidos.
+3. **Fase 2: Preparación mínima para hacer verificable el arnés — [CERRADA]**
+   - El alcance estuvo limitado estrictamente a la preparación mínima del entorno verificable. Se completó la creación del entorno virtual `.venv` y la ejecución del smoke test mínimo reproducible. Fase cerrada y consolidada en Git (commit 5a8f044).
+4. **Fase 3: Verificación automatizada mínima del arnés — [ABIERTA LOCALMENTE]**
+   - Límite operativo explícito: La Fase 3 no debe crear una suite amplia de tests ni activar pytest/uv. Su alcance se limita a una verificación local mínima ejecutable con Python estándar desde `.venv`. Se ha creado e implementado localmente de forma candidata el script determinista básico (`scripts/gate_0_preflight.py`) para comprobar las reglas estructurales del repositorio.
 5. **Fase 4: Codificación candidata de la feature piloto — [FASE POSTERIOR NO ACTIVA]**
 6. **Fase 5: Validación cruzada y ejecución de gates de código — [FASE POSTERIOR NO ACTIVA]**
 
@@ -129,6 +125,6 @@ De acuerdo con el enfoque LEAN de consolidación por capas de valor, el desarrol
 ## 14. Criterios de aceptación por fase
 * **Para avanzar de Fase Documental (Fase 0) a Spec Piloto (Fase 1):** Cierre y aprobación de todos los documentos requeridos de la Fase 0 (procedimiento de inicio, origen, visión, auditoría arquitectónica, política de zonas, README, feature list y auditoría final de cierre de Fase 0).
 * **Para avanzar a Entorno de Pruebas (Fase 2):** Aprobación y firma de la Spec Piloto por parte del desarrollador humano.
-* **Para avanzar a Script de Validaciones (Fase 3):** Configuración exitosa del entorno virtual con `uv` y `pytest`.
-* **Para avanzar a Codificación (Fase 4):** Script `gate_0_preflight.py` funcional y reportando sin falsos positivos.
+* **Para avanzar a Verificación Automatizada Mínima (Fase 3):** Creación y validación del entorno virtual mínimo `.venv` (Fase 2 completada).
+* **Para avanzar a Codificación (Fase 4):** Script `gate_0_preflight.py` de la Fase 3 funcional y reportando sin falsos positivos, sin dependencias externas ni pytest/uv, y con aprobación humana.
 * **Para avanzar a Cierre y Consolidación (Fase 5):** Pruebas unitarias al 100% de éxito, validación por revisión cruzada y reporte de evidencias del arnés documentado sin fallos.

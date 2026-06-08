@@ -24,8 +24,8 @@ Es una **base metodológica, documental y estructural** reutilizable. Funciona c
 ---
 
 ## 3. Estado actual
-El repositorio se encuentra con la **Fase 0 documental cerrada con observaciones controladas**, la **Fase 1 (Spec Piloto Documental)** formalmente **cerrada en sentido documental**, y la **Fase 2 (Preparación mínima para hacer verificable el arnés)** verificada localmente y lista para su cierre formal.
-El entorno virtual mínimo `.venv` fue validado mediante smoke test local, sin instalar dependencias ni activar uv o pytest. No hay desarrollo funcional autorizado, ni runtime activo, ni scripts activos, ni gates ejecutables activos en el repositorio. La carpeta `.agent/` sigue sin activación técnica, y la Fase 3 no ha sido abierta.
+El repositorio se encuentra con la **Fase 0 documental cerrada con observaciones controladas**, la **Fase 1 (Spec Piloto Documental)** formalmente **cerrada en sentido documental**, la **Fase 2 (Preparación mínima para hacer verificable el arnés)** formalmente **cerrada y publicada**, y la **Fase 3 (Verificación automatizada mínima del arnés)** en estado de **abierta localmente**.
+El entorno virtual mínimo `.venv` fue creado e ignorado por Git, sin instalar dependencias ni activar uv o pytest. Se ha creado e implementado localmente la verificación automatizada mínima candidata (`scripts/gate_0_preflight.py`), la cual valida localmente las reglas de seguridad estructural básicas. Las suites de pruebas y herramientas de testing (`pytest`, `uv`), los pipelines de integración continua (GitHub Actions, workflows activos) y la Fase 4 permanecen estrictamente bloqueados. La carpeta `.agent/` sigue sin activación técnica.
 
 * **Creado e incorporado a Git:**
   - Plan de implementación v0.1: [progress/plan_implementacion_v0_1_proyecto_raiz_sdd_harness.md](./progress/plan_implementacion_v0_1_proyecto_raiz_sdd_harness.md)
@@ -94,9 +94,9 @@ El diseño del repositorio raíz busca la **portabilidad e independencia**. Las 
 ---
 
 ## 9. Siguiente paso según el plan
-El siguiente hito es la revisión humana final y el commit único de cierre formal de la Fase 2, antes de evaluar la transición a la Fase 3.
+El siguiente hito es la revisión humana final y consolidación en Git de la Fase 3 local.
 
 ---
 
 ## 10. Estado del README
-* **Estado:** Aprobado en la Fase 1 - Spec Piloto Documental.
+* **Estado:** Actualizado en la definición de alcance de Fase 3.

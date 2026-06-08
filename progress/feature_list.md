@@ -63,7 +63,8 @@ Cada capacidad técnica o documental debe clasificarse en uno de los siguientes 
 | **F-017** | Activación de skills | Transición operativa de skills documentales a activas en background. | **futuro/inactivo** | - | Definir metadatos | Bloqueado en esta etapa. |
 | **F-018** | Revisión de adaptadores | Ajuste futuro a los archivos pragmáticos de la raíz. | **futuro/inactivo** | [AGENTS.md](../AGENTS.md) / [GEMINI.md](../GEMINI.md) | Auditoría técnica futura | Requiere el inicio técnico. |
 | **F-019** | Revisión de `.agent/` | Integración operativa y metadatos de configuración en rules/workflows. | **futuro/inactivo** | - | Vincular al entorno de desarrollo | Bloqueado en esta etapa. |
-| **F-020** | Apertura controlada de Fase 2 | Definición de condiciones mínimas para preparar entorno técnico verificable sin desarrollo funcional. | **en revisión** | - | Definir límites y condiciones mínimas | Fase 2 lista para cierre formal. La Microfase 2.3 ejecutó el smoke test mínimo reproducible sobre el entorno virtual (.venv). |
+| **F-020** | Apertura controlada de Fase 2 | Definición de condiciones mínimas para preparar entorno técnico verificable sin desarrollo funcional. | **completado** | [current.md](./current.md) (commit 5a8f044) | Definición de Fase 3 | Fase 2 cerrada y publicada en GitHub. |
+| **F-021** | Verificación automatizada mínima del arnés | Definir y crear una verificación local mínima, sin pytest, sin uv y sin dependencias externas. | **en revisión** | [gate_0_preflight.py](../scripts/gate_0_preflight.py) | Revisión humana del script | Fase 3 propuesta y desarrollada de forma local. |
 
 ---
 
