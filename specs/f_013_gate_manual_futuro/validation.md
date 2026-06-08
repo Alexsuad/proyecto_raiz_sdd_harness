@@ -21,27 +21,30 @@ Este documento establece el plan de validación manual para confirmar la coheren
 
 ## 2. Checklist de validación de claridad y estructura
 
+> [!NOTE]
+> Nota de pre-cierre: La validación registrada es exclusivamente documental/procedimental. No constituye ejecución de tests automatizados, no habilita pytest, no habilita uv, no crea scripts, no crea gates ejecutables y no modifica .agent/.
+
 El Equipo Auditor o el Revisor Humano deben verificar las siguientes condiciones:
-* [ ] **C-013-01: Claridad de Roles:** ¿Se identifica claramente quién realiza la revisión y quién la firma en `review.md`?
-* [ ] **C-013-02: Bloque de Firma Completo:** ¿El bloque de firma contiene todos los campos necesarios descritos en `design.md`?
-* [ ] **C-013-03: No-Autoaprobación:** ¿Se prohíbe explícitamente que el agente de IA autorice o firme su propia documentación?
-* [ ] **C-013-04: Rutas Relativas:** ¿Todas las referencias cruzadas de archivos dentro de la carpeta `specs/f_013_gate_manual_futuro/` y del resto del repositorio usan rutas relativas del tipo `./archivo.md` en lugar de rutas absolutas?
+* [x] **C-013-01: Claridad de Roles:** ¿Se identifica claramente quién realiza la revisión y quién la firma en `review.md`?
+* [x] **C-013-02: Bloque de Firma Completo:** ¿El bloque de firma contiene todos los campos necesarios descritos en `design.md`?
+* [x] **C-013-03: No-Autoaprobación:** ¿Se prohíbe explícitamente que el agente de IA autorice o firme su propia documentación?
+* [x] **C-013-04: Rutas Relativas:** ¿Todas las referencias cruzadas de archivos dentro de la carpeta `specs/f_013_gate_manual_futuro/` y del resto del repositorio usan rutas relativas del tipo `./archivo.md` en lugar de rutas absolutas?
 
 ---
 
 ## 3. Verificación de no-automatización y aislamiento técnico
 
-* [ ] **VA-013-01:** Confirmar que no se ha creado ningún script `.py`, `.sh`, `.bat` ni ningún otro binario ejecutable en el repositorio.
-* [ ] **VA-013-02:** Confirmar que no se han modificado ni agregado archivos en `.agent/` ni skills de ejecución automática.
-* [ ] **VA-013-03:** Confirmar que las suites de pruebas automáticas con `pytest`, el entorno virtual y la herramienta de gestión `uv` no han sido activadas ni llamadas en el proceso.
+* [x] **VA-013-01:** Confirmar que no se ha creado ningún script `.py`, `.sh`, `.bat` ni ningún otro binario ejecutable en el repositorio.
+* [x] **VA-013-02:** Confirmar que no se han modificado ni agregado archivos en `.agent/` ni skills de ejecución automática.
+* [x] **VA-013-03:** Confirmar que las suites de pruebas automáticas con `pytest`, el entorno virtual y la herramienta de gestión `uv` no han sido activadas ni llamadas en el proceso.
 
 ---
 
 ## 4. Validación de trazabilidad Input/Output
 
-* [ ] **VT-013-01:** Confirmar que todos los requisitos funcionales de `requirements.md` tienen un correspondiente diseño conceptual en `design.md`.
-* [ ] **VT-013-02:** Confirmar que las tareas en `tasks.md` cubren la redacción y revisión de todos los documentos candidatos.
-* [ ] **VT-013-03:** Confirmar que las evidencias listadas en `review.md` enlazan de forma correcta a la versión exacta que se audita.
+* [x] **VT-013-01:** Confirmar que todos los requisitos funcionales de `requirements.md` tienen un correspondiente diseño conceptual en `design.md`.
+* [x] **VT-013-02:** Confirmar que las tareas en `tasks.md` cubren la redacción y revisión de todos los documentos candidatos.
+* [x] **VT-013-03:** Confirmar que las evidencias listadas en `review.md` enlazan de forma correcta a la versión exacta que se audita.
 
 ---
 

@@ -17,8 +17,10 @@ Su objetivo es dejar evidencia clara de qué partes del arnés existen como docu
 - **Proyecto:** `proyecto_raiz_sdd_harness`
 - **Tipo de proyecto:** proyecto raíz metodológico y agéntico.
 - **Objetivo:** construir una base reutilizable para futuros proyectos de desarrollo de software con SDD, documentación gobernada, adaptadores operativos, skills, workflows y gates.
-- **Estado actual:** Fase 1 abierta de forma controlada. Spec piloto F-013 en revisión avanzada (revisión documental registrada en GitHub, sin implicar implementación técnica).
-- **Último commit confirmado:** 17aeb1a2527f932c9bb84489a3701958ea628b5f (Trazabilidad previa: 424576a5ce2b24781905aa584c879db3ab0f1084)
+- **Estado actual:** Fase 1 abierta de forma controlada. Spec piloto F-013 revisada documentalmente (pendiente de decisión final, sin implicar aprobación técnica).
+- **Último commit confirmado del repositorio:** 75f9d0429146e89cf58235f5fd2f946bf94fe5af
+- **Commit de revisión documental de F-013:** 17aeb1a2527f932c9bb84489a3701958ea628b5f
+- **Commit de trazabilidad previa:** 424576a5ce2b24781905aa584c879db3ab0f1084
 - **Siguiente paso:** Decisión humana final sobre si F-013 se declara completada documentalmente o si requiere ajustes menores antes del cierre de la feature.
 - **Código de producto:** No existe (bloqueado).
 - **Features activas:** Ninguna (bloqueado).

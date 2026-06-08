@@ -22,17 +22,17 @@ Este documento funciona como la lista de control de tareas necesarias para final
 ## 2. Checklist de tareas atómicas (Documentales)
 
 > [!NOTE]
-> Las tareas permanecen pendientes hasta que la spec sea revisada y aprobada por el desarrollador humano, aunque los documentos candidatos ya existan físicamente.
+> Nota de pre-cierre: Las tareas documentales se marcan como completadas únicamente en sentido documental. Esto no implica implementación técnica, creación de scripts, gates ejecutables, runtime, pytest, uv ni activación de .agent/. La decisión final de cierre de F-013 queda pendiente de autorización humana explícita.
 
-- [ ] **Tarea Documental 1: Definición de Requerimientos**
+- [x] **Tarea Documental 1: Definición de Requerimientos**
   * Redactar y consolidar el alcance, justificación, roles y bloqueos explícitos en `requirements.md`.
-- [ ] **Tarea Documental 2: Definición de Diseño Conceptual**
+- [x] **Tarea Documental 2: Definición de Diseño Conceptual**
   * Elaborar el flujo conceptual de estados y estructurar la plantilla estándar del bloque de firma en `design.md`.
-- [ ] **Tarea Documental 3: Planificación de Tareas**
+- [x] **Tarea Documental 3: Planificación de Tareas**
   * Definir esta lista de control atómica y el criterio de finalización de la spec en `tasks.md`.
-- [ ] **Tarea Documental 4: Plan de Validación Manual**
+- [x] **Tarea Documental 4: Plan de Validación Manual**
   * Detallar las pruebas manuales de casos de transición y la trazabilidad documental en `validation.md`.
-- [ ] **Tarea Documental 5: Estructura de Revisión y Dictamen**
+- [x] **Tarea Documental 5: Estructura de Revisión y Dictamen**
   * Crear la plantilla de control del Equipo Auditor Procedimental y el bloque de decisión humana en `review.md`.
 
 ---
