@@ -400,9 +400,27 @@ Actualmente no existen:
 - tests reales.
 
 ## 5. Próximo paso recomendado
+ 
+ Antes de crear nuevos recursos estructurales, se debe ejecutar el preflight documental definido en:
+ 
+ - `docs/preflight_estructural.md`
+ 
+ El siguiente avance debe estar justificado por una necesidad clara y no debe activar automatización prematura.
 
-Antes de crear nuevos recursos estructurales, se debe ejecutar el preflight documental definido en:
+---
 
-- `docs/preflight_estructural.md`
+### 2026-06-08 — Cierre de Fase 0 documental con auditoría aprobada
 
-El siguiente avance debe estar justificado por una necesidad clara y no debe activar automatización prematura.
+Se ha cerrado formalmente la **Fase 0 (Consolidación Documental y del MVP Estructural)** del proyecto raíz.
+
+**Detalles del Hito:**
+- **Commit de Cierre:** `0f2ae3e74561e3ef6129aff3b601901377ce2d3f` (publicado en GitHub).
+- **Reporte de Auditoría final:** Creado y aprobado en [progress/auditoria_final_cierre_fase_0_2026-06-07.md](./auditoria_final_cierre_fase_0_2026-06-07.md).
+- **Acciones aplicadas:** Sincronización completa de los documentos de estado (`plan_implementacion_v0_1`, `feature_list.md`, `README.md`, `current.md` y `history.md`) para registrar el estado cerrado de la fase.
+
+**Observación y Deuda Controlada:**
+- El archivo privado local `docs/manual_anti_errores_del_arnes.md` está correctamente excluido en Git via `.gitignore`, pero sigue presentándose como una alerta de contención física en la empaquetación ZIP del workspace.
+
+**Próximo Estado del Proyecto:**
+- La Fase 0 queda oficialmente **cerrada**.
+- La Fase 1 (Spec Piloto Documental) queda en estado **pendiente de autorización humana explícita** para su apertura. Se mantienen bloqueadas las suites de testeo (`pytest`), entornos de ejecución (`uv`), gates automatizados o inyección de código.

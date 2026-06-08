@@ -17,11 +17,14 @@ Su objetivo es dejar evidencia clara de qué partes del arnés existen como docu
 - **Proyecto:** `proyecto_raiz_sdd_harness`
 - **Tipo de proyecto:** proyecto raíz metodológico y agéntico.
 - **Objetivo:** construir una base reutilizable para futuros proyectos de desarrollo de software con SDD, documentación gobernada, adaptadores operativos, skills, workflows y gates.
-- **Estado actual:** fase documental / MVP estructural.
-- **Código de producto:** no existe.
-- **Features activas:** ninguna.
-- **Automatización activa:** ninguna.
-- **Gates automatizados activos:** ninguno.
+- **Estado actual:** Fase 0 documental cerrada con observaciones controladas. GitHub sincronizado.
+- **Último commit confirmado:** 0f2ae3e74561e3ef6129aff3b601901377ce2d3f
+- **Siguiente fase posible:** Fase 1 — Spec Piloto Documental (pendiente de autorización humana explícita).
+- **Código de producto:** No existe (bloqueado).
+- **Features activas:** Ninguna (bloqueado).
+- **Automatización activa:** Ninguna (bloqueado).
+- **Gates automatizados activos:** Ninguno (bloqueado).
+- **Suite de pruebas (pytest/uv):** Inactivo/bloqueado.
 
 ## 3. Estructura documental creada
 
@@ -94,25 +97,19 @@ Esta decisión deja el proyecto en un estado intermedio controlado:
 
 ## 7. Límites operativos vigentes
 
-Hasta nueva autorización explícita, no se debe:
-
-- crear `.agent/gates/`;
-- crear rules activas;
-- crear workflows activos;
-- crear skills activas;
-- crear scripts de gates;
-- crear specs de features reales;
-- ejecutar agentes sobre código real de proyectos derivados;
-- modificar la constitución sin revisión y aprobación;
-- convertir las sedes documentales en automatización activa.
+Hasta nueva autorización explícita y firma humana, se mantienen estrictamente bloqueados y no operativos:
+- specs reales;
+- scripts de gates o runtime (en `/scripts`);
+- gates ejecutables y suite de testing local (`pytest`/`uv`);
+- configuración activa agéntica de fondo o daemon;
+- activación operativa de skills o workflows en el IDE;
+- cualquier modificación física del código o el working tree.
 
 ## 8. Próximo paso recomendado
 
-El próximo paso recomendado es:
-- Evaluar una definición documental más detallada de gates;
-- O realizar una auditoría de coherencia entre `progress/`, `.agent/`, `AGENTS.md`, `GEMINI.md` y los documentos rectores.
-- No crear todavía la carpeta `.agent/gates/` ni scripts ejecutables mientras el proyecto continúe en la fase de MVP documental.
-- No avanzar a automatización activa hasta contar con autorización explícita y validación documental previa.
+El próximo hito recomendado es:
+- Evaluar la apertura de la Fase 1 — Spec Piloto Documental, requiriendo autorización humana explícita para iniciar cualquier borrador conceptual en la carpeta `specs/`.
+- Mantener estrictamente bloqueada cualquier inicialización de código técnico o automatización en background.
 
 ## 9. Definición documental de Gate 0
 

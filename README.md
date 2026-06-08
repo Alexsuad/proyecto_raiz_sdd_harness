@@ -24,7 +24,7 @@ Es una **base metodológica, documental y estructural** reutilizable. Funciona c
 ---
 
 ## 3. Estado actual
-El repositorio se encuentra en la **Fase 0 / MVP Documental Estructural**.
+El repositorio se encuentra con la **Fase 0 documental cerrada con observaciones controladas**.
 * **Creado e incorporado a Git:**
   - Plan de implementación v0.1: [progress/plan_implementacion_v0_1_proyecto_raiz_sdd_harness.md](./progress/plan_implementacion_v0_1_proyecto_raiz_sdd_harness.md)
   - Procedimiento de inicio: [docs/procedimiento_inicio_proyecto_sdd_harness.md](./docs/procedimiento_inicio_proyecto_sdd_harness.md)
@@ -32,11 +32,9 @@ El repositorio se encuentra en la **Fase 0 / MVP Documental Estructural**.
   - Visión y alcance del proyecto raíz: [docs/vision_y_alcance_del_proyecto_raiz.md](./docs/vision_y_alcance_del_proyecto_raiz.md)
   - Auditoría arquitectónica interna: [progress/auditoria_arquitectonica_interna_2026-06-07.md](./progress/auditoria_arquitectonica_interna_2026-06-07.md)
   - Política de zonas del repositorio: [docs/politica_zonas_repositorio.md](./docs/politica_zonas_repositorio.md)
-* **Pendientes de la Fase 0 (MVP Documental):**
-  - Revisión externa/humana de la auditoría final de cierre de Fase 0.
-  - Commit del reporte de auditoría final, si queda aprobado.
-* **Pendientes de fases posteriores (Bloqueados):**
-  - Inicialización del entorno de pruebas deterministas e infraestructura técnica.
+  - Auditoría final de cierre de Fase 0: [progress/auditoria_final_cierre_fase_0_2026-06-07.md](./progress/auditoria_final_cierre_fase_0_2026-06-07.md)
+* **Elementos bloqueados (Sin autorización de arranque):**
+  - Inicialización de entornos de ejecución con `uv`, pytest, scripts deterministas en `scripts/`, gates lógicos automatizados, especificaciones ejecutables reales y habilidades agénticas activas.
 
 ---
 
@@ -68,7 +66,7 @@ Para comprender el funcionamiento y los límites del arnés, se recomienda la le
 * Documentación de gobernanza y mapa documental.
 * Metodología base común y de desarrollo de software (SDD + Harness).
 * Constitución del proyecto raíz y adaptadores operativos mínimos.
-* Procedimiento de inicio de proyectos, plan de implementación v0.1 y política de zonas.
+* Procedimiento de inicio de proyectos, plan de implementación v0.1, política de zonas y reporte de auditoría final de cierre de Fase 0.
 * Bitácoras físicas e informe de auditoría arquitectónica interna.
 
 ### Qué está inactivo o bloqueado
@@ -93,10 +91,10 @@ El diseño del repositorio raíz busca la **portabilidad e independencia**. Las 
 ---
 
 ## 9. Siguiente paso según el plan
-Una vez validada y consolidada la puerta de entrada oficial en el repositorio, la hoja de ruta documental establece como siguiente hito de la Fase 0:
-* Revisar y consolidar [progress/auditoria_final_cierre_fase_0_2026-06-07.md](./progress/auditoria_final_cierre_fase_0_2026-06-07.md).
+Una vez validada y consolidada la puerta de entrada oficial en el repositorio, la hoja de ruta documental establece como siguiente hito:
+* Evaluar apertura de Fase 1 — Spec Piloto Documental, solo con autorización humana explícita.
 
 ---
 
 ## 10. Estado del README
-* **Estado:** Candidato pendiente de auditoría
+* **Estado:** Aprobado para cierre de Fase 0 documental.

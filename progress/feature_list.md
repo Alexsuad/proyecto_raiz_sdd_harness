@@ -7,7 +7,7 @@
 # Feature List inicial — Proyecto raíz SDD + Harness
 
 **Versión:** v0.1  
-**Estado:** Candidato pendiente de auditoría  
+**Estado:** Aprobado dentro del cierre de Fase 0 documental  
 **Tipo:** Inventario operativo documental  
 **Ubicación:** `progress/feature_list.md`
 
@@ -50,8 +50,8 @@ Cada capacidad técnica o documental debe clasificarse en uno de los siguientes 
 | **F-006** | Política de zonas | Reglas de delimitación de carpetas físicas y estados de artefactos. | **completado** | [politica_zonas...md](../docs/politica_zonas_repositorio.md) | Mantener como referencia | Prohíbe limpiezas destructivas ad-hoc. |
 | **F-007** | README raíz | Puerta de entrada y mapa de navegación del repositorio raíz. | **completado** | [README.md](../README.md) | Mantener actualizado | Orienta a humanos y agentes agénticos. |
 | **F-008** | Feature list inicial | Inventario de capacidades y estados del arnés. | **completado** | [feature_list.md](./feature_list.md) | Mantener actualizado | Este documento. |
-| **F-009** | Auditoría final de Fase 0 | Reporte de cierre y validación final de entregables documentales. | **en revisión** | [auditoria_final_cierre_fase_0_2026-06-07.md](./auditoria_final_cierre_fase_0_2026-06-07.md) | Revisión y aprobación formal | Criterio de salida obligatorio de Fase 0. |
-| **F-010** | Primera spec piloto | Spec funcional y de diseño en `specs/` para la primera feature. | **futuro/inactivo** | - | Iniciar diseño (Fase 1) | Requiere el cierre de Fase 0. |
+| **F-009** | Auditoría final de Fase 0 | Reporte de cierre y validación final de entregables documentales. | **completado** | [auditoria_final_cierre_fase_0_2026-06-07.md](./auditoria_final_cierre_fase_0_2026-06-07.md) (commit 0f2ae3e) | Mantener como registro de Fase 0 | Criterio de salida obligatorio de Fase 0. |
+| **F-010** | Primera spec piloto | Spec funcional y de diseño en `specs/` para la primera feature. | **futuro/inactivo** | - | Evaluar apertura (Fase 1) | Inactivo. Requiere autorización humana explícita para iniciar. |
 | **F-011** | Plantillas de specs | Estándar formalizado de plantillas markdown para la carpeta `specs/`. | **futuro/inactivo** | - | Crear borradores en docs/ | Planificado para fases futuras. |
 | **F-012** | Inventario de validaciones | Definición de reglas estáticas a auditar automáticamente. | **futuro/inactivo** | - | Registro conceptual | Enlace previsto con scripts locales. |
 | **F-013** | Gate manual futuro | Definición de flujos de aprobación y firmas humanas en texto. | **futuro/inactivo** | - | Pauta procedimental | Definir criterios manuales de aprobación |
@@ -65,7 +65,7 @@ Cada capacidad técnica o documental debe clasificarse en uno de los siguientes 
 ---
 
 ## 5. Bloqueos explícitos
-Mientras la Fase 0 del MVP Documental permanezca abierta, se mantienen **estrictamente bloqueados y sin autorización para ser ejecutados** los siguientes componentes:
+Tras el cierre de la Fase 0 documental, y hasta que exista autorización humana explícita para abrir la Fase 1, se mantienen **estrictamente bloqueados y sin autorización para ser ejecutados** los siguientes componentes:
 * Codificación o creación de especificaciones reales de características en `specs/`.
 * Programación de scripts ejecutables en `scripts/` (incluyendo `gate_0_preflight.py`).
 * Configuración de gates automatizados o inicialización de suites de test locales con `pytest`.
@@ -75,7 +75,7 @@ Mientras la Fase 0 del MVP Documental permanezca abierta, se mantienen **estrict
 ---
 
 ## 6. Relación con el plan de implementación
-Este documento constituye el penúltimo entregable de la Fase 0 (Consolidación documental). Provee la estructura necesaria para preparar de forma ordenada la futura transición hacia la Fase 1 (Spec Piloto), pero no habilita de manera autónoma el inicio de desarrollos técnicos o automatizaciones en el repositorio.
+Este documento forma parte de los entregables cerrados de la Fase 0 documental y sirve como inventario base para evaluar futuras fases sin habilitarlas automáticamente. Provee la estructura necesaria para preparar de forma ordenada la futura transición hacia la Fase 1 (Spec Piloto), pero no habilita de manera autónoma el inicio de desarrollos técnicos o automatizaciones en el repositorio.
 
 ---
 
@@ -90,4 +90,4 @@ Este documento constituye el penúltimo entregable de la Fase 0 (Consolidación 
 ---
 
 ## 8. Estado del documento
-* **Estado:** Candidato pendiente de auditoría
+* **Estado:** Aprobado dentro del cierre de Fase 0 documental

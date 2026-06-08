@@ -67,7 +67,7 @@ Para garantizar la calidad en el desarrollo híbrido (IA + determinismo), se imp
 ## 9. Orden actualizado de ejecución
 De acuerdo con el enfoque LEAN de consolidación por capas de valor, el desarrollo técnico del arnés se llevará a cabo bajo el siguiente orden:
 
-1. **Fase 0: Consolidación documental (MVP Estructural) — [EN CURSO]**
+1. **Fase 0: Consolidación documental (MVP Estructural) — [CERRADA]**
    - Ajustar y refinar el procedimiento operativo de inicio de proyectos derivados. — [COMPLETADO]
    - Crear el origen del proyecto raíz (`progress/fase_00_origen_del_proyecto_raiz.md`). — [COMPLETADO]
    - Crear la visión y alcance oficial del repositorio raíz (`docs/vision_y_alcance_del_proyecto_raiz.md`). — [COMPLETADO]
@@ -75,8 +75,8 @@ De acuerdo con el enfoque LEAN de consolidación por capas de valor, el desarrol
    - Definir la política de zonas de trabajo y restricción del espacio de archivos. — [COMPLETADO]
    - Ajustar el `README.md` principal con la arquitectura resultante. — [COMPLETADO]
    - Crear la lista oficial de características del arnés (*feature list*). — [COMPLETADO]
-   - Auditoría final de cierre de la Fase 0. — [CREADA / EN REVISIÓN]
-2. **Fase 1: Spec Piloto Documental — [PENDIENTE]**
+   - Auditoría final de cierre de la Fase 0. — [COMPLETADA / COMMIT 0f2ae3e]
+2. **Fase 1: Spec Piloto Documental — [PENDIENTE DE AUTORIZACIÓN HUMANA]**
    - Crear la especificación funcional y técnica para la primera característica piloto en `specs/`, en estado puramente documental y aprobado por el humano.
 3. **Fase 2: Preparación del entorno de pruebas deterministas locales — [FASE POSTERIOR NO ACTIVA]**
    - Configuración de la infraestructura técnica (inicialización virtual con Python y `uv`).
@@ -102,7 +102,7 @@ De acuerdo con el enfoque LEAN de consolidación por capas de valor, el desarrol
 
 ## 11. Qué está pendiente
 * **Pendientes inmediatos (Fase 0 - Documental/Procedimental):**
-  - Revisión y aprobación formal (commit) de la auditoría final de cierre de la Fase 0.
+  - Ninguno. Fase 0 documental cerrada con observaciones controladas mediante commit 0f2ae3e.
 * **Pendientes de fases técnicas posteriores (Inactivos en este momento):**
   - Configuración del entorno de pruebas unitarias locales en `tests/`.
   - Programación del script determinista `scripts/gate_0_preflight.py`.

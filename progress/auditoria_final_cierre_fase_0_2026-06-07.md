@@ -2,7 +2,8 @@
 
 ## Metadatos
 - **Versión:** v0.1
-- **Estado:** Candidato pendiente de auditoría externa
+- **Estado:** Aprobado para cierre de Fase 0 documental
+- **Commit de Aprobación:** 0f2ae3e74561e3ef6129aff3b601901377ce2d3f
 - **Tipo:** Reporte de cierre documental
 - **Ubicación:** [progress/auditoria_final_cierre_fase_0_2026-06-07.md](./auditoria_final_cierre_fase_0_2026-06-07.md)
 
@@ -90,13 +91,8 @@ PS > git check-ignore -v docs/manual_anti_errores_del_arnes.md
 Se ha consultado el estado del control de versiones en el workspace para certificar la consistencia de la rama de trabajo.
 
 ### 7.1. Estado del árbol de trabajo (`git status --short`)
-- **Estado antes de crear este reporte de auditoría:** Árbol completamente limpio y libre de modificaciones o archivos sin trackear.
-- **Estado después de crear este reporte de auditoría:**
-```powershell
-PS > git status --short
-?? progress/auditoria_final_cierre_fase_0_2026-06-07.md
-```
-El archivo de auditoría final se encuentra sin trackear, en estado de entregable candidato pendiente de revisión y commit.
+- **Estado inicial:** Árbol completamente limpio y libre de modificaciones antes del cierre.
+- **Estado posterior al cierre:** Tras el commit de cierre `0f2ae3e74561e3ef6129aff3b601901377ce2d3f`, el reporte quedó incorporado al repositorio remoto en la rama `main`. Las microcorrecciones posteriores de sincronización se registran como parte de la Microfase 0.3 y deberán consolidarse en un commit independiente de sincronización documental.
 
 ### 7.2. Historial de commits (`git log --oneline -n 10`)
 Se registran los últimos 10 commits en la rama principal, mostrando una traza cronológica coherente y atómica de las intervenciones documentales:
@@ -126,16 +122,16 @@ Durante el proceso de auditoría de cierre, se han identificado los siguientes r
 ## 9. Dictamen de la Fase 0
 De acuerdo con el análisis físico de los entregables y el cumplimiento de las políticas de gobernanza, se emite el siguiente dictamen preliminar:
 
-**Fase 0 candidata a cierre documental con observaciones**
+**Fase 0 documental cerrada con observaciones controladas**
 
 ### Justificación:
 - **Estado documental:** Todos los documentos obligatorios de la Fase 0 han sido redactados, alineados y sincronizados.
-- **No autoaprobación:** No se declara el cierre formal definitivo del hito sin la revisión externa/humana independiente y el posterior commit de este reporte.
+- **Commit de Aprobación:** Validado y asentado en el repositorio bajo el hash `0f2ae3e74561e3ef6129aff3b601901377ce2d3f`.
+- **No autoaprobación:** Dictamen ratificado tras la revisión humana independiente y el push a la rama principal.
 
 ---
 
 ## 10. Recomendaciones de siguiente paso
-Si el desarrollador humano está conforme con los resultados presentados en esta auditoría, se proponen las siguientes acciones secuenciales para efectuar la transición:
-1. **Revisión externa / humana:** Que el desarrollador humano revise este reporte y los cambios sincronizados en el plan, el README y la feature list.
-2. **Commit del reporte de auditoría:** Si queda aprobado, realizar el commit del presente archivo [progress/auditoria_final_cierre_fase_0_2026-06-07.md](./auditoria_final_cierre_fase_0_2026-06-07.md).
-3. **Evaluar transición a Fase 1:** Solo después de la revisión humana y el commit de este reporte, evaluar el inicio ordenado de la especificación puramente documental del Spec Piloto en `specs/` bajo el ciclo SDD.
+Se proponen las siguientes acciones tras la aprobación del reporte:
+1. **Reporte ya consolidado:** El reporte fue incorporado mediante el commit `0f2ae3e74561e3ef6129aff3b601901377ce2d3f`.
+2. **Siguiente paso:** Evaluar la apertura de la Fase 1 — Spec Piloto Documental, solo con autorización humana explícita y firma humana, manteniendo bloqueada la ejecución del runtime técnico.
