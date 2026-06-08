@@ -483,3 +483,19 @@ Se ha declarado formalmente la especificación piloto **F-013 — Gate manual fu
 - No se activó runtime técnico, suite de test con `pytest` ni entorno con `uv`.
 - La Fase 1 sigue abierta de forma controlada hasta una posterior decisión formal de cierre.
 - La Fase 2 se mantiene estrictamente bloqueada.
+
+---
+
+### 2026-06-08 — Cierre formal de Fase 1
+
+Se ha cerrado formalmente la **Fase 1 (Spec Piloto Documental)** del proyecto raíz en sentido documental.
+
+**Detalles del Hito:**
+- **Commit pendiente de consolidación:** Microfase 1.9
+- **Resumen:** Declaración de cierre formal de la Fase 1 tras completarse documentalmente la especificación piloto **F-013 — Gate manual futuro** (consolidada en commit `585d1c5478c0092b882d9b8d66150acabda4f59b`). Se actualizan los documentos de control y el plan de implementación v0.1.
+
+**Restricciones de Seguridad:**
+- No se abrió la Fase 2, la cual queda pendiente de autorización humana explícita.
+- No se creó código de producto ni scripts en `scripts/`.
+- No se activó runtime técnico, suite de test con `pytest` ni entorno con `uv`.
+- No se modificó ni activó nada en la carpeta `.agent/`.

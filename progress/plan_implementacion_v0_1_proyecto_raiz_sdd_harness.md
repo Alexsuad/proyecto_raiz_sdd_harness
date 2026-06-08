@@ -10,7 +10,7 @@
 Este documento define la hoja de ruta oficial y el plan de implementación v0.1 del proyecto `proyecto_raiz_sdd_harness`. Actúa como la fuente oficial de orden para guiar los pasos de desarrollo técnico, asegurando la coherencia entre las reglas de gobernanza documental, los límites de la constitución del proyecto y el desarrollo progresivo del arnés agéntico bajo el enfoque de Spec-Driven Development (SDD), priorizando el cierre de la etapa documental sobre la implementación técnica.
 
 ## 2. Estado actual del repositorio
-A la fecha actual de este plan, el repositorio tiene la Fase 0 documental cerrada con observaciones controladas. La Fase 1 (Spec Piloto Documental) ha sido abierta de forma controlada y la spec de la feature piloto F-013 se encuentra creada y revisada documentalmente, quedando pendiente de la decisión humana final de cierre.
+A la fecha actual de este plan, el repositorio tiene la Fase 0 documental cerrada con observaciones controladas, y la Fase 1 (Spec Piloto Documental) ha sido formalmente cerrada en sentido documental. La especificación piloto de la feature F-013 fue completada y cerrada documentalmente (commit 585d1c5478c0092b882d9b8d66150acabda4f59b), sin activar ningún runtime ni automatización técnica.
 * **Elementos creados y vigentes:**
   - Gobernanza y mapa documental: `docs/00_mapa_y_gobernanza_documental.md`
   - Metodología base común: `docs/01_metodologia_base_comun.md`
@@ -78,8 +78,8 @@ De acuerdo con el enfoque LEAN de consolidación por capas de valor, el desarrol
    - Ajustar el `README.md` principal con la arquitectura resultante. — [COMPLETADO]
    - Crear la lista oficial de características del arnés (*feature list*). — [COMPLETADO]
    - Auditoría final de cierre de la Fase 0. — [COMPLETADA / COMMIT 0f2ae3e]
-2. **Fase 1: Spec Piloto Documental — [ABIERTA / F-013 REVISADA DOCUMENTALMENTE / DECISIÓN FINAL PENDIENTE]**
-   - Crear la especificación funcional y técnica para la primera característica piloto en `specs/` (F-013), la cual ya ha sido creada y revisada documentalmente, quedando pendiente de la decisión humana final de cierre.
+2. **Fase 1: Spec Piloto Documental — [CERRADA DOCUMENTALMENTE / F-013 COMPLETADA]**
+   - Hito cumplido mediante la feature F-013. La especificación piloto fue creada, revisada, validada y cerrada documentalmente (commit 585d1c5478c0092b882d9b8d66150acabda4f59b). El cierre de Fase 1 es exclusivamente documental y no abre Fase 2, la cual requiere autorización humana explícita.
 3. **Fase 2: Preparación del entorno de pruebas deterministas locales — [FASE POSTERIOR NO ACTIVA]**
    - Configuración de la infraestructura técnica (inicialización virtual con Python y `uv`).
    - Configuración del marco de testing determinista (`pytest`).

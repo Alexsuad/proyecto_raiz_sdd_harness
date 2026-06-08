@@ -25,8 +25,8 @@ Es una **base metodológica, documental y estructural** reutilizable. Funciona c
 
 ## 3. Estado actual
 El repositorio se encuentra con la **Fase 0 documental cerrada con observaciones controladas**.
-La **Fase 1 (Spec Piloto Documental)** ha sido abierta de forma controlada.
-La especificación piloto **F-013 — Gate manual futuro** ha sido completada documentalmente en el repositorio, manteniendo la Fase 1 abierta de forma controlada y sin implicar ninguna implementación técnica, gate técnico activo ni habilitación de runtime (Fase 2 sigue bloqueada).
+La **Fase 1 (Spec Piloto Documental)** ha sido formalmente **cerrada en sentido documental**.
+La especificación piloto **F-013 — Gate manual futuro** ha sido completada documentalmente en el repositorio. La Fase 2 permanece bloqueada sin ningún runtime, script ejecutable ni implementación técnica activa.
 
 * **Creado e incorporado a Git:**
   - Plan de implementación v0.1: [progress/plan_implementacion_v0_1_proyecto_raiz_sdd_harness.md](./progress/plan_implementacion_v0_1_proyecto_raiz_sdd_harness.md)
@@ -95,7 +95,7 @@ El diseño del repositorio raíz busca la **portabilidad e independencia**. Las 
 ---
 
 ## 9. Siguiente paso según el plan
-El siguiente hito es decidir el cierre formal de Fase 1 y preparar, en una microfase separada, la transición controlada hacia Fase 2, manteniendo bloqueado cualquier runtime hasta autorización explícita.
+El siguiente hito es decidir explícitamente si se autoriza la apertura controlada de Fase 2 — Preparación del entorno de pruebas deterministas locales. Hasta esa autorización, todo runtime, scripts, pytest, uv, gates ejecutables y .agent/ permanecen bloqueados.
 
 ---
 
