@@ -63,7 +63,7 @@ Cada capacidad técnica o documental debe clasificarse en uno de los siguientes 
 | **F-017** | Activación de skills | Transición operativa de skills documentales a activas en background. | **futuro/inactivo** | - | Definir metadatos | Bloqueado en esta etapa. |
 | **F-018** | Revisión de adaptadores | Ajuste futuro a los archivos pragmáticos de la raíz. | **futuro/inactivo** | [AGENTS.md](../AGENTS.md) / [GEMINI.md](../GEMINI.md) | Auditoría técnica futura | Requiere el inicio técnico. |
 | **F-019** | Revisión de `.agent/` | Integración operativa y metadatos de configuración en rules/workflows. | **futuro/inactivo** | - | Vincular al entorno de desarrollo | Bloqueado en esta etapa. |
-| **F-020** | Apertura controlada de Fase 2 | Definición de condiciones mínimas para preparar entorno técnico verificable sin desarrollo funcional. | **en revisión** | - | Definir límites y condiciones mínimas | F-020 en curso. Microfase 2.1 define política mínima de entorno técnico. No hay todavía entorno virtual, uv, pytest, scripts ni gates activos. |
+| **F-020** | Apertura controlada de Fase 2 | Definición de condiciones mínimas para preparar entorno técnico verificable sin desarrollo funcional. | **en revisión** | - | Definir límites y condiciones mínimas | F-020 en curso. La Microfase 2.2 validó físicamente el aislamiento del entorno virtual mínimo (.venv) sin código funcional ni pytest/uv. |
 
 ---
 

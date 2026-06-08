@@ -536,3 +536,23 @@ Se ha definido formalmente la política de entorno técnico mínimo para la Fase
 - No se inicializó uv ni pytest.
 - No se crearon scripts.
 - No se modificó `.agent/` ni gates ejecutables.
+
+---
+
+### 2026-06-08 — Creación controlada del entorno virtual mínimo
+
+Se ha creado y validado físicamente el entorno virtual local `.venv` para la Fase 2.
+
+**Detalles del Hito:**
+- **Commit pendiente de consolidación:** Microfase 2.2
+- **Commit base de apertura:** `f86d1f8610934c6e80f14a231d4e7df9a227ff2f`
+- **Resumen:** Creación del entorno virtual mínimo `.venv` en WSL/Linux y verificación de su correcto aislamiento.
+
+**Restricciones de Seguridad e Integridad:**
+- Se validó que Python funciona desde `.venv`.
+- Se validó el aislamiento mediante `sys.prefix` y `sys.base_prefix`.
+- Se verificó que `.venv/` está ignorado por Git de manera correcta en `.gitignore`.
+- No se instalaron dependencias ni se crearon archivos de dependencias (`requirements.txt`).
+- No se inicializó uv ni pytest.
+- No se crearon scripts ni código funcional.
+- No se modificó `.agent/` ni gates ejecutables.

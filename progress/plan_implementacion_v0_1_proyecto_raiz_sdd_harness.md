@@ -83,9 +83,9 @@ De acuerdo con el enfoque LEAN de consolidación por capas de valor, el desarrol
 3. **Fase 2: Preparación mínima para hacer verificable el arnés — [ABIERTA DE FORMA CONTROLADA]**
    - El alcance está limitado estrictamente a la preparación mínima del entorno verificable, sin desarrollo funcional, sin creación de pytest, uv, scripts ejecutables, ni gates activos. La fase no debe superar 4 microfases y se estructura de la siguiente manera:
      * **2.0 — Apertura controlada de Fase 2:** Habilitación documental y revisión de .gitignore (COMPLETADO).
-     * **2.1 — Política de entorno técnico mínimo:** Definir la política del entorno virtual, uv, pytest y límites de scripts (EN CURSO).
-     * **2.2 — Creación controlada del entorno virtual mínimo:** Creación y activación física del entorno virtual y validación del aislamiento.
-     * **2.3 — Verificación mínima reproducible y cierre de Fase 2:** Smoke test básico del entorno y cierre formal.
+     * **2.1 — Política de entorno técnico mínimo:** Definir la política del entorno virtual, uv, pytest y límites de scripts (COMPLETADO).
+     * **2.2 — Creación controlada del entorno virtual mínimo:** Creación y activación física del entorno virtual y validación del aislamiento (COMPLETADA LOCALMENTE PENDIENTE DE COMMIT).
+     * **2.3 — Verificación mínima reproducible y cierre de Fase 2:** Smoke test básico del entorno y cierre formal (PENDIENTE).
 4. **Fase 3: Diseño e implementación de la validación automatizada — [FASE POSTERIOR NO ACTIVA]**
    - Desarrollo del script `scripts/gate_0_preflight.py` para la revisión estática de dependencias, entornos y archivos prohibidos.
 5. **Fase 4: Codificación candidata de la feature piloto — [FASE POSTERIOR NO ACTIVA]**
