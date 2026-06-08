@@ -1,0 +1,93 @@
+# File: progress/feature_list.md
+# ──────────────────────────────────────────────────────────────────────
+# Propósito: Registrar la lista oficial inicial de características (features) y capacidades previstas del arnés.
+# Rol: Inventario operativo documental de seguimiento del avance del MVP.
+# ──────────────────────────────────────────────────────────────────────
+
+# Feature List inicial — Proyecto raíz SDD + Harness
+
+**Versión:** v0.1  
+**Estado:** Candidato pendiente de auditoría  
+**Tipo:** Inventario operativo documental  
+**Ubicación:** `progress/feature_list.md`
+
+---
+
+## 1. Propósito
+Este documento funciona como el inventario oficial de características y capacidades previstas del proyecto raíz `proyecto_raiz_sdd_harness`. Su objetivo es organizar de forma secuencial y estructurada el avance de los entregables durante el MVP actual y estructurar las fases futuras, impidiendo la activación de implementaciones técnicas prematuras fuera del orden LEAN establecido.
+
+---
+
+## 2. Reglas de uso
+* **No equivale a Spec:** Este inventario de capacidades no sustituye en ningún caso a las especificaciones funcionales y de diseño detalladas en la carpeta `specs/`.
+* **No autoriza implementación:** La presencia de una característica en esta lista no faculta a los agentes a iniciar su codificación.
+* **No crea scripts ni gates:** La definición documental de capacidades técnicas futuras no permite la creación física de scripts ejecutables en `scripts/` o gates en `.agent/`.
+* **Evidencia física real:** El cambio de estado de una característica debe estar sustentado por una evidencia física real (commits, diffs, archivos creados en el repositorio), no por intenciones declaradas en el chat.
+
+---
+
+## 3. Estados permitidos de una feature
+Cada capacidad técnica o documental debe clasificarse en uno de los siguientes estados:
+* **completado:** El artefacto documental o técnico ha sido creado, auditado y commiteado en la rama principal.
+* **pendiente:** Característica prioritaria e inmediata dentro de la fase actual a la espera de ser creada.
+* **en revisión:** Artefacto candidato en fase de lectura y auditoría por parte de la revisión humana o cruzada.
+* **bloqueado:** Característica cuyo desarrollo está suspendido debido a dependencias de fases previas no aprobadas.
+* **futuro/inactivo:** Capacidad prevista para fases posteriores inactivas; no operable en este momento.
+* **post-MVP:** Característica técnica de largo plazo excluida de la versión v0.1.
+* **descartado:** Capacidad eliminada del alcance por obsolescencia o sobreingeniería.
+
+---
+
+## 4. Tabla inicial de features/capacidades
+
+| ID | Nombre | Descripción breve | Estado | Evidencia / archivo asociado | Próximo paso | Observaciones |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **F-001** | Plan de implementación v0.1 | Hoja de ruta v0.1 priorizando el orden LEAN de consolidación documental. | **completado** | [plan_implementacion_v0_1...md](./plan_implementacion_v0_1_proyecto_raiz_sdd_harness.md) | Seguimiento del avance | Auditado y consolidado. |
+| **F-002** | Procedimiento de inicio | Guía paso a paso de arranque de proyectos derivados con controles. | **completado** | [procedimiento_inicio...md](../docs/procedimiento_inicio_proyecto_sdd_harness.md) | Mantener actualizado | Ajustado con las directrices agénticas aprobadas. |
+| **F-003** | Origen del proyecto raíz | Registro documental del intake inicial, justificación y alcance negativo. | **completado** | [fase_00_origen...md](./fase_00_origen_del_proyecto_raiz.md) | Mantener como referencia | Consolidado sin autoaprobaciones. |
+| **F-004** | Visión y alcance | Definición de objetivos e hitos finales del MVP estructural. | **completado** | [vision_y_alcance...md](../docs/vision_y_alcance_del_proyecto_raiz.md) | Mantener como referencia | Define los criterios de salida del MVP. |
+| **F-005** | Auditoría arquitectónica | Inventario de la coherencia documental y operativa del repositorio. | **completado** | [auditoria_arquitectonica...md](./auditoria_arquitectonica_interna_2026-06-07.md) | Seguimiento de control | Matizado en estado candidato. |
+| **F-006** | Política de zonas | Reglas de delimitación de carpetas físicas y estados de artefactos. | **completado** | [politica_zonas...md](../docs/politica_zonas_repositorio.md) | Mantener como referencia | Prohíbe limpiezas destructivas ad-hoc. |
+| **F-007** | README raíz | Puerta de entrada y mapa de navegación del repositorio raíz. | **completado** | [README.md](../README.md) | Mantener actualizado | Orienta a humanos y agentes agénticos. |
+| **F-008** | Feature list inicial | Inventario de capacidades y estados del arnés. | **en revisión** | [feature_list.md](./feature_list.md) | Auditar y registrar en Git | Este documento. |
+| **F-009** | Auditoría final de Fase 0 | Reporte de cierre y validación final de entregables documentales. | **pendiente** | - | Crear reporte final | Criterio de salida obligatorio de Fase 0. |
+| **F-010** | Primera spec piloto | Spec funcional y de diseño en `specs/` para la primera feature. | **futuro/inactivo** | - | Iniciar diseño (Fase 1) | Requiere el cierre de Fase 0. |
+| **F-011** | Plantillas de specs | Estándar formalizado de plantillas markdown para la carpeta `specs/`. | **futuro/inactivo** | - | Crear borradores en docs/ | Planificado para fases futuras. |
+| **F-012** | Inventario de validaciones | Definición de reglas estáticas a auditar automáticamente. | **futuro/inactivo** | - | Registro conceptual | Enlace previsto con scripts locales. |
+| **F-013** | Gate manual futuro | Definición de flujos de aprobación y firmas humanas en texto. | **futuro/inactivo** | - | Pauta procedimental | Definir criterios manuales de aprobación |
+| **F-014** | Gate automatizado futuro | Criterios de integración y smoke tests de validación. | **futuro/inactivo** | - | Enlace a scripts/ | Pendiente de suite de testeo. |
+| **F-015** | Scripts deterministas | Inicialización técnica y herramientas de control (`gate_0_preflight.py`). | **futuro/inactivo** | - | Esperar autorización de fase técnica | Inactivo en la Fase 0. |
+| **F-016** | Tests automatizados | Suite de pruebas unitarias locales utilizando `pytest` en `tests/`. | **futuro/inactivo** | - | Esperar autorización de fase técnica | Inactivo en la Fase 0. |
+| **F-017** | Activación de skills | Transición operativa de skills documentales a activas en background. | **futuro/inactivo** | - | Definir metadatos | Bloqueado en esta etapa. |
+| **F-018** | Revisión de adaptadores | Ajuste futuro a los archivos pragmáticos de la raíz. | **futuro/inactivo** | [AGENTS.md](../AGENTS.md) / [GEMINI.md](../GEMINI.md) | Auditoría técnica futura | Requiere el inicio técnico. |
+| **F-019** | Revisión de `.agent/` | Integración operativa y metadatos de configuración en rules/workflows. | **futuro/inactivo** | - | Vincular al entorno de desarrollo | Bloqueado en esta etapa. |
+
+---
+
+## 5. Bloqueos explícitos
+Mientras la Fase 0 del MVP Documental permanezca abierta, se mantienen **estrictamente bloqueados y sin autorización para ser ejecutados** los siguientes componentes:
+* Codificación o creación de especificaciones reales de características en `specs/`.
+* Programación de scripts ejecutables en `scripts/` (incluyendo `gate_0_preflight.py`).
+* Configuración de gates automatizados o inicialización de suites de test locales con `pytest`.
+* Activación técnica de habilidades agénticas, workflows ejecutables o prompts automáticos en la carpeta `.agent/`.
+* Modificación física (creación de archivos candidato de software o alteración de código existente) en el repositorio.
+
+---
+
+## 6. Relación con el plan de implementación
+Este documento constituye el penúltimo entregable de la Fase 0 (Consolidación documental). Provee la estructura necesaria para preparar de forma ordenada la futura transición hacia la Fase 1 (Spec Piloto), pero no habilita de manera autónoma el inicio de desarrollos técnicos o automatizaciones en el repositorio.
+
+---
+
+## 7. Criterios de aceptación
+* [ ] Se listan de forma exhaustiva los entregables documentales ya completados, vinculados con sus archivos correspondientes en Git.
+* [ ] Se realiza una división clara entre las tareas pendientes de la fase actual y las capacidades futuras inactivas.
+* [ ] No se otorga ninguna autorización de codificación técnica.
+* [ ] No se crean plantillas de specs ni automatizaciones en background.
+* [ ] Se mantiene explícita la restricción de bloqueo sobre el runtime y el entorno de pruebas.
+* [ ] Se establece el cierre documental de la Fase 0 a la ejecución de una auditoría final.
+
+---
+
+## 8. Estado del documento
+* **Estado:** Candidato pendiente de auditoría
