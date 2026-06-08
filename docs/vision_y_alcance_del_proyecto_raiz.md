@@ -7,7 +7,7 @@
 # Visión y Alcance del Proyecto Raíz
 
 **Versión:** v0.1  
-**Estado:** Candidato pendiente de auditoría  
+**Estado:** Aprobado dentro del cierre de Fase 0 documental  
 **Tipo:** Documento rector de visión y estrategia  
 **Ubicación:** `docs/vision_y_alcance_del_proyecto_raiz.md`
 

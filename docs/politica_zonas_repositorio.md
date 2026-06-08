@@ -7,7 +7,7 @@
 # Política de Zonas del Repositorio
 
 **Versión:** v0.1  
-**Estado:** Candidato pendiente de auditoría  
+**Estado:** Aprobado dentro del cierre de Fase 0 documental  
 **Tipo:** Política operativa documental  
 **Ubicación:** `docs/politica_zonas_repositorio.md`
 
@@ -126,4 +126,4 @@ Esta política se alinea directamente con las restricciones de la Fase 0 (Consol
 ---
 
 ## 15. Estado del documento
-* **Estado:** Candidato pendiente de auditoría
+* **Estado:** Aprobado dentro del cierre de Fase 0 documental
