@@ -499,3 +499,21 @@ Se ha cerrado formalmente la **Fase 1 (Spec Piloto Documental)** del proyecto ra
 - No se creó código de producto ni scripts en `scripts/`.
 - No se activó runtime técnico, suite de test con `pytest` ni entorno con `uv`.
 - No se modificó ni activó nada en la carpeta `.agent/`.
+
+---
+
+### 2026-06-08 — Apertura controlada de Fase 2
+
+Se ha autorizado formalmente la apertura controlada de la **Fase 2 (Preparación mínima para hacer verificable el arnés)** del proyecto raíz en sentido documental.
+
+**Detalles del Hito:**
+- **Commit pendiente de consolidación:** Microfase 2.0
+- **Commit base de apertura:** `9d7d848a266166a476c48b59df818cce9420797b`
+- **Resumen:** Se abre la Fase 2 con un alcance estrictamente limitado a la preparación de condiciones mínimas de entorno verificable, sin desarrollo funcional, creación de código ni activación técnica.
+
+**Restricciones de Seguridad:**
+- No se autoriza desarrollo funcional ni la creación de código de producto.
+- No se autoriza la creación o ejecución de scripts deterministas todavía.
+- No se autoriza la suite de tests de `pytest` todavía.
+- No se autoriza la inicialización de `uv` todavía.
+- No se autoriza la modificación de `.agent/` ni de gates ejecutables.

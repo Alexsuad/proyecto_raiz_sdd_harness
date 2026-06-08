@@ -17,14 +17,14 @@ Su objetivo es dejar evidencia clara de qué partes del arnés existen como docu
 - **Proyecto:** `proyecto_raiz_sdd_harness`
 - **Tipo de proyecto:** proyecto raíz metodológico y agéntico.
 - **Objetivo:** construir una base reutilizable para futuros proyectos de desarrollo de software con SDD, documentación gobernada, adaptadores operativos, skills, workflows y gates.
-- **Estado actual:** Fase 1 cerrada documentalmente. F-013 completada documentalmente como spec piloto (F-010 satisfecha). Fase 2 permanece bloqueada hasta autorización humana explícita.
-- **Último commit confirmado del repositorio:** fa097ff36aeda0098f7f5405914533727907d85b
+- **Estado actual:** Fase 2 abierta de forma controlada. Fase 2 limitada a la preparación mínima del entorno verificable. No hay desarrollo funcional autorizado, ni scripts, ni gates ejecutables activos. La carpeta `.agent/` sigue bloqueada.
+- **Último commit confirmado del repositorio:** 9d7d848a266166a476c48b59df818cce9420797b
 - **Commit de cierre documental de F-013:** 585d1c5478c0092b882d9b8d66150acabda4f59b
 - **Commit de pre-cierre documental de F-013:** e46870d1c3bf6f3c9f8b681a1579e6257a94c0ce
 - **Commit de revisión documental de F-013:** 17aeb1a2527f932c9bb84489a3701958ea628b5f
 - **Commit de sincronización tras revisión de F-013:** 75f9d0429146e89cf58235f5fd2f946bf94fe5af
 - **Commit de trazabilidad previa:** 424576a5ce2b24781905aa584c879db3ab0f1084
-- **Siguiente paso:** Decisión humana explícita sobre apertura controlada de Fase 2. Hasta entonces, runtime, scripts, pytest, uv, gates ejecutables y .agent/ permanecen bloqueados.
+- **Siguiente paso:** Definir y validar condiciones mínimas de entorno técnico: entorno virtual, .gitignore, decisión sobre uv, decisión sobre pytest y límites de scripts deterministas. Python no debe ejecutarse ni usarse para instalar dependencias hasta que el entorno virtual y .gitignore estén verificados.
 - **Código de producto:** No existe (bloqueado).
 - **Features activas de implementación:** Ninguna (bloqueado). Spec documental piloto F-013: completada documentalmente.
 - **Automatización activa:** Ninguna (bloqueado).
@@ -113,9 +113,10 @@ Hasta nueva autorización explícita y firma humana, se mantienen estrictamente 
 ## 8. Próximo paso recomendado
 
 El próximo hito recomendado es:
-- Decisión humana explícita sobre apertura controlada de Fase 2. Hasta entonces, runtime, scripts, pytest, uv, gates ejecutables y .agent/ permanecen bloqueados.
-- Mantener estrictamente bloqueada cualquier inicialización de código técnico o automatización en background.
-- **Readiness documental para Fase 2:** pendiente de autorización humana explícita. Antes de abrir Fase 2 deberán definirse condiciones mínimas para entorno virtual, uv, pytest, .gitignore, scripts deterministas y límites de ejecución.
+- Definir y validar condiciones mínimas de entorno técnico: entorno virtual, .gitignore, decisión sobre uv, decisión sobre pytest y límites de scripts deterministas.
+- Python no debe ejecutarse ni usarse para instalar dependencias hasta que el entorno virtual y .gitignore estén verificados.
+- Mantener estrictamente bloqueada cualquier inicialización de código técnico, scripts, gates ejecutables, pytest, uv o automatizaciones de `.agent/` en background.
+- **Readiness documental para Fase 2:** Registrado.
 
 ## 9. Definición documental de Gate 0
 

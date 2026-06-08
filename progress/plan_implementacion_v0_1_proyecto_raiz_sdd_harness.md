@@ -10,7 +10,7 @@
 Este documento define la hoja de ruta oficial y el plan de implementación v0.1 del proyecto `proyecto_raiz_sdd_harness`. Actúa como la fuente oficial de orden para guiar los pasos de desarrollo técnico, asegurando la coherencia entre las reglas de gobernanza documental, los límites de la constitución del proyecto y el desarrollo progresivo del arnés agéntico bajo el enfoque de Spec-Driven Development (SDD), priorizando el cierre de la etapa documental sobre la implementación técnica.
 
 ## 2. Estado actual del repositorio
-A la fecha actual de este plan, el repositorio tiene la Fase 0 documental cerrada con observaciones controladas, y la Fase 1 (Spec Piloto Documental) ha sido formalmente cerrada en sentido documental. La especificación piloto de la feature F-013 fue completada y cerrada documentalmente (commit 585d1c5478c0092b882d9b8d66150acabda4f59b), sin activar ningún runtime ni automatización técnica.
+A la fecha actual de este plan, el repositorio tiene la Fase 0 documental cerrada con observaciones controladas, la Fase 1 (Spec Piloto Documental) formalmente cerrada en sentido documental (commit 585d1c5478c0092b882d9b8d66150acabda4f59b), y la **Fase 2 (Preparación mínima para hacer verificable el arnés)** abierta de forma controlada. No hay desarrollo funcional autorizado ni creación de código de producto.
 * **Elementos creados y vigentes:**
   - Gobernanza y mapa documental: `docs/00_mapa_y_gobernanza_documental.md`
   - Metodología base común: `docs/01_metodologia_base_comun.md`
@@ -80,9 +80,14 @@ De acuerdo con el enfoque LEAN de consolidación por capas de valor, el desarrol
    - Auditoría final de cierre de la Fase 0. — [COMPLETADA / COMMIT 0f2ae3e]
 2. **Fase 1: Spec Piloto Documental — [CERRADA DOCUMENTALMENTE / F-013 COMPLETADA]**
    - Hito cumplido mediante la feature F-013. La especificación piloto fue creada, revisada, validada y cerrada documentalmente (commit 585d1c5478c0092b882d9b8d66150acabda4f59b). El cierre de Fase 1 es exclusivamente documental y no abre Fase 2, la cual requiere autorización humana explícita.
-3. **Fase 2: Preparación del entorno de pruebas deterministas locales — [FASE POSTERIOR NO ACTIVA]**
-   - Configuración de la infraestructura técnica (inicialización virtual con Python y `uv`).
-   - Configuración del marco de testing determinista (`pytest`).
+3. **Fase 2: Preparación mínima para hacer verificable el arnés — [ABIERTA DE FORMA CONTROLADA]**
+   - El alcance está limitado estrictamente a la preparación mínima del entorno verificable, sin desarrollo funcional, sin creación de pytest, uv, scripts ejecutables, ni gates activos. El primer tramo se divide en la definición y validación de condiciones mínimas:
+     1. Verificar .gitignore (evitar filtración de entornos/cachés/secretos).
+     2. Definir la política de entorno virtual obligatorio.
+     3. Definir si se usará uv y bajo qué límites.
+     4. Definir si se usará pytest y bajo qué límites.
+     5. Definir criterios para futuros scripts deterministas.
+     6. Mantener la estructura de `.agent/` y gates ejecutables estrictamente bloqueados.
 4. **Fase 3: Diseño e implementación de la validación automatizada — [FASE POSTERIOR NO ACTIVA]**
    - Desarrollo del script `scripts/gate_0_preflight.py` para la revisión estática de dependencias, entornos y archivos prohibidos.
 5. **Fase 4: Codificación candidata de la feature piloto — [FASE POSTERIOR NO ACTIVA]**
