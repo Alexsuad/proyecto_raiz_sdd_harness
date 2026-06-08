@@ -424,3 +424,26 @@ Se ha cerrado formalmente la **Fase 0 (Consolidación Documental y del MVP Estru
 **Próximo Estado del Proyecto:**
 - La Fase 0 queda oficialmente **cerrada**.
 - La Fase 1 (Spec Piloto Documental) queda en estado **pendiente de autorización humana explícita** para su apertura. Se mantienen bloqueadas las suites de testeo (`pytest`), entornos de ejecución (`uv`), gates automatizados o inyección de código.
+
+---
+
+### 2026-06-08 — Apertura controlada de Fase 1 y creación de spec piloto F-013
+
+Se ha abierto la **Fase 1 (Spec Piloto Documental)** de forma controlada y se ha creado físicamente la especificación piloto en la carpeta `specs/f_013_gate_manual_futuro/`.
+
+**Detalles del Hito:**
+- **Commit Asociado:** `ccfac0b895cbbfbcf2c125df1262d29482d8c36f` (ccfac0b)
+- **Ruta de Spec:** `specs/f_013_gate_manual_futuro/`
+- **Archivos creados:**
+  * `requirements.md`: define alcance, roles y bloqueos explícitos.
+  * `design.md`: detalla estados de transición y bloque de firma en texto.
+  * `tasks.md`: registra tareas atómicas documentales pendientes.
+  * `validation.md`: pauta de validación procedimental y casos manuales.
+  * `review.md`: plantilla de dictamen final.
+- **Estado de la Spec:** Candidata y en revisión (`review.md` en estado `abierto` / pendiente de dictamen).
+
+**Restricciones de Seguridad:**
+- Se confirma que no se han creado scripts, lógicas de software, ni gates ejecutables.
+- El runtime técnico, `pytest` y `uv` se mantienen estrictamente bloqueados.
+- Las skills de background y workflows automáticos en `.agent/` siguen sin activarse.
+- No se declara finalizada la feature F-013 ni se declara cerrada la Fase 1.
