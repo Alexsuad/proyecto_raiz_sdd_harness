@@ -33,8 +33,8 @@ El repositorio se encuentra en la **Fase 0 / MVP Documental Estructural**.
   - Auditoría arquitectónica interna: [progress/auditoria_arquitectonica_interna_2026-06-07.md](./progress/auditoria_arquitectonica_interna_2026-06-07.md)
   - Política de zonas del repositorio: [docs/politica_zonas_repositorio.md](./docs/politica_zonas_repositorio.md)
 * **Pendientes de la Fase 0 (MVP Documental):**
-  - Lista oficial de características (*feature list*).
-  - Auditoría final de cierre de la Fase 0.
+  - Revisión externa/humana de la auditoría final de cierre de Fase 0.
+  - Commit del reporte de auditoría final, si queda aprobado.
 * **Pendientes de fases posteriores (Bloqueados):**
   - Inicialización del entorno de pruebas deterministas e infraestructura técnica.
 
@@ -94,7 +94,7 @@ El diseño del repositorio raíz busca la **portabilidad e independencia**. Las 
 
 ## 9. Siguiente paso según el plan
 Una vez validada y consolidada la puerta de entrada oficial en el repositorio, la hoja de ruta documental establece como siguiente hito de la Fase 0:
-* Crear el archivo: [progress/feature_list.md](./progress/feature_list.md) (para listar las características previstas del arnés).
+* Revisar y consolidar [progress/auditoria_final_cierre_fase_0_2026-06-07.md](./progress/auditoria_final_cierre_fase_0_2026-06-07.md).
 
 ---
 

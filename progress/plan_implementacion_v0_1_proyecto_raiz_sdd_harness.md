@@ -52,7 +52,7 @@ Para garantizar la calidad en el desarrollo híbrido (IA + determinismo), se imp
 * **Checklist de preparación antes de avanzar:** Se requiere la verificación obligatoria del preflight estructural (`docs/preflight_estructural.md`) y la confirmación de limpieza del workspace antes de admitir cambios o crear nuevos archivos en el repositorio.
 * **Memoria externa del proceso:** Se utiliza la carpeta `progress/` (en particular `current.md` y `history.md`) como el cuaderno de bitácora oficial que preserva el estado del repositorio de manera persistente, evitando depender del historial de la sesión del chat.
 * **Ciclo de mejora continua controlado:** Las ineficiencias o bugs de diseño detectados se corrigen mediante un bucle cerrado de retroalimentación donde se actualizan de forma ordenada las guías metodológicas o de estilo de código, sin introducir cambios ad-hoc sobre el código bajo prueba.
-* **Control Input/Output:** Cada proceso o script de validación técnica debe declarar con precisión sus datos de entrada esperados y los artefactos de salida (evidencias, reportes, logs estructurados) que se ubicarán en `/output`.
+* **Control Input/Output:** Cada proceso o script de validación técnica debe declarar con precisión sus datos de entrada esperados y los artefactos de salida (evidencias, reportes, logs estructurados) que se registrarán en sedes aprobadas de evidencia, como progress/, reportes de validación o una futura zona de outputs cuando sea definida formalmente.
 
 ## 7. Orquestador como rol procedimental
 * El Orquestador se define en esta fase únicamente como un **rol procedimental y lógico** dentro del flujo metodológico.
@@ -72,10 +72,10 @@ De acuerdo con el enfoque LEAN de consolidación por capas de valor, el desarrol
    - Crear el origen del proyecto raíz (`progress/fase_00_origen_del_proyecto_raiz.md`). — [COMPLETADO]
    - Crear la visión y alcance oficial del repositorio raíz (`docs/vision_y_alcance_del_proyecto_raiz.md`). — [COMPLETADO]
    - Realizar la auditoría arquitectónica interna inicial del repositorio (`progress/auditoria_arquitectonica_interna_2026-06-07.md`). — [COMPLETADO]
-   - Definir la política de zonas de trabajo y restricción del espacio de archivos. — [PENDIENTE]
-   - Ajustar el `README.md` principal con la arquitectura resultante. — [PENDIENTE]
-   - Crear la lista oficial de características del arnés (*feature list*). — [PENDIENTE]
-   - Auditoría final de cierre de la Fase 0. — [PENDIENTE]
+   - Definir la política de zonas de trabajo y restricción del espacio de archivos. — [COMPLETADO]
+   - Ajustar el `README.md` principal con la arquitectura resultante. — [COMPLETADO]
+   - Crear la lista oficial de características del arnés (*feature list*). — [COMPLETADO]
+   - Auditoría final de cierre de la Fase 0. — [CREADA / EN REVISIÓN]
 2. **Fase 1: Spec Piloto Documental — [PENDIENTE]**
    - Crear la especificación funcional y técnica para la primera característica piloto en `specs/`, en estado puramente documental y aprobado por el humano.
 3. **Fase 2: Preparación del entorno de pruebas deterministas locales — [FASE POSTERIOR NO ACTIVA]**
@@ -96,13 +96,13 @@ De acuerdo con el enfoque LEAN de consolidación por capas de valor, el desarrol
 * Auditoría arquitectónica interna del repositorio registrada (`progress/auditoria_arquitectonica_interna_2026-06-07.md`).
 * Sedes documentales del arnés organizadas (`specs/`, `progress/`, `scripts/`, `tests/`, `docs/adr/`).
 * Estructura agéntica conceptual mínima y no activa en `.agent/` (workflows, skills y reglas locales iniciales).
+* Política de zonas de trabajo y restricción del espacio de archivos definida.
+* `README.md` principal ajustado.
+* Lista de características (`feature_list.md`) creada.
 
 ## 11. Qué está pendiente
 * **Pendientes inmediatos (Fase 0 - Documental/Procedimental):**
-  - Definir la política de zonas de trabajo y espacio de archivos.
-  - Ajustar el `README.md` principal.
-  - Crear la lista de características (*feature list*).
-  - Auditoría final de cierre de la Fase 0.
+  - Revisión y aprobación formal (commit) de la auditoría final de cierre de la Fase 0.
 * **Pendientes de fases técnicas posteriores (Inactivos en este momento):**
   - Configuración del entorno de pruebas unitarias locales en `tests/`.
   - Programación del script determinista `scripts/gate_0_preflight.py`.
@@ -121,7 +121,7 @@ De acuerdo con el enfoque LEAN de consolidación por capas de valor, el desarrol
 * Las respuestas de APIs y stubs utilizadas para tests de integración no deben ser simuladas o "maquilladas" por el razonamiento del agente si los servicios reales fallan.
 
 ## 14. Criterios de aceptación por fase
-* **Para avanzar de Fase Documental (Fase 0) a Spec Piloto (Fase 1):** Cierre y aprobación de todos los documentos requeridos de la Fase 0 (procedimiento de inicio, origen, visión, auditoría arquitectónica, política de zonas, README y feature list).
+* **Para avanzar de Fase Documental (Fase 0) a Spec Piloto (Fase 1):** Cierre y aprobación de todos los documentos requeridos de la Fase 0 (procedimiento de inicio, origen, visión, auditoría arquitectónica, política de zonas, README, feature list y auditoría final de cierre de Fase 0).
 * **Para avanzar a Entorno de Pruebas (Fase 2):** Aprobación y firma de la Spec Piloto por parte del desarrollador humano.
 * **Para avanzar a Script de Validaciones (Fase 3):** Configuración exitosa del entorno virtual con `uv` y `pytest`.
 * **Para avanzar a Codificación (Fase 4):** Script `gate_0_preflight.py` funcional y reportando sin falsos positivos.
