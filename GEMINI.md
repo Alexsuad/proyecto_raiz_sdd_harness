@@ -35,21 +35,14 @@ Cuando Antigravity o Gemini trabajen en este repositorio deben cumplir estas reg
 - No usar respuestas de chat como fuente oficial de verdad.
 - No autoaprobar cambios relevantes.
 - Detenerse y reportar si existe ambigüedad, riesgo o conflicto documental.
+- **Política de Commits:** No realizar commits ni pushes por microfase local. Consolidar cambios en un único commit/push por fase o bloque real tras aprobación humana.
+- **Revisión de Documentación al Cierre:** Al finalizar cada fase, auditar y actualizar `README.md`, `AGENTS.md`, `GEMINI.md`, `progress/` y documentos de soporte correspondientes.
 
-## 4. Uso actual del arnés
-
-El proyecto está en fase documental/MVP.
-
-Mientras no existan plantillas mínimas de `specs/`, skills básicas, workflows y gates auditados, Antigravity no debe actuar como agente implementador sobre código real de proyectos derivados.
-
-El uso actual permitido es:
-
-- planificación;
-- documentación;
-- edición controlada;
-- revisión de documentos;
-- simulación;
-- creación progresiva de estructura del arnés cuando sea autorizada.
+El proyecto se encuentra en etapa de MVP. La Fase 3 de verificación automatizada ya fue implementada y publicada.
+- **Verificación Determinista Mínima:** Utilizar siempre el script `scripts/gate_0_preflight.py` para validar la estructura del repositorio localmente mediante `.venv/bin/python scripts/gate_0_preflight.py`.
+- **Límites de herramientas:** No se debe activar `pytest`, `uv`, GitHub Actions ni inicializar la automatización de `.agent/` de fondo sin autorización explícita.
+- Mientras no existan plantillas mínimas de `specs/` y skills de fondo habilitadas, Antigravity no debe actuar como implementador sobre código de proyectos derivados.
+- El uso actual permitido es planificación, documentación, edición controlada, ejecución del preflight local en mantenimiento, y simulaciones.
 
 ## 5. Cierre obligatorio
 

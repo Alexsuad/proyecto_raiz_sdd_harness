@@ -82,9 +82,10 @@ De acuerdo con el enfoque LEAN de consolidación por capas de valor, el desarrol
    - Hito cumplido mediante la feature F-013. La especificación piloto fue creada, revisada, validada y cerrada documentalmente (commit 585d1c5478c0092b882d9b8d66150acabda4f59b). El cierre de Fase 1 es exclusivamente documental y no abre Fase 2, la cual requiere autorización humana explícita.
 3. **Fase 2: Preparación mínima para hacer verificable el arnés — [CERRADA]**
    - El alcance estuvo limitado estrictamente a la preparación mínima del entorno verificable. Se completó la creación del entorno virtual `.venv` y la ejecución del smoke test mínimo reproducible. Fase cerrada y consolidada en Git (commit 5a8f044).
-4. **Fase 3: Verificación automatizada mínima del arnés — [ABIERTA LOCALMENTE]**
-   - Límite operativo explícito: La Fase 3 no debe crear una suite amplia de tests ni activar pytest/uv. Su alcance se limita a una verificación local mínima ejecutable con Python estándar desde `.venv`. Se ha creado e implementado localmente de forma candidata el script determinista básico (`scripts/gate_0_preflight.py`) para comprobar las reglas estructurales del repositorio.
-5. **Fase 4: Codificación candidata de la feature piloto — [FASE POSTERIOR NO ACTIVA]**
+4. **Fase 3: Verificación automatizada mínima del arnés — [CERRADA / IMPLEMENTADA Y PUBLICADA]**
+   - Se completó y publicó en GitHub (commit 83dfef4) el script determinista de validación estructural básica `scripts/gate_0_preflight.py`. Cumple la política de no depender de `pytest`, `uv` ni bibliotecas externas.
+5. **Fase 4: Codificación candidata de la feature piloto — [PENDIENTE DE DEFINICIÓN Y APROBACIÓN HUMANA]**
+   - Esta fase permanece inactiva. Antes de iniciar cualquier codificación, se requiere definir formalmente el alcance y obtener la aprobación humana correspondiente.
 6. **Fase 5: Validación cruzada y ejecución de gates de código — [FASE POSTERIOR NO ACTIVA]**
 
 ## 10. Qué está completado

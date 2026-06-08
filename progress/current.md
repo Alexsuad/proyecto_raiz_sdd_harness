@@ -17,8 +17,8 @@ Su objetivo es dejar evidencia clara de qué partes del arnés existen como docu
 - **Proyecto:** `proyecto_raiz_sdd_harness`
 - **Tipo de proyecto:** proyecto raíz metodológico y agéntico.
 - **Objetivo:** construir una base reutilizable para futuros proyectos de desarrollo de software con SDD, documentación gobernada, adaptadores operativos, skills, workflows y gates.
-- **Estado actual:** Fase 2 cerrada. La Fase 3 se encuentra abierta de forma local. Se ha creado e implementado de manera local la verificación automatizada mínima candidata (`scripts/gate_0_preflight.py`), la cual valida de manera determinista las reglas básicas de seguridad estructural del repositorio. Las suites de pruebas y herramientas de testing (`pytest`, `uv`), los pipelines de integración continua (GitHub Actions, workflows activos) y el inicio de la Fase 4 permanecen estrictamente bloqueados.
-- **Último commit confirmado del repositorio:** 5a8f044bbab0dfc1fd86723f5e4cc4dc91b46f05 (chore: cerrar fase 2 de entorno verificable)
+- **Estado actual:** Fase 3 implementada y publicada en GitHub. El script de verificación automatizada mínima (`scripts/gate_0_preflight.py`) se encuentra activo de forma local para validar las reglas estructurales básicas. Las suites de pruebas y herramientas de testing (`pytest`, `uv`), los pipelines de integración continua (GitHub Actions, workflows activos) y la Fase 4 permanecen estrictamente bloqueados y no activos. La carpeta `.agent/` sigue sin activación técnica.
+- **Último commit confirmado del repositorio:** 83dfef432fb3adc5d23663fd52180c16fb396b3d (feat: agregar verificacion preflight minima)
 - **Commit de creación controlada del entorno virtual mínimo:** a1fd0b81ea4b053424dd2623cc9e8eaa487a8708
 - **Commit de política de entorno técnico mínimo:** f86d1f8610934c6e80f14a231d4e7df9a227ff2f
 - **Commit de apertura controlada de Fase 2:** f0c9f840b04e46e1851ab1739e946f07ac518ad4
@@ -28,7 +28,7 @@ Su objetivo es dejar evidencia clara de qué partes del arnés existen como docu
 - **Commit de revisión documental de F-013:** 17aeb1a2527f932c9bb84489a3701958ea628b5f
 - **Commit de sincronización tras revisión de F-013:** 75f9d0429146e89cf58235f5fd2f946bf94fe5af
 - **Commit de trazabilidad previa:** 424576a5ce2b24781905aa584c879db3ab0f1084
-- **Siguiente paso:** Revisión humana final y consolidación de la Fase 3 local.
+- **Siguiente paso:** Definir el alcance de la Fase 4 antes de abrirla de forma controlada.
 - **Código de producto:** No existe (bloqueado).
 - **Features activas de implementación:** Ninguna (bloqueado). Spec documental piloto F-013: completada documentalmente.
 - **Automatización activa:** Ninguna (bloqueado).
@@ -117,8 +117,8 @@ Hasta nueva autorización explícita y firma humana, se mantienen estrictamente 
 ## 8. Próximo paso recomendado
 
 El próximo hito recomendado es:
-- **Revisión humana final y consolidación de la Fase 3 local.**
-- **Implementación local de Fase 3:** Creación del script `scripts/gate_0_preflight.py` y validación local de reglas estructurales.
+- **Definición de alcance de la Fase 4 antes de abrirla de forma controlada.**
+- **Fase 3 (Verificación automatizada mínima del arnés):** Implementada y publicada. Script `scripts/gate_0_preflight.py` funcional y verificado.
 - **Cierre de Fase 2 (Microfase 2.3):** Entorno virtual local `.venv` creado, validado y cerrado de forma consolidada en Git.
 - **Verificación mínima reproducible (Microfase 2.3):** Smoke test mínimo reproducible ejecutado y validado localmente desde `.venv`.
 - **Creación controlada del entorno virtual mínimo (Microfase 2.2):** Entorno virtual local `.venv` creado y validado físicamente.

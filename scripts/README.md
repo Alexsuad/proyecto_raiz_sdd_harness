@@ -31,12 +31,12 @@ Los gates son puertas de control que determinan si una tarea puede avanzar o deb
 
 Los scripts de esta carpeta podrán implementar gates como:
 
-- `gate_0_preflight.py`: validación inicial de estructura, documentos base y archivos mínimos.
+- `gate_0_preflight.py`: [IMPLEMENTADO] verificación mínima local de estructura, documentos base y exclusión de dependencias de testing.
 - `gate_spec_ready.py`: validación de que una spec contiene los archivos y campos mínimos requeridos.
 - `gate_pre_implementation.py`: validación previa a permitir implementación candidata.
 - `gate_review.py`: validación previa al cierre o aprobación final de una tarea.
 
-Estos scripts no se crean todavía para evitar automatización prematura.
+El script de preflight ya está implementado, mientras que los demás scripts no se crean todavía para evitar automatización prematura.
 
 ## 4. Regla de salida de los gates
 
@@ -64,7 +64,7 @@ Esta carpeta no debe usarse para guardar:
 
 ## 6. Estado actual
 
-- **Estado:** sede documental creada.
-- **Scripts activos:** ninguno.
-- **Gates activos:** ninguno.
-- **Pendiente:** crear `gate_0_preflight.py` cuando el arnés cuente con estructura mínima suficiente y autorización explícita.
+- **Estado:** script de validación mínima operativa creado.
+- **Scripts activos:** `gate_0_preflight.py` (verificación estructural mínima local ejecutable desde `.venv`, sin `pytest`, `uv` ni dependencias externas).
+- **Gates activos:** `gate_0_preflight.py`.
+- **Pendiente:** definir alcance y criterios de cierre de Fase 4 para la feature piloto.

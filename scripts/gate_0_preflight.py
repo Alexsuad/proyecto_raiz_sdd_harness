@@ -35,8 +35,14 @@ ALLOWED_MODIFIED_FILES = [
     "progress/current.md",
     "progress/feature_list.md",
     "progress/history.md",
-    "progress/plan_implementacion_v0_1_proyecto_raiz_sdd_harness.md",
-    "scripts/gate_0_preflight.py"
+    "progress/plan_implementacion_v0_1_proyecto_raiz_sdd_harness.md"
+]
+
+MAINTENANCE_ALLOWED_FILES = [
+    "scripts/gate_0_preflight.py",
+    "AGENTS.md",
+    "GEMINI.md",
+    "scripts/README.md"
 ]
 
 def print_result(check_name, success, message=""):
@@ -50,17 +56,19 @@ def check_gitignore_exists():
     return exists
 
 def check_venv_ignored():
-    path = os.path.join(ROOT_DIR, ".gitignore")
-    if not os.path.exists(path):
+    try:
+        # Usar git check-ignore -q .venv/ como fuente de verdad
+        result = subprocess.run(
+            ["git", "check-ignore", "-q", ".venv/"],
+            cwd=ROOT_DIR
+        )
+        # Si devuelve código de salida 0, significa que .venv/ está efectivamente ignorado
+        ignored = (result.returncode == 0)
+        print_result("Ignorado de .venv", ignored, ".venv/ está correctamente ignorado por Git" if ignored else ".venv/ no está ignorado por Git")
+        return ignored
+    except Exception as e:
+        print_result("Ignorado de .venv", False, f"Error al ejecutar git check-ignore: {e}")
         return False
-    
-    with open(path, "r", encoding="utf-8") as f:
-        content = f.read()
-    
-    # Comprobar si se ignora .venv
-    ignored = ".venv/" in content or ".venv" in content
-    print_result("Ignorado de .venv", ignored, ".venv/ está listado en .gitignore" if ignored else ".venv/ no está en .gitignore")
-    return ignored
 
 def check_unauthorized_files():
     found_any = False
@@ -99,7 +107,7 @@ def check_required_documents():
     print_result("Documentos mínimos", success, "Todos presentes" if success else f"Faltan: {', '.join(missing)}")
     return success
 
-def check_unauthorized_git_changes():
+def check_unauthorized_git_changes(maintenance_mode):
     try:
         # Ejecutar git status --short
         result = subprocess.run(
@@ -113,6 +121,11 @@ def check_unauthorized_git_changes():
         lines = result.stdout.strip().split("\n")
         unauthorized = []
         
+        # Unir las listas de permitidos dependiendo del modo
+        allowed_list = list(ALLOWED_MODIFIED_FILES)
+        if maintenance_mode:
+            allowed_list.extend(MAINTENANCE_ALLOWED_FILES)
+            
         for line in lines:
             if not line.strip():
                 continue
@@ -128,7 +141,7 @@ def check_unauthorized_git_changes():
             
             # Omitir archivos que estén en la lista de permitidos
             is_allowed = False
-            for allowed in ALLOWED_MODIFIED_FILES:
+            for allowed in allowed_list:
                 if filepath_norm == allowed:
                     is_allowed = True
                     break
@@ -146,13 +159,19 @@ def check_unauthorized_git_changes():
 
 def main():
     print("=== INICIANDO PREFLIGHT GATE 0 ===")
+    
+    # Comprobar modo mantenimiento
+    maintenance_mode = os.environ.get("GATE_PREFLIGHT_MAINTENANCE") == "1"
+    if maintenance_mode:
+        print("[NOTA] Modo mantenimiento ACTIVO. Se permiten modificaciones temporales en el script de preflight.")
+        
     checks = [
         check_gitignore_exists(),
         check_venv_ignored(),
         check_unauthorized_files(),
         check_pytest_files(),
         check_required_documents(),
-        check_unauthorized_git_changes()
+        check_unauthorized_git_changes(maintenance_mode)
     ]
     
     print("==================================")

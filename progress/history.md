@@ -585,13 +585,25 @@ Se propone formalmente el alcance de la **Fase 3 — Verificación automatizada 
 
 ---
 
-### 2026-06-08 — Implementación local de verificación automatizada mínima
+### 2026-06-08 — Implementación y publicación de la verificación automatizada mínima
 
-Se ha abierto e implementado localmente el desarrollo de la **Fase 3 — Verificación automatizada mínima del arnés**.
+Se ha cerrado e implementado la **Fase 3 — Verificación automatizada mínima del arnés**.
 
 **Detalles del Hito:**
-- Se creó el script determinista independiente `scripts/gate_0_preflight.py`.
+- Se creó y publicó el script determinista independiente `scripts/gate_0_preflight.py`.
 - Se ejecutó y validó localmente desde el entorno virtual `.venv`.
 - El script no utiliza `pytest`, `uv` ni dependencias externas, basándose únicamente en la biblioteca estándar de Python.
-- La Fase 4 (Codificación candidata de la feature piloto) permanece estrictamente **inactiva/cerrada** y no fue abierta.
-- No se ha realizado commit ni push remoto de este desarrollo local, quedando a la espera de la revisión humana.
+- Los cambios fueron consolidados y publicados en GitHub en el commit `83dfef432fb3adc5d23663fd52180c16fb396b3d`.
+
+---
+
+### 2026-06-08 — Saneamiento post-Fase 3 y consistencia documental
+
+Se ha realizado un saneamiento de consistencia documental en el repositorio tras la publicación de la Fase 3.
+
+**Detalles del Hito:**
+- Se normaliza la documentación para reflejar que la Fase 3 e hito F-021 han sido completados, integrados y publicados.
+- Se actualizaron e integraron las nuevas reglas de control agéntico en `README.md`, `AGENTS.md`, `GEMINI.md`, `progress/` y `scripts/README.md`.
+- Se mantiene la Fase 4 (Codificación candidata de la feature piloto) estrictamente **inactiva/cerrada** y pendiente de aprobación humana de alcance.
+- Se mantiene el bloqueo de `uv`, `pytest`, GitHub Actions, workflows y automatizaciones de `.agent/` en background.
+- Se registra y aplica formalmente la política operativa de commits por fase o bloque funcional real en lugar de commits por microfase.

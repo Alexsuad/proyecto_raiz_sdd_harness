@@ -64,7 +64,7 @@ Cada capacidad técnica o documental debe clasificarse en uno de los siguientes 
 | **F-018** | Revisión de adaptadores | Ajuste futuro a los archivos pragmáticos de la raíz. | **futuro/inactivo** | [AGENTS.md](../AGENTS.md) / [GEMINI.md](../GEMINI.md) | Auditoría técnica futura | Requiere el inicio técnico. |
 | **F-019** | Revisión de `.agent/` | Integración operativa y metadatos de configuración en rules/workflows. | **futuro/inactivo** | - | Vincular al entorno de desarrollo | Bloqueado en esta etapa. |
 | **F-020** | Apertura controlada de Fase 2 | Definición de condiciones mínimas para preparar entorno técnico verificable sin desarrollo funcional. | **completado** | [current.md](./current.md) (commit 5a8f044) | Definición de Fase 3 | Fase 2 cerrada y publicada en GitHub. |
-| **F-021** | Verificación automatizada mínima del arnés | Definir y crear una verificación local mínima, sin pytest, sin uv y sin dependencias externas. | **en revisión** | [gate_0_preflight.py](../scripts/gate_0_preflight.py) | Revisión humana del script | Fase 3 propuesta y desarrollada de forma local. |
+| **F-021** | Verificación automatizada mínima del arnés | Definir y crear una verificación local mínima, sin pytest, sin uv y sin dependencias externas. | **completado** | [gate_0_preflight.py](../scripts/gate_0_preflight.py) | Definir Fase 4 | Fase 3 implementada y publicada. |
 
 ---
 
