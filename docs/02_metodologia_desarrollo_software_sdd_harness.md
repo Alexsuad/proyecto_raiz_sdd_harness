@@ -213,6 +213,11 @@ Directrices de validación proporcional:
 
 *Límite del MVP:* Esta guía de validación avanzada constituye un marco de referencia metodológico proporcional para desarrollos futuros. No se considera obligatoria para tareas comunes y no habilita bajo ningún concepto la inicialización activa de entornos virtuales, frameworks de testing o gates lógicos automatizados en esta fase documental.
 
+## 18.2. Rol operativo y autoauditoría agéntica (Desarrollo Híbrido)
+Los agentes avanzados usados en este proyecto (tales como Antigravity, Codex o similares) no deben operar como simples digitadores de código o documentación. Deben actuar como ejecutores y auditores agénticos: es decir, deben analizar el contexto, ejecutar la tarea de forma autónoma, verificar criterios de aceptación, autoauditar su propio resultado detectando desvíos o errores, aplicar las correcciones correspondientes dentro del alcance autorizado y entregar evidencias técnicas verificables. 
+
+Por su parte, la revisión humana no debe desgastarse en microvalidar cada edición trivial de texto o código; debe concentrarse en la revisión conceptual, los puntos clave de decisión, la evaluación de riesgos, las transiciones de fase y la aprobación del dictamen final. Sin embargo, en ningún caso el agente puede sustituir la autoridad humana final. El cierre de fases, la activación del runtime, la creación de gates ejecutables o la aprobación de cambios técnicos críticos siempre requerirán la autorización explícita e independiente del desarrollador humano.
+
 ## 19. Límites del MVP actual
 Este documento establece la estructura lógica de desarrollo de software, pero no crea ni habilita de forma operativa los siguientes elementos, los cuales quedan pendientes para fases posteriores:
 

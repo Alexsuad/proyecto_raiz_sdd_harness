@@ -17,9 +17,9 @@ Su objetivo es dejar evidencia clara de qué partes del arnés existen como docu
 - **Proyecto:** `proyecto_raiz_sdd_harness`
 - **Tipo de proyecto:** proyecto raíz metodológico y agéntico.
 - **Objetivo:** construir una base reutilizable para futuros proyectos de desarrollo de software con SDD, documentación gobernada, adaptadores operativos, skills, workflows y gates.
-- **Estado actual:** Fase 1 abierta de forma controlada. Spec piloto F-013 creada como candidata documental en revisión.
-- **Último commit confirmado:** ccfac0b2b2a265672f614f91991a0ca465fc9206 (ccfac0b)
-- **Siguiente paso:** revisión humana de la spec F-013, especialmente `review.md`.
+- **Estado actual:** Fase 1 abierta de forma controlada. Spec piloto F-013 en revisión avanzada (revisión documental registrada en GitHub, sin implicar implementación técnica).
+- **Último commit confirmado:** 17aeb1a2527f932c9bb84489a3701958ea628b5f (Trazabilidad previa: 424576a5ce2b24781905aa584c879db3ab0f1084)
+- **Siguiente paso:** Decisión humana final sobre si F-013 se declara completada documentalmente o si requiere ajustes menores antes del cierre de la feature.
 - **Código de producto:** No existe (bloqueado).
 - **Features activas:** Ninguna (bloqueado).
 - **Automatización activa:** Ninguna (bloqueado).
@@ -108,7 +108,7 @@ Hasta nueva autorización explícita y firma humana, se mantienen estrictamente 
 ## 8. Próximo paso recomendado
 
 El próximo hito recomendado es:
-- Revisar y auditar de forma humana la spec piloto F-013 (`specs/f_013_gate_manual_futuro/review.md`) para dictaminar su aprobación.
+- Decisión humana final sobre si F-013 se declara completada documentalmente o si requiere ajustes menores antes del cierre de la feature.
 - Mantener estrictamente bloqueada cualquier inicialización de código técnico o automatización en background.
 
 ## 9. Definición documental de Gate 0

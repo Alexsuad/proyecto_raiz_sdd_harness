@@ -447,3 +447,19 @@ Se ha abierto la **Fase 1 (Spec Piloto Documental)** de forma controlada y se ha
 - El runtime técnico, `pytest` y `uv` se mantienen estrictamente bloqueados.
 - Las skills de background y workflows automáticos en `.agent/` siguen sin activarse.
 - No se declara finalizada la feature F-013 ni se declara cerrada la Fase 1.
+
+---
+
+### 2026-06-08 — Registro de revisión documental de F-013
+
+Se ha registrado formalmente el dictamen de la revisión de la especificación piloto **F-013 — Gate manual futuro** en el repositorio.
+
+**Detalles del Hito:**
+- **Commit Asociado:** 17aeb1a2527f932c9bb84489a3701958ea628b5f (Trazabilidad previa: 424576a5ce2b24781905aa584c879db3ab0f1084)
+- **Archivo modificado:** `specs/f_013_gate_manual_futuro/review.md`
+- **Resumen:** Registro del dictamen de la revisión documental de la feature piloto F-013 (`APROBADO CON OBSERVACIONES MENORES`), definiendo las pautas de control del gate manual y los bloqueos metodológicos vigentes.
+
+**Restricciones de Seguridad:**
+- Se confirma que no se ha habilitado ni creado ninguna lógica de software, scripts ni gates técnicos.
+- La ejecución del runtime, tests con `pytest` o administración con `uv` sigue totalmente bloqueada.
+- No se declara completada la feature F-013 ni se cierra la Fase 1 de forma autónoma.
