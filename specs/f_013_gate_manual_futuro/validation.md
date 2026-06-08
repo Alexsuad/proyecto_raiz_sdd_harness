@@ -7,7 +7,7 @@
 # Plan de validación manual — F-013: Gate manual futuro
 
 **Versión:** v0.1-candidato  
-**Estado:** Candidato (Fase 1 - Spec Piloto Documental)  
+**Estado:** Completado documentalmente (Fase 1 - Spec Piloto Documental)  
 **Tipo:** Plan de Validación Documental  
 **Ubicación:** `specs/f_013_gate_manual_futuro/validation.md`
 

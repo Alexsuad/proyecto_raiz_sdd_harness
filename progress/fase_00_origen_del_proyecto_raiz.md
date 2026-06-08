@@ -10,7 +10,7 @@
 * **Nombre provisional del proyecto:** `proyecto_raiz_sdd_harness`
 * **Impulsor o solicitante:** Desarrollador humano / Administrador del sistema.
 * **Fecha de registro:** 2026-06-07
-* **Estado del Intake:** Candidato pendiente de auditoría
+* **Estado del Intake:** Incorporado como evidencia documental de Fase 0 cerrada con observaciones controladas.
 
 ---
 

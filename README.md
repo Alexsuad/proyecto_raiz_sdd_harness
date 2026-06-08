@@ -26,7 +26,7 @@ Es una **base metodológica, documental y estructural** reutilizable. Funciona c
 ## 3. Estado actual
 El repositorio se encuentra con la **Fase 0 documental cerrada con observaciones controladas**.
 La **Fase 1 (Spec Piloto Documental)** ha sido abierta de forma controlada.
-La especificación piloto **F-013 — Gate manual futuro** ha sido creada y revisada documentalmente en el repositorio (pendiente de decisión final, sin implicar aprobación técnica).
+La especificación piloto **F-013 — Gate manual futuro** ha sido completada documentalmente en el repositorio, manteniendo la Fase 1 abierta de forma controlada y sin implicar ninguna implementación técnica, gate técnico activo ni habilitación de runtime (Fase 2 sigue bloqueada).
 
 * **Creado e incorporado a Git:**
   - Plan de implementación v0.1: [progress/plan_implementacion_v0_1_proyecto_raiz_sdd_harness.md](./progress/plan_implementacion_v0_1_proyecto_raiz_sdd_harness.md)
@@ -57,7 +57,7 @@ Para comprender el funcionamiento y los límites del arnés, se recomienda la le
 * [docs/](./docs/): Sede de la documentación base, metodologías, constitución y políticas.
 * [progress/](./progress/): Seguimiento operativo, plan de implementación v0.1 y registros de hitos.
 * [.agent/](./.agent/): Estructura conceptual inactiva de workflows, skills y reglas locales.
-* [specs/](./specs/): Directorio reservado para futuras especificaciones por feature (inactivo).
+* [specs/](./specs/): Sede de especificaciones por feature. Activa en modo documental para Fase 1; inactiva para implementación técnica o ejecución automatizada.
 * [scripts/](./scripts/): Directorio reservado para futuros scripts deterministas y gates de validación (inactivo).
 * [tests/](./tests/): Directorio reservado para la suite de pytest e infraestructura de pruebas (inactivo).
 * [AGENTS.md](./AGENTS.md) y [GEMINI.md](./GEMINI.md): Adaptadores de contexto pragmáticos y activos para asistentes de IA.
@@ -95,8 +95,7 @@ El diseño del repositorio raíz busca la **portabilidad e independencia**. Las 
 ---
 
 ## 9. Siguiente paso según el plan
-Una vez registrada la revisión documental de F-013 en `review.md`, el hito establecido es:
-* Tomar la decisión humana final sobre el cierre documental de la feature piloto F-013 o evaluar ajustes adicionales antes del pre-cierre.
+El siguiente hito es decidir el cierre formal de Fase 1 y preparar, en una microfase separada, la transición controlada hacia Fase 2, manteniendo bloqueado cualquier runtime hasta autorización explícita.
 
 ---
 

@@ -7,7 +7,7 @@
 # Auditoría Arquitectónica Interna (2026-06-07)
 
 **Versión:** v0.1  
-**Estado:** Candidato pendiente de auditoría  
+**Estado:** Incorporado como evidencia documental de Fase 0 cerrada con observaciones controladas.  
 **Tipo:** Reporte operativo de control  
 **Ubicación:** `progress/auditoria_arquitectonica_interna_2026-06-07.md`
 

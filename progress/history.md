@@ -463,3 +463,23 @@ Se ha registrado formalmente el dictamen de la revisión de la especificación p
 - Se confirma que no se ha habilitado ni creado ninguna lógica de software, scripts ni gates técnicos.
 - La ejecución del runtime, tests con `pytest` o administración con `uv` sigue totalmente bloqueada.
 - No se declara completada la feature F-013 ni se cierra la Fase 1 de forma autónoma.
+
+---
+
+### 2026-06-08 — Cierre documental de F-013
+
+Se ha declarado formalmente la especificación piloto **F-013 — Gate manual futuro** como completada documentalmente, sin habilitar ningún componente técnico.
+
+**Detalles del Hito:**
+- **Commit pendiente de consolidación:** Microfase 1.8
+- **Commit base de pre-cierre:** `e46870d1c3bf6f3c9f8b681a1579e6257a94c0ce`
+- **Archivos modificados:** `specs/f_013_gate_manual_futuro/{requirements,design,tasks,validation,review}.md`, `progress/{current,feature_list,history}.md`, y `README.md`.
+- **Resumen:** Cierre documental de la feature F-013. Se cambia el estado de los documentos de la spec de "Candidato" a "Completado documentalmente", se actualiza la lista oficial de features y se definen los siguientes pasos de forma coherente.
+
+**Restricciones de Seguridad:**
+- El gate manual futuro queda definido estrictamente a nivel documental; no se implementó ningún gate técnico.
+- No se creó código de producto ni scripts ejecutables en `scripts/`.
+- No se modificaron ni activaron configuraciones, rules, workflows ni skills en `.agent/`.
+- No se activó runtime técnico, suite de test con `pytest` ni entorno con `uv`.
+- La Fase 1 sigue abierta de forma controlada hasta una posterior decisión formal de cierre.
+- La Fase 2 se mantiene estrictamente bloqueada.

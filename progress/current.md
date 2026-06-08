@@ -17,13 +17,15 @@ Su objetivo es dejar evidencia clara de qué partes del arnés existen como docu
 - **Proyecto:** `proyecto_raiz_sdd_harness`
 - **Tipo de proyecto:** proyecto raíz metodológico y agéntico.
 - **Objetivo:** construir una base reutilizable para futuros proyectos de desarrollo de software con SDD, documentación gobernada, adaptadores operativos, skills, workflows y gates.
-- **Estado actual:** Fase 1 abierta de forma controlada. Spec piloto F-013 revisada documentalmente (pendiente de decisión final, sin implicar aprobación técnica).
-- **Último commit confirmado del repositorio:** 75f9d0429146e89cf58235f5fd2f946bf94fe5af
+- **Estado actual:** Fase 1 abierta de forma controlada. F-013 queda completada documentalmente (cierre documental, sin implementación técnica, gate inactivo, Fase 2 bloqueada, Fase 1 abierta).
+- **Último commit confirmado del repositorio:** e46870d1c3bf6f3c9f8b681a1579e6257a94c0ce
+- **Commit de pre-cierre documental de F-013:** e46870d1c3bf6f3c9f8b681a1579e6257a94c0ce
 - **Commit de revisión documental de F-013:** 17aeb1a2527f932c9bb84489a3701958ea628b5f
+- **Commit de sincronización de estado tras revisión:** 75f9d0429146e89cf58235f5fd2f946bf94fe5af
 - **Commit de trazabilidad previa:** 424576a5ce2b24781905aa584c879db3ab0f1084
-- **Siguiente paso:** Decisión humana final sobre si F-013 se declara completada documentalmente o si requiere ajustes menores antes del cierre de la feature.
+- **Siguiente paso:** Decidir el cierre formal de Fase 1 y preparar, en una microfase separada, la transición controlada hacia Fase 2.
 - **Código de producto:** No existe (bloqueado).
-- **Features activas:** Ninguna (bloqueado).
+- **Features activas de implementación:** Ninguna (bloqueado). Spec documental piloto F-013: completada documentalmente.
 - **Automatización activa:** Ninguna (bloqueado).
 - **Gates automatizados activos:** Ninguno (bloqueado).
 - **Suite de pruebas (pytest/uv):** Inactivo/bloqueado.
@@ -110,8 +112,8 @@ Hasta nueva autorización explícita y firma humana, se mantienen estrictamente 
 ## 8. Próximo paso recomendado
 
 El próximo hito recomendado es:
-- Decisión humana final sobre si F-013 se declara completada documentalmente o si requiere ajustes menores antes del cierre de la feature.
-- Mantener estrictamente bloqueada cualquier inicialización de código técnico o automatización en background.
+- Decidir el cierre formal de Fase 1 y preparar, en una microfase separada, la transición controlada hacia Fase 2, manteniendo bloqueado cualquier runtime hasta autorización explícita.
+- Mantener estrictamente bloqueada cualquier inicialización de código técnico o automatización en background (pytest, uv, scripts, configuración de .agent/).
 
 ## 9. Definición documental de Gate 0
 

@@ -32,6 +32,7 @@ Cada capacidad técnica o documental debe clasificarse en uno de los siguientes 
 * **pendiente:** Característica prioritaria e inmediata dentro de la fase actual a la espera de ser creada.
 * **en revisión:** Artefacto candidato en fase de lectura y auditoría por parte de la revisión humana o cruzada.
 * **revisada documentalmente:** Artefacto documental que ya tiene revisión registrada, pero aún queda pendiente una decisión humana final antes de marcarlo como completado o cerrar la fase relacionada.
+* **completado documentalmente:** Artefacto documental creado, revisado, validado y cerrado en sentido documental, sin implicar implementación técnica ni activación de runtime.
 * **bloqueado:** Característica cuyo desarrollo está suspendido debido a dependencias de fases previas no aprobadas.
 * **futuro/inactivo:** Capacidad prevista para fases posteriores inactivas; no operable en este momento.
 * **post-MVP:** Característica técnica de largo plazo excluida de la versión v0.1.
@@ -52,10 +53,10 @@ Cada capacidad técnica o documental debe clasificarse en uno de los siguientes 
 | **F-007** | README raíz | Puerta de entrada y mapa de navegación del repositorio raíz. | **completado** | [README.md](../README.md) | Mantener actualizado | Orienta a humanos y agentes agénticos. |
 | **F-008** | Feature list inicial | Inventario de capacidades y estados del arnés. | **completado** | [feature_list.md](./feature_list.md) | Mantener actualizado | Este documento. |
 | **F-009** | Auditoría final de Fase 0 | Reporte de cierre y validación final de entregables documentales. | **completado** | [auditoria_final_cierre_fase_0_2026-06-07.md](./auditoria_final_cierre_fase_0_2026-06-07.md) (commit 0f2ae3e) | Mantener como registro de Fase 0 | Criterio de salida obligatorio de Fase 0. |
-| **F-010** | Primera spec piloto | Spec funcional y de diseño en `specs/` para la primera feature. | **en revisión** | [specs/f_013_gate_manual_futuro/](../specs/f_013_gate_manual_futuro/) | Auditoría de contenido | Spec piloto creada físicamente en el repositorio. |
+| **F-010** | Primera spec piloto — completado documentalmente mediante F-013 | Spec piloto documental de Fase 1. F-010 funciona como hito/contenedor de la primera spec piloto; F-013 es la spec piloto específica creada y cerrada documentalmente. | **completado documentalmente** | [specs/f_013_gate_manual_futuro/](../specs/f_013_gate_manual_futuro/) | Seguimiento del avance | Hito de Fase 1 satisfecho documentalmente a través de F-013. |
 | **F-011** | Plantillas de specs | Estándar formalizado de plantillas markdown para la carpeta `specs/`. | **futuro/inactivo** | - | Crear borradores en docs/ | Planificado para fases futuras. |
 | **F-012** | Inventario de validaciones | Definición de reglas estáticas a auditar automáticamente. | **futuro/inactivo** | - | Registro conceptual | Enlace previsto con scripts locales. |
-| **F-013** | Gate manual futuro | Definición de flujos de aprobación y firmas humanas en texto. | **revisada documentalmente** | [specs/f_013_gate_manual_futuro/](../specs/f_013_gate_manual_futuro/) | Decisión humana final | Revisión registrada en commit 17aeb1a (Trazabilidad: 424576a). |
+| **F-013** | Gate manual futuro | Definición de flujos de aprobación y firmas humanas en texto. | **completado documentalmente** | [specs/f_013_gate_manual_futuro/](../specs/f_013_gate_manual_futuro/) | Cierre formal de Fase 1 o decisión humana sobre transición | Cierre documental en Microfase 1.8. No hay implementación técnica (gate inactivo, Fase 2 bloqueada). Base pre-cierre: commit e46870d. |
 | **F-014** | Gate automatizado futuro | Criterios de integración y smoke tests de validación. | **futuro/inactivo** | - | Enlace a scripts/ | Pendiente de suite de testeo. |
 | **F-015** | Scripts deterministas | Inicialización técnica y herramientas de control (`gate_0_preflight.py`). | **futuro/inactivo** | - | Esperar autorización de fase técnica | Inactivo en la Fase 0. |
 | **F-016** | Tests automatizados | Suite de pruebas unitarias locales utilizando `pytest` en `tests/`. | **futuro/inactivo** | - | Esperar autorización de fase técnica | Inactivo en la Fase 0. |

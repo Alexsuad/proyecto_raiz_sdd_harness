@@ -7,7 +7,7 @@
 # Registro de revisión y dictamen — F-013: Gate manual futuro
 
 **Versión:** v0.1-candidato  
-**Estado:** Candidato (Fase 1 - Spec Piloto Documental)  
+**Estado:** Completado documentalmente (Fase 1 - Spec Piloto Documental)  
 **Tipo:** Registro de Auditoría y Revisión (SDD)  
 **Ubicación:** `specs/f_013_gate_manual_futuro/review.md`
 
@@ -15,7 +15,7 @@
 
 ## 1. Estado del Gate
 
-* **Estado actual:** dictamen humano registrado — pendiente de auditoría de diff y commit
+* **Estado actual:** completado documentalmente
 * **Fecha de solicitud:** 2026-06-08
 * **Commit de referencia para revisión:** 424576a5ce2b24781905aa584c879db3ab0f1084 (424576a)
 
@@ -50,6 +50,8 @@ El desarrollador humano audita el fondo del diseño, la coherencia con el proyec
 
 La spec F-013 se registra como válida para definir documentalmente un gate manual futuro. El dictamen humano aprueba la estructura procedimental de la spec con observaciones menores, bajo la condición de que esta aprobación no habilita implementación técnica. No se autoriza crear scripts, gates ejecutables, runtime, pytest, uv, modificar .agent/ ni activar skills o workflows automáticos. Cualquier transición posterior hacia implementación, automatización o cierre completo de Fase 1 deberá requerir nueva autorización humana explícita.
 
+Las observaciones menores registradas no bloquean el cierre documental de F-013 y quedan tratadas como mejoras de sincronización documental/procedimental, sin habilitar implementación técnica, scripts, gates ejecutables, runtime, pytest, uv ni modificación de .agent/.
+
 ---
 
 ## 5. Dictamen y Firma Final de Transición de Fase
@@ -63,11 +65,11 @@ La spec F-013 se registra como válida para definir documentalmente un gate manu
 * **Fecha de Dictamen:** 2026-06-08
 * **Commit de Referencia (SHA):** 424576a5ce2b24781905aa584c879db3ab0f1084
 * **Revisor Principal:** Alex Suárez / Desarrollador Humano
-* **Dictamen Oficial:** APROBADO CON OBSERVACIONES MENORES
+* **Dictamen Oficial:** COMPLETADO DOCUMENTALMENTE
 * **Observaciones de Cierre:** Ver sección 4
 * **Firma de Aceptación:** Alex Suárez — aprobación documental controlada de F-013
 
-Nota: Este dictamen fue definido por revisión humana y registrado documentalmente en este archivo. No constituye aprobación técnica, no implementa el gate y no cierra completamente la Fase 1.
+Nota: Este dictamen fue definido por revisión humana y registrado documentalmente en este archivo. Este cierre es exclusivamente documental. No implementa el gate manual, no crea scripts, no activa runtime, no habilita pytest, no habilita uv, no modifica .agent/, no abre Fase 2 y no cierra automáticamente toda la Fase 1.
 
 ---
 
