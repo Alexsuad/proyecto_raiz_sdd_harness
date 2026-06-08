@@ -17,8 +17,8 @@ Su objetivo es dejar evidencia clara de qué partes del arnés existen como docu
 - **Proyecto:** `proyecto_raiz_sdd_harness`
 - **Tipo de proyecto:** proyecto raíz metodológico y agéntico.
 - **Objetivo:** construir una base reutilizable para futuros proyectos de desarrollo de software con SDD, documentación gobernada, adaptadores operativos, skills, workflows y gates.
-- **Estado actual:** Fase 2 abierta de forma controlada. Fase 2 limitada a la preparación mínima del entorno verificable. No hay desarrollo funcional autorizado, ni scripts, ni gates ejecutables activos. La carpeta `.agent/` sigue bloqueada.
-- **Último commit confirmado del repositorio:** 9d7d848a266166a476c48b59df818cce9420797b
+- **Estado actual:** Fase 2 abierta de forma controlada (Microfase 2.1 — Política de entorno técnico mínimo). El alcance actual está limitado a la preparación segura del entorno. No hay desarrollo funcional autorizado, no se ha creado el entorno virtual, no se ha ejecutado Python, ni inicializado uv o pytest.
+- **Último commit confirmado del repositorio:** f0c9f840b04e46e1851ab1739e946f07ac518ad4
 - **Commit de cierre documental de F-013:** 585d1c5478c0092b882d9b8d66150acabda4f59b
 - **Commit de pre-cierre documental de F-013:** e46870d1c3bf6f3c9f8b681a1579e6257a94c0ce
 - **Commit de revisión documental de F-013:** 17aeb1a2527f932c9bb84489a3701958ea628b5f
@@ -113,9 +113,11 @@ Hasta nueva autorización explícita y firma humana, se mantienen estrictamente 
 ## 8. Próximo paso recomendado
 
 El próximo hito recomendado es:
-- Definir y validar condiciones mínimas de entorno técnico: entorno virtual, .gitignore, decisión sobre uv, decisión sobre pytest y límites de scripts deterministas.
-- Python no debe ejecutarse ni usarse para instalar dependencias hasta que el entorno virtual y .gitignore estén verificados.
-- Mantener estrictamente bloqueada cualquier inicialización de código técnico, scripts, gates ejecutables, pytest, uv o automatizaciones de `.agent/` en background.
+- **Creación controlada del entorno virtual mínimo (Microfase 2.2):** Habilitar físicamente el entorno virtual local `.venv` y verificar que el aislamiento funciona correctamente.
+- **Política de entorno técnico mínimo (Microfase 2.1):** Usar el entorno virtual local `.venv` creado con `python -m venv .venv` en la siguiente microfase autorizada. Ninguna dependencia podrá instalarse fuera de este entorno virtual.
+- **Herramientas de testing y tooling:** `uv` y `pytest` permanecen en estado futuro/inactivo hasta autorización explícita para evitar complejidad prematura.
+- Python no debe ejecutarse ni usarse para instalar dependencias en el sistema global.
+- Mantener estrictamente bloqueada cualquier inicialización de código técnico, scripts, gates ejecutables o automatizaciones de `.agent/` en background.
 - **Readiness documental para Fase 2:** Registrado.
 
 ## 9. Definición documental de Gate 0

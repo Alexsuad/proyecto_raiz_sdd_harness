@@ -25,7 +25,7 @@ Es una **base metodológica, documental y estructural** reutilizable. Funciona c
 
 ## 3. Estado actual
 El repositorio se encuentra con la **Fase 0 documental cerrada con observaciones controladas**, la **Fase 1 (Spec Piloto Documental)** formalmente **cerrada en sentido documental**, y la **Fase 2 (Preparación mínima para hacer verificable el arnés)** abierta de forma controlada.
-El alcance actual de la Fase 2 está estrictamente limitado a la preparación mínima del entorno verificable. No hay desarrollo funcional autorizado, ni runtime activo, ni scripts activos, ni gates ejecutables activos, ni suite de pytest/uv activos. La carpeta `.agent/` sigue sin activación técnica.
+El alcance actual de la Fase 2 está estrictamente limitado a la preparación mínima del entorno verificable. En esta Microfase 2.1 se ha establecido la política del entorno técnico mínimo (uso exclusivo de `.venv` con venv estándar). No hay desarrollo funcional autorizado, no se ha creado el entorno virtual, ni runtime activo, ni scripts activos, ni gates ejecutables activos, ni suite de pytest/uv activos. La carpeta `.agent/` sigue sin activación técnica.
 
 * **Creado e incorporado a Git:**
   - Plan de implementación v0.1: [progress/plan_implementacion_v0_1_proyecto_raiz_sdd_harness.md](./progress/plan_implementacion_v0_1_proyecto_raiz_sdd_harness.md)
@@ -94,7 +94,7 @@ El diseño del repositorio raíz busca la **portabilidad e independencia**. Las 
 ---
 
 ## 9. Siguiente paso según el plan
-El siguiente hito es definir condiciones mínimas del entorno técnico antes de crear cualquier archivo ejecutable o instalar dependencias.
+El siguiente hito es la creación controlada del entorno virtual mínimo (Microfase 2.2), habilitando y validando físicamente el aislamiento técnico del entorno local `.venv`.
 
 ---
 

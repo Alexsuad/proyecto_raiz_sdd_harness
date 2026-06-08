@@ -517,3 +517,22 @@ Se ha autorizado formalmente la apertura controlada de la **Fase 2 (Preparación
 - No se autoriza la suite de tests de `pytest` todavía.
 - No se autoriza la inicialización de `uv` todavía.
 - No se autoriza la modificación de `.agent/` ni de gates ejecutables.
+
+---
+
+### 2026-06-08 — Política de entorno técnico mínimo
+
+Se ha definido formalmente la política de entorno técnico mínimo para la Fase 2 en sentido documental.
+
+**Detalles del Hito:**
+- **Commit pendiente de consolidación:** Microfase 2.1
+- **Commit base de apertura:** `f0c9f840b04e46e1851ab1739e946f07ac518ad4`
+- **Resumen:** Definición de la política técnica obligatoria del entorno virtual local (`.venv`) y descarte temporal de `uv` y `pytest` para evitar complejidad prematura.
+
+**Restricciones de Seguridad:**
+- Se recomienda usar `.venv` con `python -m venv .venv` en una microfase posterior autorizada.
+- No se creó el entorno virtual en esta microfase.
+- No se ejecutó Python.
+- No se inicializó uv ni pytest.
+- No se crearon scripts.
+- No se modificó `.agent/` ni gates ejecutables.
