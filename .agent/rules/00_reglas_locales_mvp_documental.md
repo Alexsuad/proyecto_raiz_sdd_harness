@@ -72,7 +72,7 @@ Ante la aparición de cualquier duda de requerimientos, incompatibilidades con l
 ## 15. Límites del MVP actual
 Queda estrictamente prohibido realizar cualquiera de las siguientes acciones en el espacio de trabajo actual:
 - Crear el directorio `.agent/gates/`.
-- Crear o programar scripts de ejecución de gates automatizados (como `scripts/gate_0_preflight.py`).
+- Crear nuevos gates, scripts de gate adicionales o automatizaciones sin autorización explícita (reconociendo que `scripts/gate_0_preflight.py` ya existe como único gate mínimo local autorizado).
 - Crear pruebas unitarias o tests de software reales.
 - Crear directorios de especificaciones reales de features dentro de `specs/`.
 - Habilitar o activar reglas, workflows o skills operativas en Antigravity.

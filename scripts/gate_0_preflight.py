@@ -50,7 +50,8 @@ MAINTENANCE_ALLOWED_FILES = [
     "scripts/gate_0_preflight.py",
     "AGENTS.md",
     "GEMINI.md",
-    "scripts/README.md"
+    "scripts/README.md",
+    ".agent/rules/00_reglas_locales_mvp_documental.md"
 ]
 
 def print_result(check_name, success, message=""):

@@ -38,13 +38,13 @@ Cuando Antigravity o Gemini trabajen en este repositorio deben cumplir estas reg
 - **Política de Commits:** No realizar commits ni pushes por microfase local. Consolidar cambios en un único commit/push por fase o bloque real tras aprobación humana.
 - **Revisión de Documentación al Cierre:** Al finalizar cada fase, auditar y actualizar `README.md`, `AGENTS.md`, `GEMINI.md`, `progress/` y documentos de soporte correspondientes.
 
-El proyecto se encuentra en etapa de MVP. La Fase 3 de verificación automatizada ya fue implementada y publicada.
+Estado actual: Fase 4 base documental cerrada y lista para auditoría humana final. La implementación agéntica sigue bloqueada (.agent/ inactiva, sin skills, agentes, workflows físicos ni CLI activos).
 - **Verificación Determinista Mínima:** Utilizar siempre el script `scripts/gate_0_preflight.py` para validar la estructura del repositorio localmente mediante `.venv/bin/python scripts/gate_0_preflight.py`.
 - **Límites de herramientas:** No se debe activar `pytest`, `uv`, GitHub Actions ni inicializar la automatización de `.agent/` de fondo sin autorización explícita.
 - Mientras no existan plantillas mínimas de `specs/` y skills de fondo habilitadas, Antigravity no debe actuar como implementador sobre código de proyectos derivados.
 - El uso actual permitido es planificación, documentación, edición controlada, ejecución del preflight local en mantenimiento, y simulaciones.
 
-## 5. Cierre obligatorio
+## 4. Cierre obligatorio
 
 Al terminar una tarea, el agente debe entregar un reporte con:
 
@@ -55,7 +55,7 @@ Al terminar una tarea, el agente debe entregar un reporte con:
 - confirmación de archivos no tocados;
 - estado final: `completado` o `bloqueado`.
 
-## 6. Futuras actualizaciones
+## 5. Futuras actualizaciones
 
 Cuando existan `.agent/skills/`, `.agent/workflows/`, `specs/`, `scripts/`, `tests/` o `progress/`, este archivo deberá actualizarse solo para referenciarlos.
 
