@@ -24,7 +24,7 @@ Es una **base metodológica, documental y estructural** reutilizable. Funciona c
 ---
 
 ## 3. Estado actual
-El repositorio se encuentra con la **Fase 3 cerrada**. `scripts/gate_0_preflight.py` existe y es el único gate mínimo local activo. La **Fase 4 no está abierta**. `uv`, `pytest`, los nuevos scripts, los tests, los workflows y la carpeta `.agent/` activa siguen bloqueados.
+El repositorio se encuentra con la **Fase 3 cerrada**. `scripts/gate_0_preflight.py` existe y es el único gate mínimo local activo. La **Fase 4 está abierta únicamente para diseño y especificación documental** (la implementación técnica, `uv`, `pytest`, nuevos scripts, tests, workflows y carpeta `.agent/` activa siguen bloqueados).
 
 * **Creado e incorporado a Git:**
   - Plan de implementación v0.1: [progress/plan_implementacion_v0_1_proyecto_raiz_sdd_harness.md](./progress/plan_implementacion_v0_1_proyecto_raiz_sdd_harness.md)
@@ -72,9 +72,9 @@ Para comprender el funcionamiento y los límites del arnés, se recomienda la le
 * `progress/` como sistema vivo de control.
 
 ### Qué está inactivo o bloqueado
-* Fase 4 no abierta.
-* `uv`, `pytest`, workflows, tests nuevos y capa `.agent/` activa.
-* Capacidades futuras candidatas aún no activas.
+* Fase 4 de implementación no abierta (solo abierta para diseño y especificación documental).
+* `uv`, `pytest`, workflows e implementaciones técnicas activas, y capa `.agent/` ejecutable.
+* Ejecución de runtime de las capacidades candidatas de Fase 4.
 
 ---
 
@@ -91,9 +91,9 @@ El diseño del repositorio raíz busca la **portabilidad e independencia**. Las 
 ---
 
 ## 9. Siguiente paso según el plan
-El siguiente hito es cerrar el saneamiento documental de `progress/`.
+El siguiente hito es iniciar el diseño conceptual y documental de las capacidades de la Fase 4 (skills, agentes, workflows).
 
 ---
 
 ## 10. Estado del README
-* **Estado:** Actualizado tras la reorganización de `progress/`.
+* **Estado:** Actualizado para reflejar la apertura de la Fase 4 para diseño documental.
