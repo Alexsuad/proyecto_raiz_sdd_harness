@@ -7,7 +7,7 @@
 # Current snapshot
 
 - Fase 3 cerrada.
-- Fase 4 abierta únicamente para diseño y especificación documental (implementación bloqueada).
+- Fase 4 base documental cerrada y lista para auditoría profunda final con ZIP completo.
 - Diseñado el contrato conceptual de misiones agénticas en `docs/contrato_misiones_agenticas.md`.
 - Diseñado el mapa conceptual de roles agénticos en `docs/mapa_roles_agenticos.md`.
 - Diseñado el workflow conceptual de misiones agénticas en `docs/workflow_misiones_agenticas.md`.
@@ -15,4 +15,4 @@
 - `uv` bloqueado.
 - `pytest` bloqueado.
 - `.agent/` no activo (ejecución de runtime inactiva).
-**Siguiente acción:** Definir los criterios metodológicos para la conversión de documentos normativos en piezas lógicas agénticas.
+**Siguiente acción:** Realizar auditoría profunda final con ZIP completo del repositorio.

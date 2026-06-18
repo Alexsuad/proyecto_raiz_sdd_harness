@@ -19,22 +19,16 @@ Es una **base metodológica, documental y estructural** reutilizable. Funciona c
 * **No es una aplicación final:** No contiene código de negocio ejecutable ni interfaces orientadas a usuarios finales.
 * **No es un runtime agéntico activo:** No ejecuta subagentes automáticos de fondo, ni gestiona procesos en segundo plano.
 * **No es un paquete instalable todavía:** No es una biblioteca de Python o un módulo de distribución técnica en esta fase.
-* **No contiene runtime agéntico activo ni gates avanzados activos:** Solo `scripts/gate_0_preflight.py` está autorizado como gate mínimo local. Nuevos scripts, nuevos gates, suites de testing, `uv`, `pytest`, workflows y `.agent/` activo siguen bloqueados hasta autorización explícita.
 
 ---
 
 ## 3. Estado actual
-El repositorio se encuentra con la **Fase 3 cerrada**. `scripts/gate_0_preflight.py` existe y es el único gate mínimo local activo. La **Fase 4 está abierta únicamente para diseño y especificación documental** (la implementación técnica, `uv`, `pytest`, nuevos scripts, tests, workflows y carpeta `.agent/` activa siguen bloqueados).
+El repositorio se encuentra con la **Fase 4 base documental cerrada**. La implementación agéntica no ha sido iniciada. El siguiente paso es la realización de una auditoría profunda final con ZIP completo del repositorio (la implementación técnica, `uv`, `pytest`, nuevos scripts, tests, workflows y carpeta `.agent/` activa siguen bloqueados).
 
-* **Creado e incorporado a Git:**
-  - Plan de implementación v0.1: [progress/plan_implementacion_v0_1_proyecto_raiz_sdd_harness.md](./progress/plan_implementacion_v0_1_proyecto_raiz_sdd_harness.md)
-  - Procedimiento de inicio: [docs/procedimiento_inicio_proyecto_sdd_harness.md](./docs/procedimiento_inicio_proyecto_sdd_harness.md)
-  - Origen / Intake del proyecto raíz: [progress/fase_00_origen_del_proyecto_raiz.md](./progress/fase_00_origen_del_proyecto_raiz.md)
-  - Visión y alcance del proyecto raíz: [docs/vision_y_alcance_del_proyecto_raiz.md](./docs/vision_y_alcance_del_proyecto_raiz.md)
-  - Auditoría arquitectónica interna: [progress/auditoria_arquitectonica_interna_2026-06-07.md](./progress/auditoria_arquitectonica_interna_2026-06-07.md)
-  - Política de zonas del repositorio: [docs/politica_zonas_repositorio.md](./docs/politica_zonas_repositorio.md)
-  - Auditoría final de cierre de Fase 0: [progress/auditoria_final_cierre_fase_0_2026-06-07.md](./progress/auditoria_final_cierre_fase_0_2026-06-07.md)
-  - Registro de revisión de Spec F-013 (Gate manual futuro): [specs/f_013_gate_manual_futuro/review.md](./specs/f_013_gate_manual_futuro/review.md)
+* **Creado e incorporado a Git (Fase 4):**
+  - Contrato de misiones agénticas: [docs/contrato_misiones_agenticas.md](./docs/contrato_misiones_agenticas.md)
+  - Mapa de roles agénticos: [docs/mapa_roles_agenticos.md](./docs/mapa_roles_agenticos.md)
+  - Workflow de misiones agénticas: [docs/workflow_misiones_agenticas.md](./docs/workflow_misiones_agenticas.md)
 * **Elementos bloqueados (Sin autorización de arranque):**
   - Inicialización de `uv`, `pytest`, nuevos scripts, tests, workflows y activación real de `.agent/`.
 
@@ -48,6 +42,9 @@ Para comprender el funcionamiento y los límites del arnés, se recomienda la le
 4. [progress/plan_implementacion_v0_1_proyecto_raiz_sdd_harness.md](./progress/plan_implementacion_v0_1_proyecto_raiz_sdd_harness.md): Checklist vivo del proyecto.
 5. [docs/procedimiento_inicio_proyecto_sdd_harness.md](./docs/procedimiento_inicio_proyecto_sdd_harness.md): Guía paso a paso de arranque e intake de proyectos.
 6. [docs/politica_zonas_repositorio.md](./docs/politica_zonas_repositorio.md): Clasificación de estados de artefactos y políticas por carpeta.
+7. [docs/contrato_misiones_agenticas.md](./docs/contrato_misiones_agenticas.md): Diseño conceptual del contrato de misiones.
+8. [docs/mapa_roles_agenticos.md](./docs/mapa_roles_agenticos.md): Mapa de roles conceptuales de la capa agéntica.
+9. [docs/workflow_misiones_agenticas.md](./docs/workflow_misiones_agenticas.md): Workflow y ciclo de vida de misiones agénticas.
 
 ---
 
@@ -72,7 +69,7 @@ Para comprender el funcionamiento y los límites del arnés, se recomienda la le
 * `progress/` como sistema vivo de control.
 
 ### Qué está inactivo o bloqueado
-* Fase 4 de implementación no abierta (solo abierta para diseño y especificación documental).
+* Fase 4 de implementación no abierta.
 * `uv`, `pytest`, workflows e implementaciones técnicas activas, y capa `.agent/` ejecutable.
 * Ejecución de runtime de las capacidades candidatas de Fase 4.
 
@@ -86,14 +83,14 @@ Para comprender el funcionamiento y los límites del arnés, se recomienda la le
 ---
 
 ## 8. Compatibilidad conceptual
-El diseño del repositorio raíz busca la **portabilidad e independencia**. Las reglas y adaptadores definidos actúan como directrices de comportamiento genéricas para guiar la interacción de Codex, Antigravity u otras herramientas agénticas del ecosistema de IA, sin crear dependencias propietarias o rígidas hacia un único proveedor.
+* El diseño del repositorio raíz busca la **portabilidad e independencia**. Las reglas y adaptadores definidos actúan como directrices de comportamiento genéricas para guiar la interacción de Codex, Antigravity u otras herramientas agénticas del ecosistema de IA, sin crear dependencias propietarias o rígidas hacia un único proveedor.
 
 ---
 
 ## 9. Siguiente paso según el plan
-El siguiente hito es iniciar el diseño conceptual y documental de las capacidades de la Fase 4 (skills, agentes, workflows).
+* Realizar la auditoría profunda final con ZIP completo del repositorio.
 
 ---
 
 ## 10. Estado del README
-* **Estado:** Actualizado para reflejar la apertura de la Fase 4 para diseño documental.
+* **Estado:** Actualizado para reflejar el cierre de la Fase 4 base documental.
