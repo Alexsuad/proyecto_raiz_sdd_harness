@@ -43,10 +43,10 @@ La estructura del arnés se compone de las siguientes carpetas físicas delimita
 * **Raíz del repositorio:** Aloja exclusivamente archivos de compatibilidad y adaptadores indispensables (`AGENTS.md`, `GEMINI.md`, `README.md`, `.gitignore`, `.gitattributes`).
 * **`/docs`**: Sede de documentos de gobernanza, metodologías comunes, políticas y especificaciones normativas.
 * **`/docs/adr/`**: Sede de decisiones arquitectónicas numeradas e históricas.
-* **`/progress`**: Carpeta destinada a la memoria externa del avance (bitácoras de progreso e hitos, plan de implementación e intake).
+* **`/progress`**: Carpeta destinada a la memoria externa del avance y al control vivo del repositorio.
 * **`/.agent/`**: Estructura de diseño conceptual y no activo para workflows, reglas locales y skills de soporte.
 * **`/specs`**: Zona futura para especificaciones por feature.
-* **`/scripts`**: Zona futura para el almacenamiento de validadores y scripts deterministas locales.
+* **`/scripts`**: Zona parcialmente activa para scripts deterministas del arnés. Solo `scripts/gate_0_preflight.py` está activo. Los demás scripts y gates siguen bloqueados.
 * **`/tests`**: Zona futura para el marco de testing y tests del arnés.
 * **Futuras zonas de output/evidencia:** Espacio lógico para reportes automáticos y evidencias físicas (ej. `/output`), inactivo hasta su aprobación formal en fases posteriores.
 * **Archivos privados/locales excluidos:** Ficheros no versionados que viven de manera aislada en el working tree local de la máquina.
@@ -60,8 +60,8 @@ La estructura del arnés se compone de las siguientes carpetas físicas delimita
 ---
 
 ## 6. Política específica para `progress/`
-* **Función:** Es la bitácora física de la memoria externa del proceso del arnés. Contiene el plan de implementación v0.1, el reporte de intake inicial (`fase_00`), el historial de hitos (`history.md`) y el reporte actual (`current.md`).
-* **Restricción:** No sustituye a la jerarquía de `/docs`. Las pautas metodológicas estables de desarrollo no deben ser definidas aquí; este espacio se limita a registrar el progreso operativo de desarrollo.
+* **Función:** Sistema vivo de control del arnés. Contiene el checklist vivo, el snapshot actual, el inventario de features y el historial mínimo no operativo.
+* **Restricción:** No sustituye a la jerarquía de `/docs`. Las pautas metodológicas estables de desarrollo no deben ser definidas aquí; este espacio se limita a registrar el control operativo del proyecto.
 
 ---
 
@@ -78,8 +78,8 @@ La estructura del arnés se compone de las siguientes carpetas físicas delimita
 ---
 
 ## 9. Política específica para `scripts/` y `tests/`
-* **Función:** Destinados al runtime de testing unitario local, gates automáticos e infraestructura técnica determinista del arnés.
-* **Restricción:** Zonas inactivas por completo en este momento. Está prohibido programar scripts de validaciones, suites de pytest o inicializaciones de entornos agénticos antes de que se autoricen las fases técnicas correspondientes.
+* **Función:** `scripts/` es una zona parcialmente activa. Actualmente solo `scripts/gate_0_preflight.py` está autorizado como gate mínimo local. `tests/` sigue reservado para pruebas futuras.
+* **Restricción:** Bloqueado: nuevos scripts adicionales, nuevos gates, suites de tests, `uv`, `pytest`, workflows, CLI y runtime. Excepción autorizada: `scripts/gate_0_preflight.py`.
 
 ---
 
@@ -111,7 +111,7 @@ Para evitar alteraciones descontroladas en el repositorio, se establecen los sig
 ---
 
 ## 13. Relación con el plan de implementación
-Esta política se alinea directamente con las restricciones de la Fase 0 (Consolidación documental del MVP estructural). Su aprobación sirve para estructurar el espacio de trabajo, pero de ninguna manera habilita o autoriza el paso a la inicialización de entornos virtuales, creación de specs funcionales, scripts de gates automáticos o código de runtime técnico.
+Esta política se alinea con el control vivo de `progress/`. `scripts/` es una zona parcialmente activa; solo `scripts/gate_0_preflight.py` está autorizado y el resto de scripts, gates, suites de tests, `uv`, `pytest`, workflows, CLI y runtime técnico siguen bloqueados hasta autorización explícita.
 
 ---
 

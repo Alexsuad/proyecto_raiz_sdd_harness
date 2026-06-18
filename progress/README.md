@@ -1,68 +1,26 @@
 # File: progress/README.md
 # ──────────────────────────────────────────────────────────────────────
-# Propósito: Definir la sede de seguimiento operativo del arnés.
-# Rol: Guía base para registrar estado, avances, bloqueos, historial y cierres con evidencia.
+# Propósito: Describir `progress/` como sistema vivo de control del proyecto.
+# Rol: Mapa breve de sedes de estado, checklist, inventario y memoria mínima.
 # ──────────────────────────────────────────────────────────────────────
 
-# Progress — Seguimiento operativo del arnés
+# Progress — Sistema vivo de control
 
 ## 1. Propósito
 
-Esta carpeta será la sede oficial para registrar el seguimiento operativo del proyecto raíz `proyecto_raiz_sdd_harness`.
+La carpeta `progress/` contiene el sistema vivo de control del proyecto. Su función es mostrar el estado actual, el checklist de avance, el inventario de features/capacidades y un histórico mínimo no operativo.
 
-Su objetivo es permitir que el avance del arnés sea trazable, revisable y verificable, evitando depender de la memoria del chat, reportes temporales o respuestas aisladas de agentes.
+## 2. Archivos de control
 
-## 2. Qué información vivirá aquí
+- `plan_implementacion_v0_1_proyecto_raiz_sdd_harness.md`: checklist vivo principal y norte operativo del proyecto.
+- `current.md`: snapshot corto del estado actual.
+- `feature_list.md`: inventario breve de features y capacidades.
+- `history.md`: histórico mínimo no operativo; no gobierna el presente ni el futuro.
 
-En fases posteriores, esta carpeta podrá contener archivos relacionados con:
+## 3. Uso
 
-- estado actual del proyecto;
-- feature activa;
-- tareas en curso;
-- bloqueos detectados;
-- decisiones pendientes;
-- historial de avances;
-- cierres con evidencia;
-- resultados de validaciones;
-- reportes de revisión.
+Los registros de `progress/` deben ser breves, verificables y orientados al control del proyecto.
 
-## 3. Relación con `specs/`
+Esta carpeta no sustituye a `docs/`, no repite la constitución ni duplica el contenido de `README.md`.
 
-La carpeta `specs/` define la fuente de verdad operativa de cada feature.
-
-La carpeta `progress/` registrará el seguimiento del avance, pero no reemplazará las specs aprobadas.
-
-Si existe diferencia entre una spec aprobada y un reporte de progreso, la spec tendrá prioridad hasta que sea actualizada mediante revisión y evidencia.
-
-## 4. Archivos de seguimiento existentes y previstos
-
-Actualmente existen `current.md` y `history.md` como archivos de seguimiento operativo. En fases posteriores, esta carpeta podrá incorporar archivos adicionales como:
-
-- `current.md`: estado operativo actual del proyecto o de la feature activa.
-- `history.md`: historial resumido de avances, cierres y cambios relevantes.
-- `blocked.md`: bloqueos abiertos, causas y acciones necesarias.
-- `decisions_pending.md`: decisiones pendientes de revisión humana o técnica.
-
-`current.md` y `history.md` ya existen; `blocked.md` y `decisions_pending.md` permanecen pendientes hasta que exista una necesidad real.
-
-## 5. Reglas de uso
-
-Todo registro dentro de `progress/` debe ser claro, breve y verificable.
-
-No debe usarse esta carpeta para duplicar la constitución, la metodología, las specs ni los ADR.
-
-Los reportes de progreso deben apuntar a la evidencia correspondiente cuando exista, por ejemplo:
-
-- commits;
-- diffs;
-- archivos modificados;
-- validaciones ejecutadas;
-- checklists;
-- gates;
-- reportes de revisión.
-
-## 6. Estado actual
-
-- **Estado:** sede documental creada.
-- **Archivos activos de seguimiento:** `current.md` e `history.md`.
-- **Pendiente:** crear `blocked.md` o `decisions_pending.md` solo cuando exista una necesidad real.
+Los archivos futuros solo se crearán si una fase posterior los autoriza expresamente.

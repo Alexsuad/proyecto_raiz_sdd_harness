@@ -32,10 +32,14 @@ FORBIDDEN_PYTEST = [
 
 ALLOWED_MODIFIED_FILES = [
     "README.md",
+    "docs/00_mapa_y_gobernanza_documental.md",
+    "docs/politica_zonas_repositorio.md",
+    "progress/README.md",
     "progress/current.md",
     "progress/feature_list.md",
     "progress/history.md",
-    "progress/plan_implementacion_v0_1_proyecto_raiz_sdd_harness.md"
+    "progress/plan_implementacion_v0_1_proyecto_raiz_sdd_harness.md",
+    "scripts/README.md"
 ]
 
 MAINTENANCE_ALLOWED_FILES = [

@@ -27,11 +27,11 @@ Los documentos que integran el sistema se clasifican en:
 - **Specs por feature**: Carpetas de especificaciones completas para características individuales de software.
 - **Skills**: Contratos operativos reutilizables que extienden las habilidades de los agentes.
 - **Workflows**: Flujos de pasos secuenciales para guiar la interacción humano-agente o multi-agente.
-- **Scripts**: sede futura de scripts deterministas y gates automatizados.
+- **Scripts**: sede parcialmente activa de scripts deterministas del arnés. Actualmente solo `scripts/gate_0_preflight.py` está autorizado como gate mínimo local; nuevos scripts, gates adicionales, suites de testing, `uv` y `pytest` siguen bloqueados hasta autorización explícita.
 - **Tests**: sede futura de pruebas del arnés.
 - **ADR (Architecture Decision Records)**: Registro cronológico de decisiones arquitectónicas y técnicas críticas.
 - **Anexos**: Repositorios de datos, logs, configuraciones o transcripciones largas para evitar inflar documentos maestros.
-- **Progress e history**: seguimiento operativo, estado actual e historial de hitos del arnés.
+- **Progress**: carpeta de control vivo del proyecto. Contiene el checklist vivo, el snapshot actual, el inventario breve de features/capacidades candidatas y un histórico mínimo no operativo.
 
 ## 5. Jerarquía documental inicial
 La estructura de jerarquía y prioridad documental del proyecto raíz se define de la siguiente manera:
@@ -62,7 +62,7 @@ Nota de subordinación operativa: `AGENTS.md`, `GEMINI.md` y la carpeta `.agent/
 | `docs/03_metodologia_proyectos_documentales_agenticos.md` | [POST-MVP - PLACEHOLDER] Ruta documental/agéntica futura | Referencia mínima de que existirá una metodología futura para proyectos documentales, creativos o analíticos. | Desarrollo completo de la metodología documental/agéntica durante el MVP actual, lógica de negocio o base de datos del proyecto. |
 | `docs/constitucion_del_proyecto.md` | Definición de límites y objetivos | Alcance del proyecto, roles, hitos, tecnologías principales permitidas y límites de presupuesto/tiempo. | Guías paso a paso de codificación, scripts de automatización. |
 | `docs/preflight_estructural.md` | Checklist documental de preflight. | Revisión manual de estructura base, estado agéntico, no duplicación, criterio LEAN, bloqueos y resultado esperado. | Scripts ejecutables, automatización, gates activos o metodología extensa. |
-| `docs/gate_0_preflight_definicion.md` | Definición documental de Gate 0. | Criterios, entradas, bloqueos, evidencias y límites del futuro `gate_0_preflight`. | Script ejecutable, gate activo, automatización, `.agent/gates/` o implementación técnica. |
+| `docs/gate_0_preflight_definicion.md` | Definición documental inicial de Gate 0. | Criterios, entradas, bloqueos, evidencias y límites iniciales del gate; pendiente de actualización tras la implementación de `scripts/gate_0_preflight.py`. | Script ejecutable, automatización, `.agent/gates/` o estado operativo actual del gate. |
 | `docs/manual_anti_errores_del_arnes.md` *(Recurso local opcional privado, excluido de git)* | Guía operativa anti-errores del arnés (privada y local). | Lecciones aplicables, errores recurrentes a evitar, reglas anti-error para la fase documental, criterios para futuras automatizaciones y manejo de deuda técnica o agéntica diferida. | Constitución paralela, reglas que contradigan documentos rectores, automatización activa, scripts, specs, workflows activos, skills activas o gates ejecutables. |
 | `AGENTS.md` | Instrucciones operativas de agentes | Instrucciones específicas de arranque, comportamiento y restricciones inmediatas para agentes de IA de desarrollo. | Metodologías de desarrollo extensas, código de aplicación. |
 | `GEMINI.md` | Adaptador operativo para Gemini | Contexto mínimo, restricciones operativas y referencias hacia la constitución, el mapa documental y los documentos operativos autorizados. | Reglas de estilo de código general, arquitectura del software. |
@@ -70,8 +70,8 @@ Nota de subordinación operativa: `AGENTS.md`, `GEMINI.md` y la carpeta `.agent/
 | `.agent/workflows/` | Sede documental conceptual de workflows. | README de sede, estructura futura de workflows, regla de descripción máxima de 250 caracteres y criterios de diseño. | Workflows activos, scripts ejecutables, specs de features o reportes de progreso. |
 | `.agent/rules/` | Sede documental conceptual de rules locales. | README de sede y criterios para futuras reglas breves, claras y accionables. | Rules activas, metodología completa, prompts extensos, credenciales o configuraciones sensibles. |
 | `specs/` | Especificaciones de features | Carpetas individuales por característica con sus requerimientos, diseños, tareas e historial de cambios. | Metodología del proyecto general, utilidades compartidas de código. |
-| `progress/` | Seguimiento operativo del arnés. | `README.md`, `current.md`, `history.md`, estado actual, hitos relevantes, bloqueos futuros y cierres con evidencia. | Specs aprobadas, metodología completa, código o decisiones arquitectónicas que deban vivir en ADR. |
-| `scripts/` | Sede futura de scripts y gates deterministas. | README de sede, scripts de validación, gates automatizados y utilidades deterministas cuando sean autorizados. | Código core de productos derivados, credenciales, tokens, prompts extensos o specs. |
+| `progress/` | Carpeta de control vivo del proyecto. | `plan_implementacion_v0_1_proyecto_raiz_sdd_harness.md`: checklist vivo y norte operativo del proyecto. `current.md`: snapshot corto del estado actual. `feature_list.md`: inventario breve de features y capacidades candidatas. `history.md`: histórico mínimo no operativo; no gobierna el presente ni el futuro. | Duplicación de gobernanza, metodología larga o código. |
+| `scripts/` | Zona parcialmente activa. | `scripts/gate_0_preflight.py` como único script autorizado. | Nuevos scripts, gates adicionales, suites de tests, CLI, `uv`, `pytest` o runtime. |
 | `tests/` | Sede futura de pruebas del arnés. | README de sede, tests de gates, tests de estructura, smoke tests, pruebas de integración y validaciones del arnés cuando existan. | Specs, reportes de progreso, credenciales, tokens o código de productos derivados. |
 | `docs/adr/` | Decisiones de arquitectura | Registros históricos numerados de decisiones de diseño, justificaciones técnicas y alternativas descartadas. | Documentos de requerimientos iniciales de usuario. |
 | `anexos/` | Soporte de datos e investigación | Transcripciones, dumps de datos de prueba, especificaciones de terceros o logs extensos de auditoría. | Código fuente ejecutable, reglas metodológicas globales. |
@@ -129,8 +129,11 @@ Antes de dar por cerrado un ciclo de cambios en la documentación, se debe verif
 - [ ] No se agregaron carpetas o archivos documentales fuera de la estructura autorizada por este mapa.
 - [ ] `docs/preflight_estructural.md` fue revisado antes de crear nuevas piezas estructurales.
 - [ ] Si existe localmente, docs/manual_anti_errores_del_arnes.md no contradice la constitución, el mapa documental, el preflight estructural ni la definición documental de Gate 0.
-- [ ] `progress/current.md` refleja el estado operativo actual del arnés.
-- [ ] `progress/history.md` registra los hitos relevantes sin convertirse en bitácora excesiva.
+- [ ] `progress/plan_implementacion_v0_1_proyecto_raiz_sdd_harness.md` actúa como checklist vivo.
+- [ ] `progress/current.md` es un snapshot corto.
+- [ ] `progress/feature_list.md` es un inventario breve.
+- [ ] `progress/history.md` es mínimo y no operativo.
+- [ ] `scripts/` se reconoce como zona parcialmente activa con `scripts/gate_0_preflight.py` como único autorizado.
 - [ ] `.agent/` sigue documentado como sede conceptual no activa y no como sistema activo, salvo autorización explícita.
 
 ## 15. Estado del documento
