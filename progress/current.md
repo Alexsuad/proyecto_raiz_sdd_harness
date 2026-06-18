@@ -8,8 +8,9 @@
 
 - Fase 3 cerrada.
 - Fase 4 abierta únicamente para diseño y especificación documental (implementación bloqueada).
+- Diseñado el contrato conceptual de misiones agénticas en `docs/contrato_misiones_agenticas.md`.
 - `scripts/gate_0_preflight.py` activo como único gate mínimo local.
 - `uv` bloqueado.
 - `pytest` bloqueado.
 - `.agent/` no activo (ejecución de runtime inactiva).
-**Siguiente acción:** Iniciar el diseño conceptual y especificación de skills, agentes y workflows de la capa agéntica.
+**Siguiente acción:** Diseñar el mapa de roles y responsabilidades de los agentes y subagentes conceptuales de la Fase 4.
