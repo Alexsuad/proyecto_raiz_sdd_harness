@@ -6,6 +6,8 @@
 
 # Contrato de Misiones Agénticas
 
+> **Nota de estado actual:** Este contrato rige como diseño conceptual en la fase actual. No habilita ejecución autónoma ni misiones agénticas activas sin autorización humana explícita.
+
 ## 1. Propósito
 Este contrato define la estructura obligatoria de entrada, salida, límites y condiciones de control que rigen la ejecución de cualquier tarea o misión delegada a un agente de Inteligencia Artificial (IA) en el repositorio `proyecto_raiz_sdd_harness`. Su fin es evitar la improvisación, el "vibe coding" y asegurar la trazabilidad.
 

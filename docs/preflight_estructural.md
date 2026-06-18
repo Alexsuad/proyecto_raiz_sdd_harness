@@ -60,7 +60,8 @@ Antes de avanzar, verificar que:
 - No existen workflows activos.
 - No existen skills activas.
 - No existe `.agent/gates/`.
-- No existen gates operativos ni automatizados.
+- No existen gates operativos adicionales ni automatizados en background.
+- Solo existe `scripts/gate_0_preflight.py` como gate mínimo local autorizado.
 
 ## 5. Checklist de no duplicación
 

@@ -16,3 +16,9 @@
 - `pytest` bloqueado.
 - Existen recursos documentales en `.agent/`, pero no hay recursos agénticos activos ni runtime habilitado.
 **Siguiente acción:** Realizar auditoría profunda final con ZIP completo del repositorio.
+
+## Snapshot operativo reportado
+
+- Último commit reportado: `e6a6aa5 docs: sanear hallazgos finales de fase 4`.
+- Gate 0: passing según reporte operativo.
+- Fase 4: documental saneada, pendiente de dictamen final de auditoría humana.

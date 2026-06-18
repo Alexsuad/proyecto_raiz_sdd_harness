@@ -63,4 +63,5 @@ Esta carpeta no debe usarse para guardar:
 
 - **Estado:** sede documental creada.
 - **Tests activos:** ninguno.
-- **Pendiente:** crear las primeras pruebas cuando exista el primer gate real del arnés.
+- **Estado actual:** el primer gate mínimo local ya existe: `scripts/gate_0_preflight.py`.
+- **Pendiente:** la creación de tests automatizados para este gate sigue bloqueada hasta autorización explícita de una fase futura.
