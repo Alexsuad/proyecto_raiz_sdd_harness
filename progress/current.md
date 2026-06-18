@@ -12,4 +12,4 @@
 - `uv` bloqueado.
 - `pytest` bloqueado.
 - `.agent/` no activo.
-- Siguiente acción: cerrar saneamiento documental de `progress/`.
+**Siguiente acción:** definir documentalmente la Fase 4 como diseño de la capa agéntica del arnés, sin abrir implementación.

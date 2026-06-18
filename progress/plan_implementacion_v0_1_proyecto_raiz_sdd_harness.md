@@ -15,7 +15,7 @@
 | Fase 2 | ✅ REALIZADO | Entorno técnico mínimo cerrado. |
 | Fase 3 | ✅ REALIZADO | Gate mínimo local publicado. |
 | Saneamiento documental actual | 🟡 EN DESARROLLO | Reordenar `progress/` como sistema vivo de control. |
-| Fase 4 | ⬜ PENDIENTE | No abierta. Requiere definición y aprobación humana antes de cualquier implementación. |
+| Fase 4 | ⬜ PENDIENTE | Diseño de la capa agéntica del arnés. No abierta. Requiere definición y aprobación humana antes de cualquier implementación. |
 | Capacidades candidatas futuras | 🧊 FUTURO | `improve_plan`, `ponytail_review`, capa agéntica futura. |
 
 ## Checklist vivo
@@ -26,7 +26,7 @@
 | ✅ REALIZADO | Gate mínimo | `scripts/gate_0_preflight.py` activo como único gate mínimo local autorizado. |
 | 🟡 EN DESARROLLO | Saneamiento | Reducir y alinear `current`, `history` y `feature_list`. |
 | ⬜ PENDIENTE | Saneamiento documental | Actualizar `docs/gate_0_preflight_definicion.md` porque aún describe `gate_0_preflight.py` como futuro, aunque ya existe como gate mínimo local autorizado. |
-| ⬜ PENDIENTE | Fase 4 | Definir alcance, límites y criterio de apertura. |
+| ⬜ PENDIENTE | Fase 4 | Definir cómo se convertirán procedimientos repetibles y documentación larga en piezas agénticas controladas: skills, agentes, subagentes, auditores, workflows, CLI, gates, scripts y checklists. |
 | ⛔ BLOQUEADO | Runtime técnico | `uv`, `pytest`, workflows y `.agent/` activo. |
 | 🧊 FUTURO | Capas candidatas | `improve_plan`, `ponytail_review`, capa agéntica completa. |
 
