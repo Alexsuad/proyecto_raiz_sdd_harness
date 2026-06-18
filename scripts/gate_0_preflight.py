@@ -34,6 +34,7 @@ ALLOWED_MODIFIED_FILES = [
     "README.md",
     "docs/00_mapa_y_gobernanza_documental.md",
     "docs/contrato_misiones_agenticas.md",
+    "docs/mapa_roles_agenticos.md",
     "docs/gate_0_preflight_definicion.md",
     "docs/politica_zonas_repositorio.md",
     "progress/README.md",

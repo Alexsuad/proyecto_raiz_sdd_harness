@@ -28,6 +28,7 @@
 | ✅ REALIZADO | Saneamiento documental | Actualizado `docs/gate_0_preflight_definicion.md` para reflejar `scripts/gate_0_preflight.py` como único gate mínimo local autorizado. |
 | 🟡 EN DESARROLLO | Fase 4 | Definir cómo se convertirán procedimientos repetibles y documentación larga en piezas agénticas controladas: skills, agentes, subagentes, auditores, workflows, CLI, gates, scripts, checklists, rules y contratos de entrada/salida. |
 | ✅ REALIZADO | Fase 4 - Diseño | Diseñado el contrato conceptual de misiones agénticas en `docs/contrato_misiones_agenticas.md`. |
+| ✅ REALIZADO | Fase 4 - Roles | Diseñado el mapa conceptual de roles agénticos en `docs/mapa_roles_agenticos.md`. |
 | ⛔ BLOQUEADO | Runtime técnico | `uv`, `pytest`, workflows y `.agent/` activo. |
 | 🟡 EN DESARROLLO | Capas candidatas | Diseño documental de `improve_plan`, `ponytail_review` y `capa_agentica_futura`. |
 
@@ -43,4 +44,4 @@
 
 ## Próxima acción
 
-Diseñar el mapa de roles y responsabilidades de los agentes y subagentes conceptuales de la Fase 4.
+Definir los criterios metodológicos para la conversión de documentos normativos en piezas lógicas agénticas.

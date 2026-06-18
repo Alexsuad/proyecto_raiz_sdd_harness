@@ -42,13 +42,14 @@ La estructura de jerarquía y prioridad documental del proyecto raíz se define 
 5. [preflight_estructural.md](./preflight_estructural.md)
 6. [gate_0_preflight_definicion.md](./gate_0_preflight_definicion.md)
 7. [contrato_misiones_agenticas.md](./contrato_misiones_agenticas.md)
-8. `AGENTS.md` / `GEMINI.md`
-9. `.agent/rules/`, `.agent/workflows/` y `.agent/skills/` como sedes documentales conceptuales no activas
-10. `specs/`
-11. `progress/`
-12. `scripts/` y `tests/`
-13. `anexos/`
-14. 
+8. [mapa_roles_agenticos.md](./mapa_roles_agenticos.md)
+9. `AGENTS.md` / `GEMINI.md`
+10. `.agent/rules/`, `.agent/workflows/` y `.agent/skills/` como sedes documentales conceptuales no activas
+11. `specs/`
+12. `progress/`
+13. `scripts/` y `tests/`
+14. `anexos/`
+15. 
 *Recurso local opcional privado (excluido de git):* [manual_anti_errores_del_arnes.md](./manual_anti_errores_del_arnes.md) (si existe localmente en el entorno de trabajo, subordinado a las metodologías superiores).
 
 Nota de subordinación operativa: `AGENTS.md`, `GEMINI.md` y la carpeta `.agent/` actúan como adaptadores y canalizadores de contexto para los agentes. No son documentos maestros y no pueden contradecir, reemplazar ni ignorar las normas definidas en `docs/00_mapa_y_gobernanza_documental.md`, `docs/constitucion_del_proyecto.md`, `docs/01_metodologia_base_comun.md` ni `docs/02_metodologia_desarrollo_software_sdd_harness.md`.
@@ -65,6 +66,7 @@ Nota de subordinación operativa: `AGENTS.md`, `GEMINI.md` y la carpeta `.agent/
 | `docs/preflight_estructural.md` | Checklist documental de preflight. | Revisión manual de estructura base, estado agéntico, no duplicación, criterio LEAN, bloqueos y resultado esperado. | Scripts ejecutables, automatización, gates activos o metodología extensa. |
 | `docs/gate_0_preflight_definicion.md` | Definición documental inicial de Gate 0. | Criterios, entradas, bloqueos, evidencias y límites iniciales del gate; pendiente de actualización tras la implementación de `scripts/gate_0_preflight.py`. | Script ejecutable, automatización, `.agent/gates/` o estado operativo actual del gate. |
 | `docs/contrato_misiones_agenticas.md` | Contrato conceptual de misiones agénticas | Especificación de parámetros de entrada, salida, límites de acción, reglas de STOP y validaciones para misiones delegadas. | Implementación física de skills, workflows o código ejecutable de runtime agéntico. |
+| `docs/mapa_roles_agenticos.md` | Mapa conceptual de roles agénticos | Definición de roles conceptuales (humano director, orquestador, planificador, implementador, auditores) y sus límites. | Implementación o código de agentes físicos, runtime o CLI ejecutable. |
 | `docs/manual_anti_errores_del_arnes.md` *(Recurso local opcional privado, excluido de git)* | Guía operativa anti-errores del arnés (privada y local). | Lecciones aplicables, errores recurrentes a evitar, reglas anti-error para la fase documental, criterios para futuras automatizaciones y manejo de deuda técnica o agéntica diferida. | Constitución paralela, reglas que contradigan documentos rectores, automatización activa, scripts, specs, workflows activos, skills activas o gates ejecutables. |
 | `AGENTS.md` | Instrucciones operativas de agentes | Instrucciones específicas de arranque, comportamiento y restricciones inmediatas para agentes de IA de desarrollo. | Metodologías de desarrollo extensas, código de aplicación. |
 | `GEMINI.md` | Adaptador operativo para Gemini | Contexto mínimo, restricciones operativas y referencias hacia la constitución, el mapa documental y los documentos operativos autorizados. | Reglas de estilo de código general, arquitectura del software. |
