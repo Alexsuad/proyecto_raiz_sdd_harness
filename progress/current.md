@@ -14,5 +14,5 @@
 - `scripts/gate_0_preflight.py` activo como único gate mínimo local.
 - `uv` bloqueado.
 - `pytest` bloqueado.
-- `.agent/` no activo (ejecución de runtime inactiva).
+- Existen recursos documentales en `.agent/`, pero no hay recursos agénticos activos ni runtime habilitado.
 **Siguiente acción:** Realizar auditoría profunda final con ZIP completo del repositorio.

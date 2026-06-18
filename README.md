@@ -23,14 +23,14 @@ Es una **base metodológica, documental y estructural** reutilizable. Funciona c
 ---
 
 ## 3. Estado actual
-El repositorio se encuentra con la **Fase 4 base documental cerrada**. La implementación agéntica no ha sido iniciada. El siguiente paso es la realización de una auditoría profunda final con ZIP completo del repositorio (la implementación técnica, `uv`, `pytest`, nuevos scripts, tests, workflows y carpeta `.agent/` activa siguen bloqueados).
+El repositorio se encuentra con la **Fase 4 base documental cerrada**. La implementación agéntica no ha sido iniciada. El siguiente paso es la realización de una auditoría profunda final con ZIP completo del repositorio (la implementación técnica, `uv`, `pytest`, nuevos scripts, tests, workflows y la habilitación de runtime en `.agent/` siguen bloqueados).
 
 * **Creado e incorporado a Git (Fase 4):**
   - Contrato de misiones agénticas: [docs/contrato_misiones_agenticas.md](./docs/contrato_misiones_agenticas.md)
   - Mapa de roles agénticos: [docs/mapa_roles_agenticos.md](./docs/mapa_roles_agenticos.md)
   - Workflow de misiones agénticas: [docs/workflow_misiones_agenticas.md](./docs/workflow_misiones_agenticas.md)
 * **Elementos bloqueados (Sin autorización de arranque):**
-  - Inicialización de `uv`, `pytest`, nuevos scripts, tests, workflows y activación real de `.agent/`.
+  - Inicialización de `uv`, `pytest`, nuevos scripts, tests, y habilitación del runtime en `.agent/` (los archivos de la carpeta `.agent/` son recursos documentales y conceptuales no activos).
 
 ---
 
@@ -70,7 +70,7 @@ Para comprender el funcionamiento y los límites del arnés, se recomienda la le
 
 ### Qué está inactivo o bloqueado
 * Fase 4 de implementación no abierta.
-* `uv`, `pytest`, workflows e implementaciones técnicas activas, y capa `.agent/` ejecutable.
+* `uv`, `pytest`, workflows e implementaciones técnicas activas, y habilitación de runtime en `.agent/` (no hay recursos agénticos activos ni runtime habilitado).
 * Ejecución de runtime de las capacidades candidatas de Fase 4.
 
 ---
@@ -92,5 +92,8 @@ Para comprender el funcionamiento y los límites del arnés, se recomienda la le
 
 ---
 
-## 10. Estado del README
+## 10. Nota sobre distribución de ZIPs
+* **Nota sobre empaquetado:** Los ZIP internos de auditoría pueden incluir recursos locales privados si el usuario lo autoriza. Los ZIP exportables o públicos deben excluir `docs/manual_anti_errores_del_arnes.md`.
+
+## 11. Estado del README
 * **Estado:** Actualizado para reflejar el cierre de la Fase 4 base documental.

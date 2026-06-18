@@ -51,7 +51,8 @@ MAINTENANCE_ALLOWED_FILES = [
     "AGENTS.md",
     "GEMINI.md",
     "scripts/README.md",
-    ".agent/rules/00_reglas_locales_mvp_documental.md"
+    ".agent/rules/00_reglas_locales_mvp_documental.md",
+    "docs/procedimiento_inicio_proyecto_sdd_harness.md"
 ]
 
 def print_result(check_name, success, message=""):

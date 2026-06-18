@@ -36,7 +36,7 @@ Este procedimiento se usa cuando se quiere iniciar:
 
 > [!IMPORTANT]
 > **Límites del MVP actual:**
-> El MVP actual de este procedimiento y del arnés de desarrollo se enfoca exclusivamente en proyectos técnicos de desarrollo de software utilizando **Spec-Driven Development (SDD) + Harness agéntico** (desarrollo con Python, inicialización virtual con `uv`, scripts locales, APIs internas, utilidades de línea de comandos CLI, validadores estáticos, definición e implementación de gates documentales y suite de tests locales con `pytest`).
+> El MVP actual de este procedimiento y del arnés de desarrollo se enfoca en proyectos de desarrollo de software bajo la metodología **Spec-Driven Development (SDD)**. Cabe aclarar que elementos como la inicialización virtual con `uv`, suite de tests locales con `pytest`, herramientas de línea de comandos `CLI` y scripts locales de gates pertenecen a una línea técnica prevista o futura, pero no están activos en el estado actual del repositorio salvo `scripts/gate_0_preflight.py` (el cual es el único gate mínimo local activo). En el estado actual: `uv` está bloqueado, `pytest` está bloqueado, la `CLI` está bloqueada y la creación de scripts nuevos de gates está bloqueada.
 > 
 > Quedan estrictamente **fuera del alcance** de esta versión del arnés:
 > - Planes de negocio, análisis comerciales, estudios de mercado o financieros.
