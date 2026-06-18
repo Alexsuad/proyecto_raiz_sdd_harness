@@ -12,4 +12,4 @@
 - `uv` bloqueado.
 - `pytest` bloqueado.
 - `.agent/` no activo.
-**Siguiente acción:** definir documentalmente la Fase 4 como diseño de la capa agéntica del arnés, sin abrir implementación.
+**Siguiente acción:** preparar la apertura controlada de la Fase 4 como fase de diseño de la capa agéntica del arnés, sin activar implementación.

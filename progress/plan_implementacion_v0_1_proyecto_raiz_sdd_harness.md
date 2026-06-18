@@ -25,7 +25,7 @@
 | ✅ REALIZADO | Base documental | Fases 0, 1, 2 y 3 cerradas. |
 | ✅ REALIZADO | Gate mínimo | `scripts/gate_0_preflight.py` activo como único gate mínimo local autorizado. |
 | 🟡 EN DESARROLLO | Saneamiento | Reducir y alinear `current`, `history` y `feature_list`. |
-| ⬜ PENDIENTE | Saneamiento documental | Actualizar `docs/gate_0_preflight_definicion.md` porque aún describe `gate_0_preflight.py` como futuro, aunque ya existe como gate mínimo local autorizado. |
+| ✅ REALIZADO | Saneamiento documental | Actualizado `docs/gate_0_preflight_definicion.md` para reflejar `scripts/gate_0_preflight.py` como único gate mínimo local autorizado. |
 | ⬜ PENDIENTE | Fase 4 | Definir cómo se convertirán procedimientos repetibles y documentación larga en piezas agénticas controladas: skills, agentes, subagentes, auditores, workflows, CLI, gates, scripts y checklists. |
 | ⛔ BLOQUEADO | Runtime técnico | `uv`, `pytest`, workflows y `.agent/` activo. |
 | 🧊 FUTURO | Capas candidatas | `improve_plan`, `ponytail_review`, capa agéntica completa. |

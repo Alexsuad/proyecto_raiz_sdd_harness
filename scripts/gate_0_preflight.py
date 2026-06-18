@@ -33,6 +33,7 @@ FORBIDDEN_PYTEST = [
 ALLOWED_MODIFIED_FILES = [
     "README.md",
     "docs/00_mapa_y_gobernanza_documental.md",
+    "docs/gate_0_preflight_definicion.md",
     "docs/politica_zonas_repositorio.md",
     "progress/README.md",
     "progress/current.md",
