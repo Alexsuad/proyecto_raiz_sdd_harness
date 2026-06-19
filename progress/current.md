@@ -7,7 +7,8 @@
 # Current snapshot
 
 - Fase 3 cerrada.
-- Fase 4 base documental cerrada y lista para auditoría profunda final con ZIP completo.
+- Fase 4 base documental cerrada.
+- Auditoría final de Fase 4 cerrada a nivel documental y remoto.
 - Diseñado el contrato conceptual de misiones agénticas en `docs/contrato_misiones_agenticas.md`.
 - Diseñado el mapa conceptual de roles agénticos en `docs/mapa_roles_agenticos.md`.
 - Diseñado el workflow conceptual de misiones agénticas en `docs/workflow_misiones_agenticas.md`.
@@ -15,10 +16,14 @@
 - `uv` bloqueado.
 - `pytest` bloqueado.
 - Existen recursos documentales en `.agent/`, pero no hay recursos agénticos activos ni runtime habilitado.
-**Siguiente acción:** Realizar auditoría profunda final con ZIP completo del repositorio.
 
-## Snapshot operativo reportado
+## Cierre de auditoría Fase 4
 
-- Último commit reportado: `e6a6aa5 docs: sanear hallazgos finales de fase 4`.
-- Gate 0: passing según reporte operativo.
-- Fase 4: documental saneada, pendiente de dictamen final de auditoría humana.
+- Estado: auditoría final de Fase 4 cerrada a nivel documental y remoto.
+- Commit de saneamiento final: `72845c0 docs: corregir hallazgos finales de auditoria fase 4`.
+- Gate 0: passing.
+- GitHub main: actualizado.
+- Runtime agéntico: no activo.
+- `.agent/`: recursos documentales presentes, sin ejecución activa.
+- Tests automatizados: no activos; creación bloqueada hasta fase futura autorizada.
+- Decisión: no abrir Fase 5 sin autorización humana explícita del Equipo Auditor.

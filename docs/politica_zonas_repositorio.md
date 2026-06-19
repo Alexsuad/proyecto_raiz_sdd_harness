@@ -99,6 +99,12 @@ Cualquier proceso o script de exportación que se cree en el futuro para empaque
 * Recursos obsoletos o copias temporales (`tmp/`, `sandbox/`).
 * *Nota:* Esta política regula la lógica de exclusiones, pero no autoriza la codificación o creación de scripts de empaquetado en esta fase.
 
+### Política de empaquetado ZIP
+
+- Los ZIP internos de auditoría pueden incluir archivos privados solo si Alex lo autoriza explícitamente.
+- Los ZIP públicos, compartibles o entregables deben excluir manuales privados, ZIPs previos, archivos temporales, outputs locales y cualquier archivo ignorado por Git.
+- `docs/manual_anti_errores_del_arnes.md`, si existe localmente, no debe formar parte de entregables públicos ni paquetes compartibles.
+
 ---
 
 ## 12. Política de saneamiento futuro
