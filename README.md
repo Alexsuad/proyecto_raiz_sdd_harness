@@ -23,7 +23,7 @@ Es una **base metodológica, documental y estructural** reutilizable. Funciona c
 ---
 
 ## 3. Estado actual
-El repositorio se encuentra con la **Fase 4 base documental cerrada**. La implementación agéntica no ha sido iniciada. El siguiente paso es la realización de una auditoría profunda final con ZIP completo del repositorio (la implementación técnica, `uv`, `pytest`, nuevos scripts, tests, workflows y la habilitación de runtime en `.agent/` siguen bloqueados).
+El repositorio se encuentra con la **Fase 4 base documental cerrada y auditada a nivel documental y remoto**. La implementación agéntica no ha sido iniciada. La Fase 5, `uv`, `pytest`, nuevos scripts, tests, workflows y la habilitación de runtime en `.agent/` siguen bloqueados hasta autorización humana explícita del Equipo Auditor.
 
 * **Creado e incorporado a Git (Fase 4):**
   - Contrato de misiones agénticas: [docs/contrato_misiones_agenticas.md](./docs/contrato_misiones_agenticas.md)
@@ -69,7 +69,7 @@ Para comprender el funcionamiento y los límites del arnés, se recomienda la le
 * `progress/` como sistema vivo de control.
 
 ### Qué está inactivo o bloqueado
-* Fase 4 de implementación no abierta.
+* Fase 5 no abierta.
 * `uv`, `pytest`, workflows e implementaciones técnicas activas, y habilitación de runtime en `.agent/` (no hay recursos agénticos activos ni runtime habilitado).
 * Ejecución de runtime de las capacidades candidatas de Fase 4.
 
@@ -88,7 +88,7 @@ Para comprender el funcionamiento y los límites del arnés, se recomienda la le
 ---
 
 ## 9. Siguiente paso según el plan
-* Realizar la auditoría profunda final con ZIP completo del repositorio.
+* No abrir Fase 5 ni activar runtime, `uv`, `pytest`, nuevos scripts, tests, workflows o `.agent/` activo sin autorización humana explícita del Equipo Auditor.
 
 ---
 
@@ -96,4 +96,4 @@ Para comprender el funcionamiento y los límites del arnés, se recomienda la le
 * **Nota sobre empaquetado:** Los ZIP internos de auditoría pueden incluir recursos locales privados si el usuario lo autoriza. Los ZIP exportables o públicos deben excluir `docs/manual_anti_errores_del_arnes.md`.
 
 ## 11. Estado del README
-* **Estado:** Actualizado para reflejar el cierre de la Fase 4 base documental.
+* **Estado:** Actualizado para reflejar el cierre auditado de la Fase 4 documental y el bloqueo explícito de Fase 5.

@@ -39,14 +39,14 @@ El comportamiento del agente dentro del entorno de desarrollo debe ajustarse a l
 - **No improvisar ni inventar:** No inventar rutas, archivos, funciones, dependencias, decisiones de diseño, estados de avance ni comandos del sistema.
 - **Evidencia obligatoria:** No reportar ni marcar una tarea como completada o definitiva sin haber obtenido y documentado evidencia técnica verificable y reproducible.
 - **Trazabilidad de bloqueos:** Detenerse y reportar de forma prioritaria cualquier bloqueo, duda razonable, conflicto de arquitectura o riesgo funcional detectado.
-- **Política de Commits:** No realizar commits ni pushes individuales por cada microfase local; consolidar el trabajo en un único commit/push al cierre de cada fase o bloque funcional real tras revisión humana.
+- **Política de Commits:** No realizar commits ni pushes sin revisión y autorización humana explícita. Preferir commits consolidados por bloque funcional real, salvo microcorrecciones de auditoría autorizadas.
 - **Revisión Documental de Cierre:** Al finalizar cada fase, es obligatorio leer y actualizar la documentación rectora y de estado (`README.md`, `AGENTS.md`, `GEMINI.md`, `progress/` y utilidades) para evitar información desactualizada en el repositorio.
 
 ## 5. Estado actual del arnés
 
-El proyecto se encuentra en una etapa de Producto Mínimo Viable (MVP). Estado actual: Fase 4 base documental cerrada y lista para auditoría humana final. La implementación agéntica sigue bloqueada.
-- **Estado de .agent/:** Permanece inactiva. No hay skills, agentes, workflows físicos ni CLI activos.
-- **Verificación Estructural Activa:** El arnés ya cuenta con una verificación mínima preflight automatizada que se ejecuta localmente mediante `.venv/bin/python scripts/gate_0_preflight.py` (o con `GATE_PREFLIGHT_MAINTENANCE=1` si se requiere modificar dicho script).
+El proyecto se encuentra en una etapa de Producto Mínimo Viable (MVP). Estado actual: Fase 4 base documental cerrada y auditada a nivel documental y remoto. La implementación agéntica sigue bloqueada y no se debe abrir Fase 5 sin autorización humana explícita del Equipo Auditor.
+- **Estado de .agent/:** permanece inactiva. Existen recursos documentales, pero no hay ejecución activa, runtime, CLI, agentes, skills ejecutables ni workflows habilitados.
+- **Verificación Estructural Activa:** El arnés ya cuenta con una verificación mínima preflight automatizada que se ejecuta localmente mediante `python3 scripts/gate_0_preflight.py` (o con `GATE_PREFLIGHT_MAINTENANCE=1 python3 scripts/gate_0_preflight.py` si se requiere modificar dicho script).
 - **Herramientas Bloqueadas:** No se permite activar, instalar o utilizar `pytest`, `uv`, GitHub Actions ni automatizaciones de `.agent/` sin autorización y firma humana explícitas.
 - **Restricción de modificación de código:** Debido a que las plantillas de especificaciones, adaptadores de sistema y skills de soporte aún no se encuentran operativos en proyectos derivados, los agentes no deben modificar bajo ningún concepto código real de dichos proyectos.
 

@@ -35,11 +35,11 @@ Cuando Antigravity o Gemini trabajen en este repositorio deben cumplir estas reg
 - No usar respuestas de chat como fuente oficial de verdad.
 - No autoaprobar cambios relevantes.
 - Detenerse y reportar si existe ambigüedad, riesgo o conflicto documental.
-- **Política de Commits:** No realizar commits ni pushes por microfase local. Consolidar cambios en un único commit/push por fase o bloque real tras aprobación humana.
+- **Política de Commits:** No realizar commits ni pushes sin revisión y autorización humana explícita. Preferir commits consolidados por bloque funcional real, salvo microcorrecciones de auditoría autorizadas.
 - **Revisión de Documentación al Cierre:** Al finalizar cada fase, auditar y actualizar `README.md`, `AGENTS.md`, `GEMINI.md`, `progress/` y documentos de soporte correspondientes.
 
-Estado actual: Fase 4 base documental cerrada y lista para auditoría humana final. La implementación agéntica sigue bloqueada (.agent/ inactiva, sin skills, agentes, workflows físicos ni CLI activos).
-- **Verificación Determinista Mínima:** Utilizar siempre el script `scripts/gate_0_preflight.py` para validar la estructura del repositorio localmente mediante `.venv/bin/python scripts/gate_0_preflight.py`.
+Estado actual: Fase 4 base documental cerrada y auditada a nivel documental y remoto. La implementación agéntica sigue bloqueada y no se debe abrir Fase 5 sin autorización humana explícita del Equipo Auditor (.agent/ inactiva, con recursos documentales presentes, sin ejecución activa, runtime, CLI, agentes, skills ejecutables ni workflows habilitados).
+- **Verificación Determinista Mínima:** Utilizar siempre el script `scripts/gate_0_preflight.py` para validar la estructura del repositorio localmente mediante `python3 scripts/gate_0_preflight.py`.
 - **Límites de herramientas:** No se debe activar `pytest`, `uv`, GitHub Actions ni inicializar la automatización de `.agent/` de fondo sin autorización explícita.
 - Mientras no existan plantillas mínimas de `specs/` y skills de fondo habilitadas, Antigravity no debe actuar como implementador sobre código de proyectos derivados.
 - El uso actual permitido es planificación, documentación, edición controlada, ejecución del preflight local en mantenimiento, y simulaciones.

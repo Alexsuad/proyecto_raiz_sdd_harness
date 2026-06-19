@@ -15,7 +15,7 @@
 | Fase 2 | ✅ REALIZADO | Entorno técnico mínimo cerrado. |
 | Fase 3 | ✅ REALIZADO | Gate mínimo local publicado. |
 | Saneamiento documental | ✅ REALIZADO | Reordenado y alineado `progress/` como sistema vivo de control. |
-| Fase 4 | ✅ REALIZADO | Fase 4 base documental cerrada (sin implementación agéntica). |
+| Fase 4 | ✅ REALIZADO | Fase 4 base documental cerrada y auditada (sin implementación agéntica). |
 | Capacidades candidatas futuras | 🧊 FUTURO | improve_plan, ponytail_review, capa agéntica futura (pendientes de diseño específico posterior). |
 
 ## Checklist vivo
@@ -26,7 +26,7 @@
 | ✅ REALIZADO | Gate mínimo | `scripts/gate_0_preflight.py` activo como único gate mínimo local autorizado. |
 | ✅ REALIZADO | Saneamiento | Reducir y alinear `current`, `history` y `feature_list`. |
 | ✅ REALIZADO | Saneamiento documental | Actualizado `docs/gate_0_preflight_definicion.md` para reflejar `scripts/gate_0_preflight.py` como único gate mínimo local autorizado. |
-| ✅ REALIZADO | Fase 4 | Fase 4 base documental cerrada. No hay implementación agéntica. |
+| ✅ REALIZADO | Fase 4 | Fase 4 base documental cerrada y auditada. No hay implementación agéntica. |
 | ✅ REALIZADO | Fase 4 - Diseño | Diseñado el contrato conceptual de misiones agénticas en `docs/contrato_misiones_agenticas.md`. |
 | ✅ REALIZADO | Fase 4 - Roles | Diseñado el mapa conceptual de roles agénticos en `docs/mapa_roles_agenticos.md`. |
 | ✅ REALIZADO | Fase 4 - Workflow | Diseñado el workflow conceptual de misiones agénticas en `docs/workflow_misiones_agenticas.md`. |
@@ -45,4 +45,4 @@
 
 ## Próxima acción
 
-Realizar la auditoría profunda final con ZIP completo del repositorio.
+Esperar decisión humana explícita del Equipo Auditor sobre el siguiente bloque. No abrir Fase 5 ni activar runtime, `uv`, `pytest`, nuevos scripts, tests, workflows o `.agent/` activo sin autorización.
