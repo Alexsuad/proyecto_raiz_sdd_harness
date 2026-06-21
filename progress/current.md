@@ -20,7 +20,10 @@
 ## Cierre de auditoría Fase 4
 
 - Estado: auditoría final de Fase 4 cerrada a nivel documental y remoto.
-- Commit de saneamiento final: `72845c0 docs: corregir hallazgos finales de auditoria fase 4`.
+- Commits de cierre:
+  - `72845c0 docs: corregir hallazgos finales de auditoria fase 4`
+  - `ce31ebb docs: cerrar auditoria final de fase 4 sin deuda documental`
+  - `3fac449 docs: sincronizar estado final de fase 4`
 - Gate 0: passing.
 - GitHub main: actualizado.
 - Runtime agéntico: no activo.
