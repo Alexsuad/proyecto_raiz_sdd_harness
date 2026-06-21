@@ -2,6 +2,7 @@
 
 ID | Nombre | Estado | Tipo | Comentario breve
 ---|---|---|---|---
+FASE-5-READINESS | Readiness de implementación controlada | 🔓 ABIERTA | Documental / planificación | Fase 5 abierta documentalmente. Sin runtime, sin implementación técnica. Gate requerido: Gate 0. Objetivo: definir criterios y plan para futura activación técnica controlada.
 F-021 | Gate 0 preflight mínimo | ✅ REALIZADO | Gate | `scripts/gate_0_preflight.py` es el único gate mínimo local autorizado.
 F-015 | Scripts deterministas adicionales | 🧊 FUTURO | Scripts | Reservado para scripts futuros distintos de `scripts/gate_0_preflight.py`.
 improve_plan | Auditoría y planes autocontenidos | 🟡 DISEÑO DOCUMENTAL | Capacidad Fase 4 | Diseño conceptual del patrón de auditoría y planes ejecutables; implementación inactiva.
