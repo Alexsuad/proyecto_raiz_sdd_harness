@@ -148,11 +148,14 @@ El intake debe responder, como mínimo:
 
 Antes de abrir una spec, diseño técnico, tareas o implementación candidata, debe verificarse si la necesidad inicial contiene información suficiente para planear sin inventar componentes técnicos.
 
-El gate puede producir tres estados:
+Este gate evalúa exclusivamente la suficiencia y claridad de la necesidad y el producto. Puede bloquear el avance cuando esa claridad es insuficiente, pero no impone arquitectura, stack, librerías, scripts, gates técnicos ni estructura interna del proyecto.
+
+El gate puede producir cuatro estados:
 
 - **APTO PARA PLANEAR:** la necesidad, el usuario, el resultado esperado, los límites y los criterios de éxito son suficientemente claros para abrir planeación proporcional.
 - **ACLARACIÓN REQUERIDA:** existe una necesidad válida, pero falta información relevante sobre usuario, interfaz, datos, seguridad, entorno, validación, restricciones o criterios de éxito.
-- **NO APLICA / REDIRIGIR:** la solicitud no corresponde al alcance del proyecto o debe tratarse por otro flujo.
+- **NO APLICA / REDIRIGIR:** la solicitud puede ser válida, pero no corresponde al alcance del flujo actual y debe tratarse por otro repositorio, fase, procedimiento o responsable.
+- **NO INTERVENIR:** la solicitud no justifica acción dentro del proyecto, no requiere intervención del arnés o no debe avanzar por falta de pertinencia, autorización o valor suficiente.
 
 Si falta información para decidir, no se debe avanzar inventando arquitectura ni componentes técnicos. Deben generarse preguntas concretas y quedar registrada la aclaración pendiente.
 
