@@ -144,7 +144,25 @@ El intake debe responder, como mínimo:
 8. ¿Qué información todavía falta?
 9. ¿El proyecto debe avanzar, aclararse o detenerse?
 
-### 5.3. Resultado esperado
+### 5.3. Gate de Suficiencia de Entrada
+
+Antes de abrir una spec, diseño técnico, tareas o implementación candidata, debe verificarse si la necesidad inicial contiene información suficiente para planear sin inventar componentes técnicos.
+
+El gate puede producir tres estados:
+
+- **APTO PARA PLANEAR:** la necesidad, el usuario, el resultado esperado, los límites y los criterios de éxito son suficientemente claros para abrir planeación proporcional.
+- **ACLARACIÓN REQUERIDA:** existe una necesidad válida, pero falta información relevante sobre usuario, interfaz, datos, seguridad, entorno, validación, restricciones o criterios de éxito.
+- **NO APLICA / REDIRIGIR:** la solicitud no corresponde al alcance del proyecto o debe tratarse por otro flujo.
+
+Si falta información para decidir, no se debe avanzar inventando arquitectura ni componentes técnicos. Deben generarse preguntas concretas y quedar registrada la aclaración pendiente.
+
+El sistema no debe asumir frontend, backend, login, base de datos, despliegue, infraestructura, proveedor externo o complejidad técnica por costumbre.
+
+Cada componente técnico debe justificarse por una necesidad, usuario, riesgo, restricción o criterio de validación.
+
+Esta decisión no abre Fase 5, no activa runtime agéntico, no habilita `.agent/`, no crea skills nuevas, no crea scripts y no modifica la arquitectura técnica del repositorio.
+
+### 5.4. Resultado esperado
 
 El resultado de esta fase puede quedar en un documento de progreso, una sección de visión o una plantilla de intake, según el tamaño del proyecto.
 
