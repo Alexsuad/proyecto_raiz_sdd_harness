@@ -41,6 +41,21 @@ El arnés agéntico cumple con las siguientes funciones estratégicas:
 * **Desarrolladores humanos (como Directores y Aprobadores):** Mantienen el control absoluto de la arquitectura del software. Resuelven las dudas e imprecisiones de los requisitos en la etapa de aclaraciones, validan los planes de diseño y firman las transiciones de estado críticas de las características (*features*).
 * **Asistentes y Agentes de IA (como Ejecutores de Tareas):** Trabajan bajo un alcance predefinido, leen las especificaciones atómicas de `specs/`, proponen código candidato limpio de acuerdo a las directrices de estilo y reportan de forma objetiva los resultados de las validaciones en las sedes físicas aprobadas del repositorio.
 
+### Decisión arquitectónica: producción de skills
+
+El proyecto raíz SDD Harness podrá definir, solicitar, validar y aprobar skills necesarias para su operación metodológica y para proyectos derivados.
+
+La producción de skills puede realizarse mediante dos modos:
+
+- **Modo local:** el propio Harness define o produce skills candidatas cuando sea necesario.
+- **Modo externo:** una Fábrica de Skills, como proyecto hermano, puede producir skills candidatas para el Harness.
+
+La existencia futura de una Fábrica de Skills no reemplaza la gobernanza del Harness. Toda skill producida externamente debe entrar como artefacto candidato, ser revisada, validada y aprobada antes de activarse o incorporarse a proyectos derivados.
+
+El modo local queda disponible como respaldo. Si la Fábrica de Skills no está lista, se retrasa, falla o deja de convenir, el Harness conserva la capacidad de operar con producción local controlada.
+
+Esta decisión no activa runtime agéntico, no habilita `.agent/`, no crea skills nuevas y no abre Fase 5.
+
 ---
 
 ## 5. ¿Qué problema resuelve?
