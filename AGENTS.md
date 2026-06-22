@@ -44,7 +44,7 @@ El comportamiento del agente dentro del entorno de desarrollo debe ajustarse a l
 
 ## 5. Estado actual del arnés
 
-El proyecto se encuentra en una etapa de Producto Mínimo Viable (MVP). Estado actual: Fase 4 base documental cerrada y auditada a nivel documental y remoto. La implementación agéntica sigue bloqueada y no se debe abrir Fase 5 sin autorización humana explícita del Equipo Auditor.
+El proyecto se encuentra en una etapa de Producto Mínimo Viable (MVP). Estado actual: Fase 4 base documental cerrada y auditada a nivel documental y remoto, y Fase 5 — Readiness de implementación controlada abierta documentalmente. La implementación agéntica sigue bloqueada: toda activación técnica futura requiere misión separada, Gate 0 y aprobación humana explícita.
 - **Estado de .agent/:** permanece inactiva. Existen recursos documentales, pero no hay ejecución activa, runtime, CLI, agentes, skills ejecutables ni workflows habilitados.
 - **Verificación Estructural Activa:** El arnés ya cuenta con una verificación mínima preflight automatizada que se ejecuta localmente mediante `python3 scripts/gate_0_preflight.py` (o con `GATE_PREFLIGHT_MAINTENANCE=1 python3 scripts/gate_0_preflight.py` si se requiere modificar dicho script).
 - **Herramientas Bloqueadas:** No se permite activar, instalar o utilizar `pytest`, `uv`, GitHub Actions ni automatizaciones de `.agent/` sin autorización y firma humana explícitas.
